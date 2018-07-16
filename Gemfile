@@ -53,6 +53,7 @@ gem 'geometry', '~> 6.5'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'codecov', :require => false
+  gem 'dotenv-rails'
 end
 
 group :development do

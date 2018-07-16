@@ -12,7 +12,6 @@ module MySpaceBooker
     config.time_zone = 'Paris'
     config.active_record.default_timezone = :local
     config.i18n.default_locale = :fr
-    config.active_record.raise_in_transactional_callbacks = true
     config.assets.enabled = true
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
   end
