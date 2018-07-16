@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="utf-8" /
+    title
+    link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" /
+    link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet" /
+    link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /
+    link href="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.css" rel="stylesheet" /
+    link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /
+  body
+    /! En tête
+    = render partial: "pages/style_guide/v1/components/entete_fournisseur"
+    .bloc_rent
+      .fournileft
+        .fournitext
+          p Proposez la location de votre salle de réunion ou salle de séminaire et obtenez un revenu complémentaire. La création d'une annonce pour louer une salle sur Bird Office est gratuite et sans engagement !
+          p Partagez votre salle de formation en toute confiance : vous connaissez à l'avance l'entreprise que vous accueillez et votre adresse exacte reste strictement confidentielle jusqu'à validation définitive de la réservation. Nous vous mettons en relation avec les clients et nous engageons à vous transmettre toutes les informations dans les meilleures conditions.
+          p Bird Office s'occupe de toutes les tâches administratives liées à la location de votre salle de réunion. Nous assurons la prestation avec AXA, nous nous chargeons de la facturation et du contrat avec le client et nous vous garantissons le paiement.
+      .fourniright
+        .fournitext
+          p Que vous soyez un hôtel, un centre d’affaires, un espace de coworking, un centre de formation, un lieu événementiel ou une entreprise avec des espaces de travail disponibles, vous pouvez proposer la location de votre salle de réunion, salle de formation, salle de séminaire ou espace atypique sur Bird Office.
+          p Indiquez la description, les caractéristiques, équipements et tarifs de votre salle de réunion, salle de séminaire, salle de formation, espace atypique et recevez des demandes de réservation.
+          p Notre équipe est là pour vous accompagner dans la création et l'optimisation de votre annonce de location de salle.
+          input.rent type="button" value=("Louer ma salle") /
+    hr color="#428CC6" width="100%" /
+    /! FOOTER
+    = render partial: "pages/style_guide/v1/components/footer"

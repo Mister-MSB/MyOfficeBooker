@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="utf-8" /
+    title
+    link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" /
+    link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet" /
+    link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /
+    link href="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.css" rel="stylesheet" /
+    link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /
+  body
+    = render partial: "pages/style_guide/v1/components/navbar"
+    h1.create_title CRÉATION D'UN NOUVEL ÉTABLISSEMENT
+    .building_left
+      .navleft_building
+        a.onglets href="#"  Accéder à l'établissement
+        a.onglets href="#"  Contact &amp; horaires
+        a.onglets href="#"  Service restauration
+        a.onglets href="#"  Photos de l'établissement
+        a.onglets href="#"  Liste des salles
+        a.onglets href="#"  Créer une salle
+        input.rent type="button" value=("retour à mon compte") /
+      .navleft2_building
+        p Accéder à l'établissement
+        p Renseignez toutes les informations nécessaires pour permettre à vos clients de trouver facilement votre établissement
+        p Toutes ces informations sont divulguées uniquement lorsque vous confirmez une réservation de salle.
+        p.input_title Nom de l'établissement:
+        input.input name="name" type="text" /
+        p.input_title Adresse de l'établissement:
+        input.input name="street" type="text" /
+        .mapouter
+          .gmap_canvas
+            iframe#gmap_canvas frameborder="0" height="250" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
+            a href="https://www.pureblack.de"
+          css:
+            .mapouter height:250px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:100%;
+        p.input_title Code pour accéder à l'établissement
+        input.input name="code" type="text" /
+        p.input_title Description
+        input.input name="description" type="text" /
+        hr/
+        p.input_title Interphone
+        input.input name="door_code" type="text" /
+        p.input_title Étage de l'établissement
+        input.input name="floor" type="text" /
+        p.input_title Plus de détails sur l'établissement
+        textarea.input name="details" type="text"
+        input.rent type="button" value="Enregistrer" /
+    .building_right
+      .bloc_right
+        p Qu'est-ce qu'un établissement ?
+        p Un établissement est localisé à une adresse. Il réunit une ou plusieurs salles quel que soit leur taille.
+        p Si vos salles sont situées à différentes adresses, vous devez créer autant d'établissements que d'adresses.
+        p Chaque établissement a ses propres horaires, contact sur place et spécificités d'accès.
+    = render partial: "pages/style_guide/v1/components/footer"
