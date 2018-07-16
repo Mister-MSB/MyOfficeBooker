@@ -16,11 +16,7 @@ This application is using overcommit in order to push correct commit.
 
 Please to do those steps:
 
-1 - overcommit --install
-2 - overcommit --sign
+* 1 - overcommit --install
+* 2 - overcommit --sign
 
 # License
-
-
-
-
