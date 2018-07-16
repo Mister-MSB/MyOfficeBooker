@@ -11,7 +11,7 @@ development: &default
 
 test: &test
   <<: *default
-  database: test_lcds_<%= ENV["USER"] %>_<%= ENV["TEST_ENV_NUMBER"] %>
+  database: test_msb_<%= ENV["USER"] %>_<%= ENV["TEST_ENV_NUMBER"] %>
 
 staging:
   <<: *test
