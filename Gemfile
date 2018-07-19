@@ -54,6 +54,9 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'codecov', :require => false
   gem 'dotenv-rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'rspec-rails'
 end
 
 group :development do
