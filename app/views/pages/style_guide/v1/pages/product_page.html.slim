@@ -1,0 +1,225 @@
+doctype html
+html
+  head
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta charset="utf-8" /
+    title
+    link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" /
+    link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet" /
+    link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" /
+    link href="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.css" rel="stylesheet" /
+    link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" /
+  body
+    .jumbotron2
+      nav.text-capitalize
+        a href="#"  My Space Booker
+        a href="#"  Partagez votre salle
+        a href="#"  0654321276
+        a href="#"  Inscription
+        a href="#"  Connexion
+      center
+        div class:=""
+          form.flex-form
+            input placeholder="Ville, quartier, adresse" type="search" /
+            select id="" name=""
+              i.fas.fa-user
+              option value="1"  5
+              option value="2"  10
+              option value="3"  50
+              option value="4"  100
+              option value="5"  300
+            select id="" name=""
+              option value="1"  100 €
+              option value="2"  200 €
+              option value="3"  300 €
+              option value="4"  500 €
+              option value="5"  1000 €
+            label.datepicker for="form"  Le
+            input#dt name="from" /
+            input.submitBtn type="submit" value="Recherche" /
+          script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.js"
+          javascript:
+            | rome(dt, { time: false });
+            | rome(dt2, { time: false });
+            | $(".flex-form").submit(function(){    $(".submitBtn").attr("disabled", true);                               return true;
+            | });
+          .product_left
+            .slider2
+              .slide_viewer2
+                .slide_group2
+                  .slide2
+                  .slide2
+                  .slide2
+                  .slide2
+            .text_left
+              p Notre plus grande salle de réunion se situe tout en haut de notre bâtiment du 9ème arrondissement de Paris. Elle est baignée de lumière avec une belle surface vitrée qui vous immerge dans l'énergie du lieu.
+              p Une grande LEDTV HD, un adaptateur Mac, un branchement HDMI , et un paperboard seront à votre disposition. 12 personnes pourront s'asseoir autour de cette belle table en bois et participer à votre événement professionnel.
+              p Cet espace de 22m2 est à votre disposition pour une durée de 2 heures ou plus en fonction de vos besoins. Le métro Liège situé sur la ligne 13 vous permettra d'accéder à notre établissement le plus facilement possible.
+              p Profitez de nombreuses formules de restauration proposées par l'établissement afin de faciliter l'organisation de votre journée et réjouir vos collègues.
+              h5 Superficie 22 m2
+              h5 Référence de l'annonce : 131539
+              p.smalltext Modification sans frais possible jusqu’à 9 jours avant la date réservée. Non modifiable à moins de 9 jours avant la date réservée.
+              p.smalltext Annulation possible jusqu’à 9 jours avant la date réservée, frais d’annulation à hauteur de 20% du montant total de la réservation et d’un minimum de 20€ HT. A moins de 9 jours avant la date réservée, le montant total de la réservation est dû.
+          center
+            .product_infos
+              h5.product_title Louer salle de réunion joliment décorée pour 12 personnes à Paris 9
+              p Avenue des Champs Elysées - 75009 Paris - France
+              hr color="#428CC6" width="75%" /
+              p.product_ss_title Caractéristiques de l'établissement
+              i.fas.fa-home
+              i.fas.fa-utensils
+              p.product_ss_title Caractéristiques de la salle
+              i.fas.fa-home
+              p.product_ss_title Les équipements inclus
+              .equipement
+                p WIFI
+                p Internet fibré
+                p Paper Board
+                p Prises électriques
+              .equipement
+                p Téléviseur
+                p Photocopie
+                p Micro-ondes
+                p Café inclus
+              .maps_product
+                p.maps_title Carte
+                .mapouter
+                  .gmap_canvas
+                    iframe#gmap_canvas frameborder="0" height="330" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=champ%20elys%C3%A9es&t=&z=13&ie=UTF8&iwloc=&output=embed" width="335"
+                    a href="https://www.maps-erstellen.de"  maps-erstellen.de
+                  css:
+                    .mapouter text-align:right;height:330px;width:335px;}.gmap_canvas {overflow:hidden;background:none!important;height:330px;width:335px;
+                  small
+                    a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=28532&url=42158&tid1=google2" rel="nofollow"  Build beautiful WordPress Themes fast
+          hr color="#428CC6" width="100%" /
+          h5.product_title Restauration disponible
+          .food_bloc
+            .menus
+              p.food Petits Déjeuners
+              p.food2 Formule petit déjeuner      12 €
+              p Petit déjeuner - Standard
+              p - Mini viennoiseries
+              p - Chouquettes artisanales
+              p - Jus de fruit frais pressé : orange/pamplemousse
+              p - Café 100% Arabica - Cafés Richard
+              p - Thé Comptoirs Richard - Assortiment de sachets voiles
+              p - Bar à fruits découpés
+              p - Eau plate &amp; gazeuse
+            .menus
+              p.food Menu
+              p.food2 Coffret repas    40 €
+              p Menu Poisson
+              p - Rillettes de saumon à l’aneth et ses petits croûtons de céréales
+              p - Cabillaud en chapelure d’herbes maraîchères, petite ratatouille provençale
+              p - Camembert
+              p - Riz au lait à la pistache et sa chantilly de grenadine
+              p - Eau 33 cl
+              p Menu Volaille
+              p - Fantaisie du jardin à la ciboulette et brousse de brebis
+              p - Suprême de volaille à la crème de moutarde, risotto gourmand aux petits Paris
+              p - Camembert
+              p - Fromage blanc et son coulis de framboise
+              p - Eau 33 cl
+            .menus
+              p.food Pause café
+              p.food2 Formule pause café    6 €
+              p Pause Matin - Standard
+              p - Moelleux au chocolat
+              p - Mini financier
+              p - Café 100% Arabica
+              p - Cafés Richard
+              p - Thé Comptoirs Richard
+              p - Assortiment de sachets voiles
+              p - Eau plate &amp; gazeuse
+          = render partial: "pages/style_guide/v1/components/footer"
+
+          javascript:
+            | $('.slider2').each(function() {
+            | var $this = $(this);
+            | var $group = $this.find('.slide_group2');
+            | var $slides = $this.find('.slide2');
+            | var bulletArray = [];
+            | var currentIndex = 0;
+            | var timeout;
+
+            | function move(newIndex) {
+              | var animateLeft, slideLeft;
+
+              | advance();
+
+              | if ($group.is(':animated') || currentIndex === newIndex) {
+                | return;
+              | }
+
+              | bulletArray[currentIndex].removeClass('active');
+              | bulletArray[newIndex].addClass('active');
+
+              | if (newIndex > currentIndex) {
+                | slideLeft = '100%';
+                | animateLeft = '-100%';
+              | } else {
+                | slideLeft = '-100%';
+                | animateLeft = '100%';
+              | }
+
+              | $slides.eq(newIndex).css({
+                | display: 'block',
+                | left: slideLeft
+              | });
+              | $group.animate({
+                | left: animateLeft
+              | }, function() {
+                | $slides.eq(currentIndex).css({
+                  | display: 'none'
+                | });
+                | $slides.eq(newIndex).css({
+                  | left: 0
+                | });
+                | $group.css({
+                  | left: 0
+                | });
+                | currentIndex = newIndex;
+              | });
+            | }
+
+            | function advance() {
+              | clearTimeout(timeout);
+              | timeout = setTimeout(function() {
+                | if (currentIndex < ($slides.length - 1)) {
+                  | move(currentIndex + 1);
+                | } else {
+                  | move(0);
+                | }
+              | }, 4000);
+            | }
+
+            | $('.next_btn').on('click', function() {
+              | if (currentIndex < ($slides.length - 1)) {
+                | move(currentIndex + 1);
+              | } else {
+                | move(0);
+              | }
+            | });
+
+            | $('.previous_btn').on('click', function() {
+              | if (currentIndex !== 0) {
+                | move(currentIndex - 1);
+              | } else {
+                | move(3);
+              | }
+            | });
+
+            | $.each($slides, function(index) {
+              | var $button = $('<a class="slide_btn">&bull;</a>');
+
+              | if (index === currentIndex) {
+                | $button.addClass('active');
+              | }
+              | $button.on('click', function() {
+                | move(index);
+              | }).appendTo('.slide_buttons');
+              | bulletArray.push($button);
+            | });
+
+            | advance();
+            | });
