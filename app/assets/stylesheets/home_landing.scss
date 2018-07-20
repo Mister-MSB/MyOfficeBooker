@@ -58,6 +58,21 @@ body {
 
 ////// SEARCHBAR ////////
 
+.searchbuttons{
+  display: inline-block;
+  background-color: rgba(0,0,0,0.3);
+  height: 40px;
+  width: 100px;
+  margin-left: -4px;
+  color: white;
+  border: none;
+}
+
+.active, .searchbuttons:hover{
+  background:#6598d1;
+  cursor: pointer;
+}
+
 /*Hack to get them to align properly */
 .flex-form > *:not([type="date"]) {
   border-top:1px solid white;
@@ -128,6 +143,9 @@ input[type="search"]{
     display: block;
     width: 100%;
     text-align: center;
+  }
+  .flex-form_home{
+    background: transparent;
   }
   .datepicker{
     display: none;
@@ -248,7 +266,7 @@ input[type="search"]{
   float: left;
   width: 84.8%;
   text-align: center;
-  background-color: #6598d1;
+  background-color: rgb(200, 209, 211);
   border: 5px solid white;
   margin-left: 7.3%;
   color: white;
@@ -371,6 +389,60 @@ input[type="search"]{
   }
 }
 
+//////qui sommes nous //////
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #6598d1;
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #6598d1;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    background-color: #6598d1;
+    height: 200px;
+    color: white;
+}
+
+.tabtext{
+  padding-top: 4%;
+}
+
+@media screen and (max-width: 640px){
+  .tab button{
+    display: block;
+    float: none;
+  }
+}
 
 ////// FOOTER//////
 
