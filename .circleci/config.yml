@@ -52,8 +52,8 @@ jobs:
       - run:
           name: rspec
           command: |
-            mkdir ~/rspec
-            command: bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
+            mkdir -p ~/rspec
+            bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
           when: always
       - store_test_results:
           path: ~/rspec
