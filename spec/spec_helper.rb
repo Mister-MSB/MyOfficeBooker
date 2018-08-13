@@ -1,6 +1,11 @@
 require 'simplecov'
 require 'factory_bot'
 
+if ENV['RAILS_ENV'] == 'test'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
+
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.expect_with :rspec do |expectations|
