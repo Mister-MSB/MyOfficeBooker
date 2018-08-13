@@ -35,15 +35,15 @@ footer.flex-rw
       a.generic-anchor.footer-list-anchor href="/shop/user-registration?URL=" itemprop="significantLink"  PRESSE
   section.footer-social-section.flex-rw
     span.footer-social-overlap.footer-social-icons-wrapper
-      a.generic-anchor href="https://www.pinterest.com/paviliongift/" itemprop="significantLink" target="_blank" title="Pinterest"
-        i.fa.fa-pinterest
-      a.generic-anchor href="https://www.facebook.com/paviliongift" itemprop="significantLink" target="_blank" title="Facebook"
-        i.fa.fa-facebook
-      a.generic-anchor href="https://twitter.com/PavilionGiftCo" itemprop="significantLink" target="_blank" title="Twitter"
+      = link_to "https://www.facebook.com/paviliongift",
+        target: "_blank" do
+        i.fab.fa-facebook-f
+      = link_to "https://twitter.com/PavilionGiftCo",
+        target: "_blank" do
         i.fa.fa-twitter
-      a.generic-anchor href="http://instagram.com/paviliongiftcompany" itemprop="significantLink" target="_blank" title="Instagram"
+      = link_to "http://instagram.com/paviliongiftcompany",
+        target: "_blank" do
         i.fa.fa-instagram
-      a.generic-anchor href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" itemprop="significantLink" target="_blank" title="Youtube"
-        i.fa.fa-youtube
-      a.generic-anchor href="https://plus.google.com/+Paviliongift/posts" itemprop="significantLink" target="_blank" title=("Google Plus")
-        i.fa.fa-google-plus
+      = link_to "https://plus.google.com/+Paviliongift/posts",
+        target: "_blank" do
+        .fa.fa-google-plus
