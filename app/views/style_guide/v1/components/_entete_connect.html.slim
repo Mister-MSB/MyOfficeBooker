@@ -1,13 +1,22 @@
 .jumbotron
   nav.text-capitalize
-    a href="#"  My Space Booker
-    a href="#"  Partagez votre salle
-    a href="#"  0654321276
-    a href="#"  Inscription
-    a href="#"  Connexion
+    = link_to "My Space Booker",
+      "#"
+    = link_to "Partagez votre salle",
+      "#"
+    = link_to "0654321276",
+      "#"
+    = link_to "Bienvenue #{current_user.firstname} #{current_user.lastname}",
+      "#"
+    = link_to "se déconnecter",
+      destroy_user_session_path,
+      method: :delete
+
   #title.text-uppercase
-    h1.catchtitle Vos séminaires et réunions dans le lieu idéal
-    p Où allez-vous travailler aujourd'hui ?
+    h1.catchtitle
+      | Vos séminaires et réunions dans le lieu idéal
+    p
+      | Où allez-vous travailler aujourd'hui ?
   /! SEARCHBAR
   = render partial: "style_guide/v1/components/searchbar_home"
 

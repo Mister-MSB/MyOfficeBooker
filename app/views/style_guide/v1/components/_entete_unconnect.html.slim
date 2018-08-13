@@ -1,0 +1,29 @@
+.jumbotron
+  nav.text-capitalize
+    = link_to "My Space Booker",
+      "#"
+    = link_to "Partagez votre salle",
+      "#"
+    = link_to "0654321276",
+      "#"
+    = link_to "Inscription",
+      "#"
+    = link_to "Connexion",
+      new_user_session_path
+
+  #title.text-uppercase
+    h1.catchtitle
+      | Vos séminaires et réunions dans le lieu idéal
+    p
+      | Où allez-vous travailler aujourd'hui ?
+  /! SEARCHBAR
+  = render partial: "style_guide/v1/components/searchbar_home"
+
+
+  script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.js"
+  javascript:
+    | rome(dt, { time: false });
+    | rome(dt2, { time: false });
+    | $(".flex-form").submit(function(){    $(".submitBtn").attr("disabled", true);                               return true;
+    | });
+/! jumbotron end
