@@ -5,11 +5,46 @@
 script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.js"
 
 javascript:
-  | rome(dt, { time: false });
-  | rome(dt2, { time: false });
-  | $(".flex-form").submit(function(){    $(".submitBtn").attr("disabled", true);                               return true;
-  | });
+   rome(dt, { time: false });
+   rome(dt2, { time: false });
+   $(".flex-form").submit(function(){    $(".submitBtn").attr("disabled", true);return true;
+   });
+#myDIV
+  button.searchbuttons.active Coworking
+  button.searchbuttons Bureau
+  button.searchbuttons Réunion
+javascript:
+  /!/ Add active class to the current button (highlight it)
+   var header = document.getElementById("myDIV");
+   var btns = header.getElementsByClassName("searchbuttons");
+   for (var i = 0; i < btns.length; i++) {
+     btns[i].addEventListener("click", function() {
+       var current = document.getElementsByClassName("active");
+       current[0].className = current[0].className.replace(" active", "");
+       this.className += " active";
+     });
+   }
+/! price slider
+#range-slider
+  #slider-range
+  p
+    input#amount readonly="readonly" style="border:0;" type="text" /
+/! close range-slider div
+javascript:
+  /!/ Range slider - gravity forms
+     $( function() {
+       $( "#slider-range" ).slider({
+         range: true,
+         min: 0,
+         max: 1000,
+         step: 100,
+         values: [ 0, 1000 ],
+         slide: function( event, ui ) {
+           $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+         }
+       });
+       $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+         " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+     } );
 /! PRODUCTS BLOC
 = render partial: "style_guide/v1/components/products_bloc"
-/! FOOTER
-= render partial: "style_guide/v1/components/footer"
