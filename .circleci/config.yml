@@ -6,7 +6,17 @@ version: 2
 jobs:
   build:
     docker:
-       - image: circleci/ruby:2.5.0-node-browsers
+      - image: circleci/ruby:2.5.0-node-browsers
+        environment:
+          PGHOST: 127.0.0.1
+          PGUSER: mistermsb
+          RAILS_ENV: test
+          TZ: '/usr/share/zoneinfo/Europe/Paris'
+      - image: circleci/postgres:9.4.12-alpine
+        environment:
+          POSTGRES_USER: mistermsb
+          POSTGRES_PASSWORD: mistermsb
+          TZ: '/usr/share/zoneinfo/Europe/Paris'
 
     working_directory: ~/repo
 
