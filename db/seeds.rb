@@ -6,7 +6,7 @@ puts "====================="
   :admin
 )
 
-puts "ADMIN seeds done !"
+puts "ADMINS seeds done !"
 puts "====================="
 
 #USER
@@ -22,5 +22,18 @@ puts "====================="
   sex:                   "Male"
 )
 
-puts "USER seeds done !"
+puts "USERS seeds done !"
+puts "====================="
+
+@address = FactoryBot.create(
+  :address,
+  street:  "11 place de la concorde",
+  country: "France",
+  zipcode: "75001",
+  city:    "Paris",
+  usage:    "Living",
+  user_id: @user1.id
+)
+
+puts "USER ADDRESSES seeds done !"
 puts "====================="
