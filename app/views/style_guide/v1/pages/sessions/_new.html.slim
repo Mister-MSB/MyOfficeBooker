@@ -1,0 +1,13 @@
+h1
+  | My Space Booker
+= simple_form_for :user, url: user_session_path do |f|
+  = f.input :email,
+    required: true,
+    label: false,
+    placeholder: 'Adresse de messagerie'
+  = f.input :password,
+    required: true,
+    label: false,
+    placeholder: 'Mot de passe'
+  = f.button :submit,
+    'Se connecter'

@@ -1,1 +1,19 @@
-AdminUser.create!(email: 'admin@myspacebooker.fr', password: 'password', password_confirmation: 'password') if Rails.env.development?
+puts "SEEDING NOW !"
+puts "====================="
+
+#ADMIN
+@admin = FactoryBot.create(
+  :admin
+)
+
+#USER
+# @user = FactoryGirl.create(
+#   :user
+# )
+#
+# @user = FactoryGirl.create(
+#   :user
+# )
+
+puts "USER seeds done !"
+puts "====================="
