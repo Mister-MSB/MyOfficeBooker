@@ -8,7 +8,7 @@
 
 # Link information
 
-<!-- [![codecov](https://codecov.io/gh/Mister-MSB/MySpaceBooker/branch/develop/graph/badge.svg?token=HIAYxWhNgo)](https://codecov.io/gh/Mister-MSB/MySpaceBooker) -->
+<!-- [![codecov](https://codecov.io/gh/Mister-MSB/MySpaceBooker/branch/develop/graph/badge.svg)](https://codecov.io/gh/Mister-MSB/MySpaceBooker) -->
 
 
 # Other information
