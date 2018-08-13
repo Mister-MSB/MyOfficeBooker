@@ -37,3 +37,10 @@ puts "====================="
 
 puts "USER ADDRESSES seeds done !"
 puts "====================="
+
+@place = FactoryBot.create(
+  :place
+)
+
+puts "PLACES seeds done !"
+puts "====================="
