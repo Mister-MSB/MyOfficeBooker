@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2018_08_13_121318) do
     t.string "zipcode"
     t.string "city"
     t.string "country"
-    t.string "type"
+    t.string "usage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
