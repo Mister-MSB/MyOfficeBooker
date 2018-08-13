@@ -44,10 +44,14 @@ html
 
     = csrf_meta_tags
     = csp_meta_tag
-
-    = stylesheet_link_tag 'application',
-      media: 'all',
-      'data-turbolinks-track': 'reload'
+    - if params[:id] == "v1/pages/sessions/_new"
+      = stylesheet_link_tag 'connexion',
+        media: 'all',
+        'data-turbolinks-track': 'reload'
+    - else
+      = stylesheet_link_tag 'home',
+        media: 'all',
+        'data-turbolinks-track': 'reload'
 
     = javascript_include_tag 'application',
       'data-turbolinks-track': 'reload'
