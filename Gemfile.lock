@@ -524,6 +524,7 @@ DEPENDENCIES
   seedbank
   selenium-webdriver
   simple_form
+  simplecov
   slim-rails
   spring
   spring-watcher-listen (~> 2.0.0)
