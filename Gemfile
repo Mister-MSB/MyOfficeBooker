@@ -51,6 +51,7 @@ gem 'high_voltage'
 gem 'geometry', '~> 6.5'
 gem 'factory_bot_rails'
 gem 'awesome_rails_console'
+gem 'gmaps4rails'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
