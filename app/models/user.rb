@@ -12,8 +12,4 @@ class User < ApplicationRecord
   validates :firstname, presence: true
   validates :lastname,  presence: true
   validates :email,     presence: true
-
-  def timeout_in
-    15.minutes
-  end
 end
