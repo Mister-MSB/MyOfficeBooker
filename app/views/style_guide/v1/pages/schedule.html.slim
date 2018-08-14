@@ -1,0 +1,118 @@
+= render partial: "style_guide/v1/components/navbar"
+
+h1.create_title
+  | Horaires d'ouverture
+.building_left
+  .navleft_building
+    a.onglets href="#"
+      | Accéder à l'établissement
+    a.onglets href="#"
+      | Contact  horaires
+    a.onglets href="#"
+      | Service restauration
+    a.onglets href="#"
+      | Service hébergement
+    a.onglets href="#"
+      | Photos de l'établissement
+    a.onglets href="#"
+      | Liste des salles
+    a.onglets href="#"
+      | Créer une salle
+    input.rent type="button" value=("retour à mon compte")
+
+    .navleft2_building
+      p
+        | Contacts sur place  Horaires d'ouverture
+      p
+        | Indiquez ici les coordonnées des responsables de l'accueil des clients et les horaires d'ouverture de l'établissement
+      p
+        | Ces informations sont divulguées uniquement lorsque vous confirmez une réservation de salle.
+      p.input_title
+        | Coordonnées des responsables de l'accueil des clients
+      /! POP UP A METTRE POUR AJOUT COORDONNEES
+  p.input_title
+    | Horaires d'ouverture
+  p
+    | Indiquez la fourchette horaire maximale au cours de laquelle votre établissement est ouvert et que vous &#xEA;tes en capacité d'accueillir des clients
+  table
+    tr
+      th
+        | Jour
+      th
+        | Ouvert/fermé
+      th
+        | Heures d'ouverture
+    tr
+      td
+        | Lundi
+      td
+        .can-toggle
+          input#a type="checkbox"
+            label for="a"
+              .can-toggle__switch data-checked="Ouvert" data-unchecked="Fermé"
+        td
+      tr
+        td
+          | Mardi
+        td
+          .can-toggle
+            input#a type="checkbox"
+              label for="a"
+                .can-toggle__switch data-checked="Ouvert" data-unchecked="Fermé"
+          td
+        tr
+          td
+            | Mercredi
+          td
+            .can-toggle
+              input#a type="checkbox"
+                label for="a"
+                  .can-toggle__switch data-checked="Ouvert" data-unchecked="Fermé"
+            td
+          tr
+            td
+              | Jeudi
+            td
+              .can-toggle
+                input#a type="checkbox"
+                  label for="a"
+                    .can-toggle__switch data-checked="Ouvert" data-unchecked="Fermé"
+              td
+            tr
+              td
+                | Vendredi
+              td
+                .can-toggle
+                  input#a type="checkbox"
+                    label for="a"
+                      .can-toggle__switch data-checked="Ouvert" data-unchecked="Fermé"
+                td
+              tr
+                td
+                  | Samedi
+                td
+                  .can-toggle
+                    input#a type="checkbox"
+                      label for="a"
+                        .can-toggle__switch data-checked="Ouvert" data-unchecked="Fermé"
+                  td
+                tr
+                  td
+                    | Dimanche
+                  td
+                    .can-toggle
+                      input#a type="checkbox"
+                        label for="a"
+                          .can-toggle__switch data-checked="Ouvert" data-unchecked="Fermé"
+                    td
+            input.rent type="button" value="Enregistrer"
+          .building_right
+            .bloc_right
+              p
+                | Qu'est-ce qu'un établissement ?
+              p
+                | Un établissement est localisé à une adresse. Il réunit une ou plusieurs salles quel que soit leur taille.
+              p
+                | Si vos salles sont situées à différentes adresses, vous devez créer autant d'établissements que d'adresses.
+              p
+                | Chaque établissement a ses propres horaires, contact sur place et spécificités d'acc&#xE8;s.
