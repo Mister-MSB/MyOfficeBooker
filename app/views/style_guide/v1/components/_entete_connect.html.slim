@@ -4,8 +4,13 @@
       "#"
     = link_to "Partagez votre salle",
       "#"
-    = link_to "0654321276",
-      "#"
+    = link_to "#",
+      href: "tel:+33654321276",
+      class: 'link_phone' do
+      i.fa.fa-phone
+      span
+        |  06 54 32 12 76
+
     = link_to "Bienvenue #{current_user.firstname} #{current_user.lastname}",
       "#"
     = link_to "se déconnecter",
