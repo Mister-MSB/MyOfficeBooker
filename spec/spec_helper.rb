@@ -1,4 +1,10 @@
+require 'simplecov'
 require 'factory_bot'
+
+if ENV['RAILS_ENV'] == 'test'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
 
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
@@ -9,5 +15,4 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
   config.shared_context_metadata_behavior = :apply_to_host_groups
-
 end
