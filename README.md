@@ -22,5 +22,3 @@ Please to do those steps:
 * 2 - overcommit --sign
 
 # License
-
-4222aa37-2846-47e1-afd3-2cff6e9ed29d (upload token)
