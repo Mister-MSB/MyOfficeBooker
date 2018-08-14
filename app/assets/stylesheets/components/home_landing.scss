@@ -32,7 +32,7 @@ body {
   margin-left: auto;
   border: solid 2px white;
   padding: .15em .60em;
-  background-color: #6598d1;
+  background-color: #428CC6;
   color: white;
 }
 .jumbotron nav a {
@@ -69,7 +69,7 @@ body {
 }
 
 .active, .searchbuttons:hover{
-  background:#6598d1;
+  background:#428CC6;
   cursor: pointer;
 }
 
@@ -80,9 +80,9 @@ body {
 }
 
 .flex-form input[type="submit"] {
-  background:#6598d1;
-  border-top: 1px solid #6598d1;
-  border-bottom: 1px solid #6598d1;
+  background:#428CC6;
+  border-top: 1px solid #428CC6;
+  border-bottom: 1px solid #428CC6;
   color:white;
 }
 
@@ -180,7 +180,7 @@ input[type="search"]{
 }
 
 .container .title{
-  color: #6598d1;
+  color: #428CC6;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -193,6 +193,8 @@ input[type="search"]{
   margin: auto;
   overflow: hidden;
   display: inline-block;
+  padding-right: 2px;
+  margin-bottom: 2px;
 }
 
 .content .content-overlay {
@@ -361,7 +363,7 @@ input[type="search"]{
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #6598d1;
+	color: #428CC6;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -372,7 +374,7 @@ input[type="search"]{
 .sharebutton:hover{
 	opacity: 0.8;
   color: #fff;
-  background: #6598d1;
+  background: #428CC6;
 }
 
 @media screen and (max-width: 640px){
@@ -397,6 +399,7 @@ input[type="search"]{
     background-color: white;
     width: 50%;
     margin-left: 25%;
+    padding-top: 3%;
 }
 
 /* Style the buttons inside the tab */
@@ -413,13 +416,13 @@ input[type="search"]{
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #6598d1;
+    background-color: #428CC6;
     color: white;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #6598d1;
+    background-color: #428CC6;
     color: white;
 }
 
@@ -428,7 +431,7 @@ input[type="search"]{
     display: none;
     padding: 6px 12px;
     border-top: none;
-    background-color: #6598d1;
+    background-color: #428CC6;
     height: 200px;
     color: white;
 }
@@ -545,6 +548,15 @@ footer {
 
 .footer-social-overlap > a:not(:first-child) {
   margin-left: 0.38em;
+}
+
+.socials{
+  text-decoration: none;
+  color: #428CC6;
+}
+
+.socials:hover{
+  color: white;
 }
 
 .footer-bottom-section {
