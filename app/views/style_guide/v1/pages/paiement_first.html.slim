@@ -1,0 +1,114 @@
+/! NAVBAR
+= render partial: "style_guide/v1/components/navbar"
+
+br
+
+center
+  ul.progression
+    li.firstcircle
+      span.numberCircle
+        | 1
+      span.normal
+        | Choisir votre créneau
+    li
+      span.numberCircle
+        | 2
+      span.normal
+        | Détails de votre évènement
+    li
+      span.numberCircle
+        | 3
+      span.normal
+        | Services additionnels
+    li
+      span.numberCircle
+        | 4
+      span.normal
+        | Paiement & confirmation
+
+.left_paiement
+  img class="img_paiement" src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&h=350"
+
+  .left_display
+    h5
+      | Louer salle de réunion joliment décorée pour 12 per...
+    h5
+      | Rue de Bucarest
+    p
+      | Vous pouvez réserver cette salle pour un minimum de 30 minutes mais elle vous sera facturée pour un montant minimum de 2h de réservation.
+
+  br
+  h2
+    | Vos créneaux
+  p
+    | VOS CRÉNEAUX 30 août 2018 de 08:30 à 09:00 180 € H.T.
+  br
+  h2
+    | CHOISIR VOTRE CRÉNEAU
+
+  label
+    | Date
+  br
+  input.schedule placeholder="date" type="search"
+
+
+  label
+    | Horaires de votre évènement
+
+  input.schedule placeholder="heure de début" type="search"
+  input.schedule placeholder="heure de fin" type="search"
+
+  input.submitBtn type="submit" value="Ajouter"
+
+
+
+  input.rent type="button" value="Enregistrer"
+
+
+.right_paiement
+  .right_infos
+    p
+      | Besoin d'assistance pour votre réservation ?
+    p
+      | Contactez-nous au +33 1 86 76 10 87
+    p
+      | ou contact@bird-office.com
+    p
+      | Disponible du lundi au vendredi de 08:30 à 18:30
+
+  br
+
+  .right_recap
+    p
+      | Louer salle de réunion joliment décorée...
+    p
+      | Rue de Bucarest
+    p
+      | 30/08/2018 - 08:30 à 09:00
+    p
+      | Total
+    p
+      | 180 € H.T.
+
+    .right_why
+      p
+        | Pourquoi réserver sur Bird Office ?
+      p
+        | Meilleurs prix garantis
+      p
+        | Réservation sans frais
+      p
+        | Événement assuré par AXA
+      p
+        | Paiement sécurisé
+      p
+        | Lieux vérifiés
+      p
+        | Un service client à votre écoute
+      p
+        | Conditions d'annulation flexibles
+
+  br
+  br
+
+  input.rent type="button" value="Enregistrer"
