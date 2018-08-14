@@ -1,0 +1,63 @@
+= render partial: "style_guide/v1/components/navbar"
+
+h1.create_title
+  | Service restauration
+.building_left
+  .navleft_building
+    a.onglets href="#"
+      | Accéder à l'établissement
+    a.onglets href="#"
+      | Contact  horaires
+    a.onglets href="#"
+      | Service restauration
+    a.onglets href="#"
+      | Service hébergement
+    a.onglets href="#"
+      | Photos de l'établissement
+    a.onglets href="#"
+      | Liste des salles
+    a.onglets href="#"
+      | Créer une salle
+    input.rent type="button" value=("retour à mon compte")
+
+    .navleft2_building
+      p
+        | Service restauration
+      p
+        | Ajoutez ici les diff&#xE9;rents produits qui composent votre offre restauration.
+      p
+        | Si vous n'offrez pas de service restauration, merci d'indiquer si vous acceptez la livraison de nourriture dans vos locaux par un de nos partenaires traiteurs.
+      fieldset
+        div
+          input#delivery name="feature" type="checkbox" value="food"
+          label for="delivery"
+            | Vous acceptez la livraison de nourriture dans vos locaux
+        div
+          input#yes name="feature" type="checkbox" value="food"
+          label for="yes"
+            | Vous proposez un service de restauration
+        div
+          input#no name="feature" type="checkbox" value="food"
+          label for="no"
+            | Vous ne souhaitez pas proposer de la restauration dans votre lieu
+      /! POP UP A METTRE POUR AJOUT COORDONNEES
+  p.input_title
+    | S&#xE9;lectionnez une cat&#xE9;gorie et ajoutez les produits qui la composent.
+  p.input_title
+    | Retrouvez toutes les cat&#xE9;gories dans le menu &#xE0; gauche et cliquez sur une cat&#xE9;gorie pour voir les produits qui la composent.
+  center
+    input.food_service type="button" value=("Ajouter un produit petits déjeuners")
+      input.food_service type="button" value=("Ajouter un produit menus")
+        input.food_service type="button" value=("Ajouter un produit pauses café")
+          input.food_service type="button" value=("Ajouter un produit boissons")
+      input.rent type="button" value="Enregistrer"
+    .building_right
+      .bloc_right
+        p
+          | Qu'est-ce qu'un &#xE9;tablissement ?
+        p
+          | Un &#xE9;tablissement est localis&#xE9; &#xE0; une adresse. Il r&#xE9;unit une ou plusieurs salles quel que soit leur taille.
+        p
+          | Si vos salles sont situ&#xE9;es &#xE0; diff&#xE9;rentes adresses, vous devez cr&#xE9;er autant d'&#xE9;tablissements que d'adresses.
+        p
+          | Chaque &#xE9;tablissement a ses propres horaires, contact sur place et sp&#xE9;cificit&#xE9;s d'acc&#xE8;s.

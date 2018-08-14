@@ -1031,3 +1031,148 @@ footer {
   padding: 20px 5px 0;
   margin: 0;
 }
+
+
+///// contact page //////
+.contact{
+  background-color: rgba(5, 15, 244, 0.11);
+  padding-top: 5%;
+  height: 300px;
+}
+
+.contact_txt{
+ text-align: left;
+ width: 80%;
+}
+
+.contact_title{
+  color: #428CC6;
+  text-align: center;
+}
+
+
+.contact_subtitle{
+  text-align: center;
+}
+
+.contact_left{
+  display: inline-block;
+  width: 70%;
+}
+
+.contact_right{
+  text-align: left;
+  display: inline-block;
+}
+
+.contact_right h5{
+  color: #428CC6;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+form {
+  max-width: 80%;
+  padding-left: 2%;
+}
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+form input:focus, form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #428CC6 !important;
+  -webkit-box-shadow: 0 0px 2px #428CC6 !important;
+  box-shadow: 0 0px 2px #428CC6 !important;
+}
+form #input-submit {
+  color: white;
+  background: #428CC6;
+  cursor: pointer;
+  width: 20%;
+  margin-left: 38%;
+}
+form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+form textarea {
+  height: 107px;
+}
+
+.half {
+  float: left;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 45%;
+  display: inline-block;
+  padding-left: 5%;
+}
+
+.left {
+  width: 45%;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .cf{
+    max-width: 100%;
+    text-align: center;
+  }
+  .cf h1{
+    font-size: 12px;
+  }
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+  .right {
+    width: 70%;
+    display: inline-block;
+    padding-left: 0%;
+  }
+
+  .left {
+    width: 70%;
+    display: inline-block;
+  }
+  .contact{
+    height: 350px;
+  }
+  .contact_left{
+    display: inline-block;
+    width: 100%;
+  }
+  .contact_right{
+    padding-top: 5%;
+    padding-left: 5%;
+  }
+}
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
