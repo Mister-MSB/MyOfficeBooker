@@ -45,15 +45,14 @@ jobs:
           name: database
           command:  |
             bundle exec rake db:create
-            bundle exec rake db:migrate
-            bundle exec rake db:setup
+            bundle exec rake db:schema:load
 
       # Rspec
       - run:
           name: rspec
           command: |
             mkdir -p ~/rspec
-            bundle exec rspec --format progress --format RspecJunitFormatter -o ~/rspec/rspec.xml
+            bundle exec rspec --format RspecJunitFormatter -o ~/rspec/rspec.xml
           when: always
       - store_test_results:
           path: ~/rspec
@@ -65,7 +64,7 @@ jobs:
           name: cucumber
           command: |
             mkdir -p ~/cucumber
-            bundle exec cucumber --format junit --out ~/cucumber/cucumber.xml
+            bundle exec cucumber --out ~/cucumber/cucumber.xml
           when: always
       - store_test_results:
           path: ~/cucumber
