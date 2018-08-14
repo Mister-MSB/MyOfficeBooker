@@ -82,6 +82,21 @@
   margin-left: 43%;
 }
 
+.food_service{
+  text-align: center;
+  background-color: white;
+  color: #428CC6;
+  border: none;
+  width: 40%;
+  height: 30px;
+  text-align: center;
+  margin-left: 43%;
+}
+
+.food_service:hover{
+  background-color: lightgrey;
+}
+
 @media only screen and (max-width: 600px) {
   .fournileft{
     background-color: grey;
