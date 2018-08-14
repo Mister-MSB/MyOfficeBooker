@@ -1,8 +1,11 @@
 center
   #myDIV
-    button.searchbuttons.active Coworking
-    button.searchbuttons Bureau
-    button.searchbuttons R&#xE9;union
+    button.searchbuttons.active
+      | Coworking
+    button.searchbuttons
+      | Bureau
+    button.searchbuttons
+      | Réunion
   javascript:
     /!/ Add active class to the current button (highlight it)
      var header = document.getElementById("myDIV");
@@ -20,12 +23,18 @@ center
     input.town placeholder="Ville, quartier, adresse" type="search"
       select#guests name=""
         i.fas.fa-user
-        option value="0"  participants
-        option value="1"  5
-        option value="2"  10
-        option value="3"  50
-        option value="4"  100
-        option value="5"  300
+        option value="0"
+          | participants
+        option value="1"
+          | 5
+        option value="2"
+          | 10
+        option value="3"
+          | 50
+        option value="4"
+          | 100
+        option value="5"
+          | 300
       input.submitBtn type="submit" value="Recherche"
     script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.js"
     javascript:
