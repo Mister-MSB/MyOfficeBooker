@@ -493,7 +493,6 @@ DEPENDENCIES
   dotenv-rails
   enumerize
   factory_bot_rails
-  font-awesome-rails
   geometry (~> 6.5)
   gmaps4rails
   high_voltage
