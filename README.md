@@ -8,7 +8,7 @@
 
 # Link information
 
-[![codecov](https://codecov.io/gh/Mister-MSB/myofficebooker/branch/develop/graph/badge.svg)](https://codecov.io/gh/Mister-MSB/myofficebooker)
+[![codecov](https://codecov.io/gh/Mister-MSB/myspacebooker/branch/develop/graph/badge.svg)](https://codecov.io/gh/Mister-MSB/myspacebooker)
 
 https://my-space-booker-staging.herokuapp.com/
 
