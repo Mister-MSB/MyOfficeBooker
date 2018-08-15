@@ -2,7 +2,6 @@
   = link_to "Acceuil",
     root_path
 
-
 .containernew
   center
     .background_login
@@ -14,7 +13,7 @@
       br
       .login
         form.login-form
-        = simple_form_for :user, url: user_session_path do |f|
+        = simple_form_for :booker, url: booker_session_path do |f|
           = f.input :email,
             required: true,
             label: false,

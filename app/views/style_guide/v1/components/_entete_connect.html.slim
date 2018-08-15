@@ -11,10 +11,10 @@
       span
         |  06 54 32 12 76
 
-    = link_to "Bienvenue #{current_user.firstname} #{current_user.lastname}",
+    = link_to "Bienvenue #{current_booker.firstname} #{current_booker.lastname}",
       "#"
     = link_to "se déconnecter",
-      destroy_user_session_path,
+      destroy_booker_session_path,
       method: :delete
 
   #title.text-uppercase
