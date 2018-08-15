@@ -197,69 +197,103 @@ input[type="search"]{
   margin-bottom: 2px;
 }
 
-.content .content-overlay {
-  background: rgba(0,0,0,0.7);
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.content:hover .content-overlay{
-  opacity: 1;
-}
-
 .content-image{
   width: 100%;
 }
 
-.content-details {
-  position: absolute;
+.infos_img{
+  background-color: lightgrey;
+  color: black;
+  margin-top: -22%;
+}
+
+/////// test //////
+.info {
+  font-family: 'Alegreya Sans', sans-serif;
+  padding-bottom: 2rem;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
+}
+
+.card {
+  max-width: 400px;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
+  margin: auto;
+  background: #428CC6;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
+  padding: 1rem 0;
+  overflow:hidden;
+  display: inline-block;
+  margin-right: 2px;
+  margin-top: 2px;
+  padding-top: 0;
 
-.content:hover .content-details{
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
+  a {
+    text-decoration: none;
+    color: white;
+  }
 
-.content-details h3{
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
+  .meta {
 
-.content-details p{
-  color: #fff;
-  font-size: 0.8em;
-}
+    .favicon {
+      display: block;
+      vertical-align: middle;
+      float: left;
+      margin-right: .5rem;
+      margin-left: 1rem;
+      width: 16px;
+      height: 16px;
+    }
 
-.fadeIn-bottom{
-  top: 80%;
-}
+    .timestamp {
+      font-size: .75rem;
+      color: #999;
+      line-height: 18px;
+      display: block;
+      margin-top: 0px;
+    }
+  }
 
+
+
+  .photo {
+     width: 100%;
+     display: block;
+     margin-bottom: .75rem;
+
+  }
+
+  .title, .description {
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #333;
+    margin-top: .5rem;
+    font-weight: b700;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: #555;
+
+    p {
+      line-height: 1.51;
+      margin-top: 0;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+}
 
 ////// bloc comment ça marche //////
 
