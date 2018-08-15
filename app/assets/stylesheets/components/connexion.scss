@@ -8,6 +8,15 @@ body{
   margin-top: 20%;
 }
 
+.background_login{
+	width: 30%;
+	height: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 2%;
+	background-color: rgba(190, 190, 190, 0.29);
+}
+
 .header{
 	z-index: 2;
   display: inline-block;
@@ -181,4 +190,10 @@ body{
   .messages{
     color: black;
   }
+	.containernew {
+		width: 100%;
+	}
+	.background_login{
+		width: 70%;
+	}
 }
