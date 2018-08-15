@@ -10,8 +10,8 @@ Feature: User can log out
     And I log as an user
     Then I see "Bienvenue User MSB" on this page
     Then I see "Louer une salle à Paris" on this page
-    Then I see "TOP RECHERCHE" on this page
+    Then I see "Top Recherche" on this page
     And I click on "se déconnecter" link
     Then I see "Connexion" on this page
     Then I see "Louer une salle à Paris" on this page
-    Then I see "TOP RECHERCHE" on this page
+    Then I see "Top Recherche" on this page
