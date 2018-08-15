@@ -4,6 +4,17 @@ body{
   background-repeat: no-repeat;
 }
 
+.back_cross{
+	float: right;
+	margin-top: -10%;
+	margin-right: 10%;
+}
+
+.back_cross a{
+	text-decoration: none;
+	color: white;
+}
+
 .containernew{
   margin-top: 20%;
 }
@@ -195,5 +206,9 @@ body{
 	}
 	.background_login{
 		width: 70%;
+	}
+	.back_cross a{
+		text-decoration: none;
+		color: black;
 	}
 }
