@@ -48,21 +48,22 @@ footer.flex-rw
     li#user-registration
       a.generic-anchor.footer-list-anchor href="/shop/user-registration?URL=" itemprop="significantLink"
         | PRESSE
-  section.footer-social-section.flex-rw
-    span.footer-social-overlap.footer-social-icons-wrapper
-      = link_to "https://www.facebook.com/paviliongift",
-        class: "socials",
-        target: "_blank" do
-        i.fa.fa-facebook
-      = link_to "https://twitter.com/PavilionGiftCo",
-        class: "socials",
-        target: "_blank" do
-        i.fa.fa-twitter
-      = link_to "http://instagram.com/paviliongiftcompany",
-        class: "socials",
-        target: "_blank" do
-        i.fa.fa-instagram
-      = link_to "https://plus.google.com/+Paviliongift/posts",
-        class: "socials",
-        target: "_blank" do
-        .fa.fa-google-plus
+  center
+    section.footer-social-section.flex-rw
+      span.footer-social-overlap.footer-social-icons-wrapper
+        = link_to "https://www.facebook.com/paviliongift",
+          class: "socials",
+          target: "_blank" do
+          = image_tag("fb.png", class: "icon_socials")
+        = link_to "https://twitter.com/PavilionGiftCo",
+          class: "socials",
+          target: "_blank" do
+          = image_tag("Twitter.png", class: "icon_socials")
+        = link_to "http://instagram.com/paviliongiftcompany",
+          class: "socials",
+          target: "_blank" do
+          = image_tag("insta.png", class: "icon_socials")
+        = link_to "https://plus.google.com/+Paviliongift/posts",
+          class: "socials",
+          target: "_blank" do
+          = image_tag("google.png", class: "icon_socials")
