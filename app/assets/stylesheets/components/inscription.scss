@@ -1,31 +1,13 @@
+////// inscription signup  ////////
+
 body{
 	background-image: url("https://buildersprofits.com/wp-content/uploads/revslider/home-cta/Office-blur.jpg");
 	background-size: cover;
   background-repeat: no-repeat;
 }
 
-.back_cross{
-	float: right;
-	margin-top: -10%;
-	margin-right: 10%;
-}
-
-.back_cross a{
-	text-decoration: none;
-	color: white;
-}
-
-.containernew{
-  margin-top: 20%;
-}
-
-.background_login{
-	width: 30%;
-	height: auto;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	border-radius: 2%;
-	background-color: rgba(190, 190, 190, 0.29);
+.container{
+  margin-top: 15%;
 }
 
 .header{
@@ -41,7 +23,7 @@ body{
 }
 
 .header div span{
-	color: #428CC6 !important;
+	color: #6598d1 !important;
 }
 
 .login{
@@ -52,7 +34,7 @@ body{
   display: inline-block;
 }
 
-.login input[type=email]{
+.login input[type=text]{
 	width: 250px;
 	height: 30px;
 	background: transparent;
@@ -76,17 +58,16 @@ body{
 	font-size: 16px;
 	font-weight: 400;
 	padding: 4px;
-	margin-top: 10px;
 }
 
-.login input[type=submit]{
+.login input[type=button]{
 	width: 260px;
 	height: 35px;
 	background: #fff;
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #428CC6;
+	color: #6598d1;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -94,17 +75,17 @@ body{
 	margin-top: 10px;
 }
 
-.login input[type=submit]:hover{
+.login input[type=button]:hover{
 	opacity: 0.8;
   color: #fff;
-  background: #428CC6;
+  background: #6598d1;
 }
 
-.login input[type=submit]:active{
+.login input[type=button]:active{
 	opacity: 0.6;
 }
 
-.login input[type=email]:focus{
+.login input[type=text]:focus{
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
 }
@@ -114,7 +95,7 @@ body{
 	border: 1px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=submit]:focus{
+.login input[type=button]:focus{
 	outline: none;
 }
 
@@ -131,7 +112,7 @@ body{
 }
 
 .messages a{
-  color: #428CC6;
+  color: #6598d1;
   text-decoration: none;
 }
 
@@ -150,13 +131,13 @@ body{
   .header div{
   	color: black;
   }
-  .login input[type=email]{
+  .login input[type=text]{
   	width: 250px;
   	height: 30px;
   	background: transparent;
   	border: 1px solid black;
   	border-radius: 2px;
-  	color: #428CC6;
+  	color: #6598d1;
   	font-family: 'Exo', sans-serif;
   	font-size: 16px;
   	font-weight: 400;
@@ -169,22 +150,21 @@ body{
   	background: transparent;
   	border: 1px solid black;
   	border-radius: 2px;
-  	color: #428CC6;
+  	color: #6598d1;
   	font-family: 'Exo', sans-serif;
   	font-size: 16px;
   	font-weight: 400;
   	padding: 4px;
-  	margin-top: 10px;
   }
 
-  .login input[type=submit]{
+  .login input[type=button]{
   	width: 260px;
   	height: 35px;
   	background: #fff;
   	border: 1px solid black;
   	cursor: pointer;
   	border-radius: 2px;
-  	color: #428CC6;
+  	color: #6598d1;
   	font-family: 'Exo', sans-serif;
   	font-size: 16px;
   	font-weight: 400;
@@ -192,23 +172,13 @@ body{
   	margin-top: 10px;
   }
   ::-webkit-input-placeholder{
-     color: #428CC6;
+     color: #6598d1;
   }
 
   ::-moz-input-placeholder{
-     color: #428CC6;
+     color: #6598d1;
   }
-  .messages{
-    color: black;
-  }
-	.containernew {
-		width: 100%;
-	}
-	.background_login{
-		width: 70%;
-	}
-	.back_cross a{
-		text-decoration: none;
-		color: black;
-	}
+}
+.messages{
+  color: black;
 }
