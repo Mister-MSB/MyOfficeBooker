@@ -1,4 +1,4 @@
-class User < ApplicationRecord
+class Booker < ApplicationRecord
   devise :database_authenticatable,
          :registerable,
          :recoverable,
