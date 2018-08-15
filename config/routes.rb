@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :bookers,
     controllers: {passwords: "bookers/passwords", registrations: "bookers/registrations", sessions: "bookers/sessions"},
-    path_names: { sign_in: 'connexion', sign_out: 'deconnexion'}
+    path_names: { sign_in: 'connexion', sign_out: 'deconnexion', sign_up: 'inscription'}
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   ActiveAdmin.routes(self)

@@ -1,0 +1,37 @@
+.back_cross
+  = link_to "Accueil",
+    root_path
+
+.containernew
+  center
+    .background_login
+      .header
+        div
+          | Inscription Utilisateur
+      br
+      .login
+        form.login-form
+        = simple_form_for :booker, url: booker_registration_path do |f|
+          = f.error_notification
+          = f.input :email,
+            required: true,
+            label: false,
+            placeholder: 'Courriel'
+          = f.input :password,
+            required: true,
+            label: false,
+            placeholder: 'Mot de passe'
+          = f.input :password_confirmation,
+            required: true,
+            label: false,
+            placeholder: 'Confirmation du mot de passe'
+          = f.input :firstname,
+            required: true,
+            label: false,
+            placeholder: 'Nom'
+          = f.input :lastname,
+            required: true,
+            label: false,
+            placeholder: 'Prénom'
+          = f.button :submit,
+            "S'inscrire"

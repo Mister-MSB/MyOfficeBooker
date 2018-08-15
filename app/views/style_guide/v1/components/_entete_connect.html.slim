@@ -12,7 +12,7 @@
         |  06 54 32 12 76
 
     = link_to "Bienvenue #{current_booker.firstname} #{current_booker.lastname}",
-      "#"
+      edit_booker_registration_path
     = link_to "se déconnecter",
       destroy_booker_session_path,
       method: :delete
