@@ -8,9 +8,9 @@
 
 # Link information
 
-[![codecov](https://codecov.io/gh/Mister-MSB/MySpaceBooker/branch/develop/graph/badge.svg)](https://codecov.io/gh/Mister-MSB/MySpaceBooker)
+[![codecov](https://codecov.io/gh/Mister-MSB/MyOfficeBooker/branch/develop/graph/badge.svg)](https://codecov.io/gh/Mister-MSB/MyOfficeBooker)
 
-https://my-space-booker-staging.herokuapp.com/
+https://my-office-booker-staging.herokuapp.com/
 
 # Other information
 
@@ -22,3 +22,5 @@ Please to do those steps:
 * 2 - overcommit --sign
 
 # License
+
+put license here

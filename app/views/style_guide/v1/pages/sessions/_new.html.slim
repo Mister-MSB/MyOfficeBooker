@@ -1,26 +1,32 @@
+.back_cross
+  = link_to "Accueil",
+    root_path
+
+
 .containernew
   center
-    .header
-      div
-        | My Space
-        span
-          | Booker
-    br
-    .login
-      form.login-form
-      = simple_form_for :user, url: user_session_path do |f|
-        = f.input :email,
-          required: true,
-          label: false,
-          placeholder: 'addresse mail'
-        = f.input :password,
-          required: true,
-          label: false,
-          placeholder: 'Mot de passe'
-        = f.button :submit,
-          'Valider'
+    .background_login
+      .header
+        div
+          | My Office
+          span
+            | Booker
+      br
+      .login
+        form.login-form
+        = simple_form_for :user, url: user_session_path do |f|
+          = f.input :email,
+            required: true,
+            label: false,
+            placeholder: 'addresse mail'
+          = f.input :password,
+            required: true,
+            label: false,
+            placeholder: 'Mot de passe'
+          = f.button :submit,
+            'Valider'
 
-      p.messages
-        | Vous n'avez pas encore de compte?
-        a href="#"
-          |  S'inscrire
+          p.messages
+            | Vous n'avez pas encore de compte?
+            a href="#"
+              |  S'inscrire
