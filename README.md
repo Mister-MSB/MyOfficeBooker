@@ -22,3 +22,5 @@ Please to do those steps:
 * 2 - overcommit --sign
 
 # License
+
+put license here
