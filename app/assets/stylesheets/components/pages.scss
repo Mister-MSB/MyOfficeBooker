@@ -6,9 +6,10 @@
 
 .jumbotron2 {
   border-radius: 0px;
-  padding: 0;
-  height: 50px;
-  background-color: #428CC6;
+  padding: 1%;
+  height: auto;
+  background: #428CC6;
+  background-size: cover;
 }
 .jumbotron2 nav {
   display: flex;
@@ -22,15 +23,13 @@
   margin-left: auto;
   border: solid 2px white;
   padding: .15em .60em;
-  border-radius: 2%;
 }
 .jumbotron2 nav a:nth-of-type(2):hover {
   margin-left: auto;
   border: solid 2px white;
   padding: .15em .60em;
-  background-color: white;
-  color: #428CC6;
-  border-radius: 2%;
+  background-color: #428CC6;
+  color: white;
 }
 .jumbotron2 nav a {
   color: white;
@@ -44,9 +43,26 @@
     margin: 20px auto;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
   .jumbotron2 {
-    height: 80px;;
+    padding-bottom: 5px;
+    height: auto;
+  }
+  .jumbotron2 nav {
+    padding-top: 3%;
+    padding: 0px;
+  }
+  .mini_inscription{
+    display: none;
+  }
+  #guests{
+    display: none;
+  }
+  #prices{
+    display: none;
+  }
+  .datepicker{
+    display: none;
   }
 }
 
@@ -70,7 +86,6 @@
   border:0;
   padding:10px;
   background:white;
-  margin:10px;
   border-radius:5px;
   outline:0;
   -webkit-appearance:none;
@@ -78,17 +93,6 @@
 
 .flex-form_home > *:last-child {
   border-right: 0;
-}
-
-/*Flexbox Starts Here*/
-
-.flex-form_home{
-  z-index:10;
-  background:rgba(0,0,0,0.3);
-  border-radius:5px;
-  display:flex;
-  width: 40%;
-  justify-content: center;
 }
 
 input:hover{
@@ -120,8 +124,9 @@ input[type="search"]{
   }
   .flex-form{
     display: block;
-    width: 100%;
+    width: 80%;
     text-align: center;
+    padding: 10%;
   }
   .datepicker{
     display: none;
@@ -204,7 +209,8 @@ input[type="search"]{
 .product-list {
 	display: block;
 	margin: 1rem auto;
-	padding: 0;
+	padding: 2%;
+  padding-left: 2%;
 	font-size: 0;
 	text-align: center;
 	list-style: none;
@@ -213,18 +219,12 @@ input[type="search"]{
 .product {
 	display: block;
 	width: 50%;
-
-	margin: 1rem;
 	font-size: 1rem;
 	text-decoration: none;
+  margin-bottom: 1%;
 	overflow: hidden;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
-}
-
-.product:hover {
-	transform: translateY(-0.5rem) scale(1.0125);
-	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
 }
 
 .product-description {
@@ -992,8 +992,7 @@ footer {
 }
 
 form {
-  max-width: 80%;
-  padding-left: 2%;
+
 }
 form input, form textarea {
   border: 0;
