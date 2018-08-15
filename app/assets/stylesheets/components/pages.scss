@@ -270,14 +270,27 @@ input[type="search"]{
   margin-bottom: 3%;
 }
 
+.left_right_contents{
+  display: inline-block;
+  width: 100%;
+  padding-left: 30%;
+  margin-top: -5%;
+}
+
 .nbrs{
   display: inline-block;
-  padding-right: 20px;
+  float: left;
 }
 
 .stars{
   display: inline-block;
-  padding-left: 20px;
+  float: right;
+  width: 70%;
+}
+
+.size_stars{
+  width: 20%;
+  display: inline-block;
 }
 
 @media screen and (max-width:600px) {
