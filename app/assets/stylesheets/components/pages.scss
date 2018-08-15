@@ -723,86 +723,16 @@ footer {
 
 /////////  PRODUCT PAGE //////////
 
-
-/*SLIDER*/
-
-.slider2 {
-  margin: 0 auto;
-  max-width: 940px;
-  width: 70%;
-  float: left;
-  padding-left: 200px;
-  display: block;
-}
-
-.slide_viewer2 {
-  height: 340px;
-  overflow: hidden;
-  position: relative;
-}
-
-.slide_group2 {
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.slide2 {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.slide2:first-child {
-  display: block;
-}
-
-.slide2:nth-of-type(1) {
-  background-image: url("http://www.croatia-holidayhome.com/wp-content/uploads/2018/03/creative-office-new-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide2:nth-of-type(2) {
-  background-image: url("http://dreamstop.com/wp-content/uploads/2013/07/office-dream-meaning.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide2:nth-of-type(3) {
-  background-image: url("https://www.officelovin.com/wp-content/uploads/2016/01/ragged-edge-london-office-6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide2:nth-of-type(4) {
-  background-image: url("http://wiredwriters.net/wp-content/uploads/2016/02/1748-56cc448f28226.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-width: 767px) {
-  .slider {
-    max-width: 940px;
-    width: 100%;
-  }
-  .slide_viewer {
-    overflow: hidden;
-    position: relative;
-  }
-}
-
-/*fin slide*/
-
 .product_left{
-  float: left;
+  width: 100%;
+}
+
+.product_image{
   width: 50%;
 }
 
 .text_left{
-  margin-top: 350px;
-  padding-left: 200px;
+  padding: 2%;
   width: 70%;
 }
 
@@ -821,6 +751,7 @@ footer {
   font-size: 20px;
   color: #428CC6;
   font-weight: bold;
+  padding: 2%;
 }
 
 .product_ss_title{
