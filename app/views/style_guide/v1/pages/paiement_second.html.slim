@@ -1,0 +1,144 @@
+/! NAVBAR
+= render partial: "style_guide/v1/components/navbar"
+
+br
+
+center
+  ul.progression
+    li.firstcircle
+      span.numberCircle
+        | 1
+      span.normal
+        | Choisir votre créneau
+    li
+      span.numberCircle
+        | 2
+      span.normal
+        | Détails de votre évènement
+    li
+      span.numberCircle
+        | 3
+      span.normal
+        | Services additionnels
+    li
+      span.numberCircle
+        | 4
+      span.normal
+        | Paiement & confirmation
+
+
+  .left_paiement
+    img class="img_paiement" src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&h=350"
+
+      h5
+        | Cochez la disposition souhaitée *
+      h5
+        | Nombre de participants (12 max dans cette configuration)
+
+      input.schedule placeholder="participants" type="search"
+
+      h5
+        | Donnez un titre à votre évènement *
+
+      input.schedule placeholder="Exemple : Comité de direction du 5 septembre" type="search"
+
+      h5
+        | Caractéristiques de la salle
+
+      p
+        | Cuisine partagée, lumière du jour, régisseur / intendant, erp.
+
+      h5
+        | Quels équipements inclus dans le prix désirez-vous ? (Vous pouvez en cocher plusieurs)
+
+      .radio_left
+        input type="radio" id="wifi" name="wifi"
+            label for="wifi"
+              i.fa.fa-wifi
+              |  Wifi
+        br
+        input type="radio" id="cafe" name="cafe"
+            label for="cafe"
+              i.fa.fa-coffee
+              |  Café inclus
+        br
+        input type="radio" id="internet" name="internet"
+            label for="internet"
+              i.fa.fa-tachometer
+              |  Internet fibré
+
+      .radio_right
+        input type="radio" id="board" name="board"
+            label for="board"
+              i.fa.fa-clipboard
+              |  Paper board
+        br
+        input type="radio" id="tele" name="tele"
+            label for="tele"
+              i.fa.fa-tv
+              |  Téléviseur
+        br
+        input type="radio" id="photocopie" name="photocopie"
+            label for="photocopie"
+              i.fa.fa-print
+              |  Photocopie
+
+      h5
+        | Description
+
+      textarea.schedule placeholder="décrire votre évènement" type="textarea"
+
+      h5
+        | Une question ? Une précision ?
+
+      textarea.schedule placeholder="Ex : est-il possible de prévoir un second paper board ?" type="textarea"
+
+      input.rent type="button" value="Etape suivante"
+
+  .right_paiement
+    .right_infos
+      p
+        | Besoin d'assistance pour votre réservation ?
+      p
+        | Contactez-nous au +33 1 86 76 10 87
+      p
+        | ou contact@bird-office.com
+      p
+        | Disponible du lundi au vendredi de 08:30 à 18:30
+
+    br
+
+    .right_recap
+      p
+        | Louer salle de réunion joliment décorée...
+      p
+        | Rue de Bucarest
+      p
+        | 30/08/2018 - 08:30 à 09:00
+      p
+        | Total
+      p
+        | 180 € H.T.
+
+      .right_why
+        p
+          | Pourquoi réserver sur Bird Office ?
+        p
+          | Meilleurs prix garantis
+        p
+          | Réservation sans frais
+        p
+          | Événement assuré par AXA
+        p
+          | Paiement sécurisé
+        p
+          | Lieux vérifiés
+        p
+          | Un service client à votre écoute
+        p
+          | Conditions d'annulation flexibles
+
+    br
+    br
+
+    input.rent type="button" value="Etape suivante"

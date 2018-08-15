@@ -1176,3 +1176,120 @@ form textarea {
 .cf:after {
   clear: both;
 }
+
+/////// paiement pages  /////
+
+  //////// line of paiement ///////
+
+.progression{
+  list-style:none
+}
+.numberCircle{
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin-left:.6em;
+  padding: 4px;
+  background: none repeat scroll 0% 0% #FFF;
+  border: 2px solid #428CC6;
+  color: #428CC6;
+  text-align: center;
+  font: 28px HelveticaNeueW01-45Ligh;
+  display: inline-block;
+}
+.numberCircle:after{
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background-color: #428CC6;
+  max-width: 100%;
+  position: absolute;
+  margin-right: 16px;
+  margin-left: 44px;
+  margin-top: .5em;
+  vertical-align: middle;
+  padding: 0px;
+  width: 52px;
+}
+.numberCircle:after:last-child{
+  content:"";
+  display:none;
+  height:0
+}
+.normal{
+  display:block;
+  color:#428CC6;
+  margin-top: 1em;
+}
+.progression li:nth-child(4) .normal{
+  margin-left: 0px;
+}
+.progression li:nth-child(3) .normal{
+  margin-left: -5px;
+}
+.progression li:nth-child(5) .normal{
+  margin-left: -7px;
+}
+.progression li:nth-child(2) .normal{
+  margin-left: -8px;
+}
+.progression li{min-width: 150px;
+  margin-bottom: 2em;
+}
+.progression li{
+  display:inline-block;
+  width: 180px;
+}
+.progression li:last-child .numberCircle:after{
+  content:'';
+  display:none
+}
+
+//////// paiement pages  ////////
+
+.img_paiement{
+  width: 15%;
+  display: inline-block;
+}
+
+.left_display{
+  display: inline-block;
+  width: 80%;
+  padding-left: 10px;
+}
+
+.schedule{
+  display: inline-block;
+}
+
+.left_paiement{
+  float: left;
+  margin-left: 10px;
+  width: 60%;
+}
+
+.right_paiement{
+  float: right;
+  padding-right: 10px;
+}
+
+.right_infos{
+  border: 1px solid black;
+}
+
+.right_recap{
+  border: 1px solid black;
+}
+
+.right_why{
+  background-color: #428CC6;
+}
+
+.radio_left{
+display: inline-block;
+}
+
+.radio_right{
+display: inline-block;
+padding-left: 10px;
+}
