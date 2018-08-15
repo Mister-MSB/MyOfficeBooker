@@ -894,7 +894,12 @@ footer {
 .contact{
   background-color: rgba(5, 15, 244, 0.11);
   padding-top: 5%;
-  height: 300px;
+  height: auto;
+  padding: 2%;
+}
+
+.cf{
+  text-align: center;
 }
 
 .contact_txt{
@@ -913,13 +918,11 @@ footer {
 }
 
 .contact_left{
-  display: inline-block;
   width: 70%;
 }
 
 .contact_right{
-  text-align: left;
-  display: inline-block;
+  padding-left: 10%;
 }
 
 .contact_right h5{
@@ -957,7 +960,7 @@ form #input-submit {
   background: #428CC6;
   cursor: pointer;
   width: 20%;
-  margin-left: 38%;
+  margin-left: -15%;
 }
 form #input-submit:hover {
   -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
@@ -1018,6 +1021,13 @@ form textarea {
   .contact_right{
     padding-top: 5%;
     padding-left: 5%;
+  }
+  form #input-submit {
+    color: white;
+    background: #428CC6;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 38%;
   }
 }
 /* Clearfix */
