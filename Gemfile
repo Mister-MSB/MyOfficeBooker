@@ -38,7 +38,6 @@ gem 'simple_form'
 gem "slim-rails"
 gem 'super_module'
 gem 'carrierwave'
-gem "font-awesome-rails"
 gem 'devise-i18n'
 gem 'country_select'
 gem 'html5_validators'
