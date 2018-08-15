@@ -504,6 +504,7 @@ a {
 .flex-rw {
   display: flex;
   flex-flow: row wrap;
+  background: lightgrey;
 }
 
 main {
@@ -516,7 +517,7 @@ main {
 }
 
 footer {
-  background: #373737;
+  background: lightgrey;
   margin-top: auto;
   width: 100%;
   font-size: 12px;
@@ -561,7 +562,7 @@ footer {
 .footer-social-overlap {
   position: relative;
   z-index: 2;
-  background: #373737;
+  background: lightgrey;
   padding: 0 20px;
 }
 
