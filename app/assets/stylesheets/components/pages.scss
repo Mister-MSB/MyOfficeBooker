@@ -22,7 +22,6 @@
   margin-left: auto;
   border: solid 2px white;
   padding: .15em .60em;
-  border-radius: 2%;
 }
 .jumbotron2 nav a:nth-of-type(2):hover {
   margin-left: auto;
@@ -44,9 +43,26 @@
     margin: 20px auto;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
   .jumbotron2 {
-    height: 80px;;
+    padding-bottom: 5px;
+    height: auto;
+  }
+  .jumbotron2 nav {
+    padding-top: 3%;
+    padding: 0px;
+  }
+  .mini_inscription{
+    display: none;
+  }
+  #guests{
+    display: none;
+  }
+  #prices{
+    display: none;
+  }
+  .datepicker{
+    display: none;
   }
 }
 
@@ -70,7 +86,6 @@
   border:0;
   padding:10px;
   background:white;
-  margin:10px;
   border-radius:5px;
   outline:0;
   -webkit-appearance:none;
@@ -78,17 +93,6 @@
 
 .flex-form_home > *:last-child {
   border-right: 0;
-}
-
-/*Flexbox Starts Here*/
-
-.flex-form_home{
-  z-index:10;
-  background:rgba(0,0,0,0.3);
-  border-radius:5px;
-  display:flex;
-  width: 40%;
-  justify-content: center;
 }
 
 input:hover{
@@ -120,8 +124,9 @@ input[type="search"]{
   }
   .flex-form{
     display: block;
-    width: 100%;
+    width: 80%;
     text-align: center;
+    padding: 10%;
   }
   .datepicker{
     display: none;
@@ -204,7 +209,8 @@ input[type="search"]{
 .product-list {
 	display: block;
 	margin: 1rem auto;
-	padding: 0;
+	padding: 2%;
+  padding-left: 2%;
 	font-size: 0;
 	text-align: center;
 	list-style: none;
@@ -213,18 +219,12 @@ input[type="search"]{
 .product {
 	display: block;
 	width: 50%;
-
-	margin: 1rem;
 	font-size: 1rem;
 	text-decoration: none;
+  margin-bottom: 1%;
 	overflow: hidden;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
-}
-
-.product:hover {
-	transform: translateY(-0.5rem) scale(1.0125);
-	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
 }
 
 .product-description {
@@ -712,86 +712,16 @@ footer {
 
 /////////  PRODUCT PAGE //////////
 
-
-/*SLIDER*/
-
-.slider2 {
-  margin: 0 auto;
-  max-width: 940px;
-  width: 70%;
-  float: left;
-  padding-left: 200px;
-  display: block;
-}
-
-.slide_viewer2 {
-  height: 340px;
-  overflow: hidden;
-  position: relative;
-}
-
-.slide_group2 {
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.slide2 {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.slide2:first-child {
-  display: block;
-}
-
-.slide2:nth-of-type(1) {
-  background-image: url("http://www.croatia-holidayhome.com/wp-content/uploads/2018/03/creative-office-new-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide2:nth-of-type(2) {
-  background-image: url("http://dreamstop.com/wp-content/uploads/2013/07/office-dream-meaning.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide2:nth-of-type(3) {
-  background-image: url("https://www.officelovin.com/wp-content/uploads/2016/01/ragged-edge-london-office-6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide2:nth-of-type(4) {
-  background-image: url("http://wiredwriters.net/wp-content/uploads/2016/02/1748-56cc448f28226.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-width: 767px) {
-  .slider {
-    max-width: 940px;
-    width: 100%;
-  }
-  .slide_viewer {
-    overflow: hidden;
-    position: relative;
-  }
-}
-
-/*fin slide*/
-
 .product_left{
-  float: left;
+  width: 100%;
+}
+
+.product_image{
   width: 50%;
 }
 
 .text_left{
-  margin-top: 350px;
-  padding-left: 200px;
+  padding: 2%;
   width: 70%;
 }
 
@@ -804,12 +734,14 @@ footer {
 .product_infos{
   display: inline-block;
   padding-left: 0px;
+  background-color: #428CC6;
 }
 
 .product_title{
   font-size: 20px;
   color: #5d8cc2;
   font-weight: bold;
+  padding: 2%;
 }
 
 .product_ss_title{
@@ -828,7 +760,7 @@ footer {
 
 .food_bloc{
   width: 100%;
-  margin-left: 13%;
+  display: flex;
 }
 
 .menus{
@@ -846,7 +778,12 @@ footer {
   font-weight: bold;
 }
 
-
+@media only screen and (max-width: 600px){
+  .food_bloc{
+    width: 100%;
+    display: block;
+  }
+}
 
 
 
@@ -946,7 +883,12 @@ footer {
 .contact{
   background-color: rgba(5, 15, 244, 0.11);
   padding-top: 5%;
-  height: 300px;
+  height: auto;
+  padding: 2%;
+}
+
+.cf{
+  text-align: center;
 }
 
 .contact_txt{
@@ -965,13 +907,11 @@ footer {
 }
 
 .contact_left{
-  display: inline-block;
   width: 70%;
 }
 
 .contact_right{
-  text-align: left;
-  display: inline-block;
+  padding-left: 10%;
 }
 
 .contact_right h5{
@@ -981,8 +921,7 @@ footer {
 }
 
 form {
-  max-width: 80%;
-  padding-left: 2%;
+
 }
 form input, form textarea {
   border: 0;
@@ -1010,7 +949,7 @@ form #input-submit {
   background: #5d8cc2;
   cursor: pointer;
   width: 20%;
-  margin-left: 38%;
+  margin-left: -15%;
 }
 form #input-submit:hover {
   -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
@@ -1071,6 +1010,13 @@ form textarea {
   .contact_right{
     padding-top: 5%;
     padding-left: 5%;
+  }
+  form #input-submit {
+    color: white;
+    background: #428CC6;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 38%;
   }
 }
 /* Clearfix */

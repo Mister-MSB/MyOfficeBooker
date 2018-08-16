@@ -80,11 +80,9 @@
   background-color: #5d8cc2;
   color: white;
   border: none;
-  text-align: center;
-  margin-left: 43%;
   padding: 2%;
   font-size: 150%;
-  margin-top: -3%;
+  z-index: 100;
 }
 
 .food_service{
@@ -109,6 +107,15 @@
     display: block;
     text-align: center;
     color: white;
+  }
+
+  .myspace{
+    text-align: inherit;
+    padding-left: 5%;
+  }
+
+  #title_fournisseur{
+    margin-top: 10px;
   }
 
   .fourniright{
