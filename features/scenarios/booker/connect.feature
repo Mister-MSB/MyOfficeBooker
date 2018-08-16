@@ -1,4 +1,4 @@
-Feature: User can log in
+Feature: Booker can log in
   As a booker
   I want to log
   So that I can see the homepage
