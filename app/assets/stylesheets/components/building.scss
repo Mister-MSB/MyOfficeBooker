@@ -1,11 +1,12 @@
 .create_title{
   color: white;
-  background-color: #5d8cc2;
+  background-color: #e8bc44;
+  padding: 1%;
 }
 
 .building_left{
   float: left;
-  width: 70%;
+  width: 100%;
   background-color: white;
   display: inline-block;
 }
@@ -14,23 +15,28 @@
   float: left;
   width: 20%;
   height: 1000px;
-  background-color: rgb(246, 246, 246);
+  background-color: #e8bc44;
 }
 
 .onglets{
   text-decoration: none;
   color: black;
+  padding: 4%;
 }
 
 .onglets:hover{
-  background-color: white;
-  color: #5d8cc2;
+  background-color: #81b570;
+  color: white;
 }
 
 .navleft2_building{
   margin-left: 20%;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.navleft2_building h3{
+  color: #81b570;
 }
 
 .input{

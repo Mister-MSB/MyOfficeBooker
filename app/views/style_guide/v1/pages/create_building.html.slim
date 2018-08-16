@@ -1,28 +1,52 @@
 = render partial: "style_guide/v1/components/navbar"
+
 h1.create_title
   | CRÉATION D'UN NOUVEL ÉTABLISSEMENT
 .building_left
   .navleft_building
+    br
     a.onglets href="#"
       | Accéder à l'établissement
+    br
+    br
     a.onglets href="#"
       | Contact &amp; horaires
+    br
+    br
     a.onglets href="#"
       | Service restauration
+    br
+    br
     a.onglets href="#"
       | Photos de l'établissement
+    br
+    br
     a.onglets href="#"
       | Liste des salles
-    a.onglets href="#"
-      | Créer une salle
-    input.rent type="button" value=("retour à mon compte")
+    br
+    br
+    br
+    br
+    center
+      input.rent type="button" value=("Créer une salle")
+      br
+      br
+      input.rent type="button" value=("retour à mon compte")
+
+
+
   .navleft2_building
-    p
-      | Accéder à l'établissement
-    p
-      | Renseignez toutes les informations nécessaires pour permettre à vos clients de trouver facilement votre établissement
-    p
-      | Toutes ces informations sont divulguées uniquement lorsque vous confirmez une réservation de salle.
+    br
+    center
+      h3
+        | Accéder à l'établissement
+      br
+      p
+        | Renseignez toutes les informations nécessaires pour permettre à vos clients de trouver facilement votre établissement
+      p
+        | Toutes ces informations sont divulguées uniquement lorsque vous confirmez une réservation de salle.
+
+    br
     p.input_title
       | Nom de l'établissement:
     input.input name="name" type="text"
@@ -41,7 +65,7 @@ h1.create_title
     p.input_title
       | Description
     input.input name="description" type="text"
-    hr/
+    hr
     p.input_title
       | Interphone
     input.input name="door_code" type="text"
@@ -52,14 +76,5 @@ h1.create_title
       | Plus de détails sur l'établissement
     textarea.input name="details" type="text"
     input.rent type="button" value="Enregistrer"
-.building_right
-  .bloc_right
-    p
-      | Qu'est-ce qu'un établissement ?
-    p
-      | Un établissement est localisé à une adresse. Il réunit une ou plusieurs salles quel que soit leur taille.
-    p
-      | Si vos salles sont situées à différentes adresses, vous devez créer autant d'établissements que d'adresses.
-    p
-      | Chaque établissement a ses propres horaires, contact sur place et spécificités d'accès.
+
 = render partial: "style_guide/v1/components/footer"
