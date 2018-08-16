@@ -10,19 +10,19 @@ puts "ADMINS seeds done !"
 puts "====================="
 
 #USER
-@user1 = FactoryBot.create(
-  :user,
-  email:                 "user1@msb.com",
+@booker1 = FactoryBot.create(
+  :booker,
+  email:                 "booker1@msb.com",
   password:              "password",
   password_confirmation: "password",
-  firstname:             "User",
+  firstname:             "Booker",
   lastname:              "MSB",
   mobile:                "0102030405",
   phone:                 "0607080910",
   sex:                   "Male"
 )
 
-puts "USERS seeds done !"
+puts "BOOKERS seeds done !"
 puts "====================="
 
 @address = FactoryBot.create(
@@ -32,10 +32,10 @@ puts "====================="
   zipcode: "75001",
   city:    "Paris",
   usage:    "Living",
-  user_id: @user1.id
+  booker_id: @booker1.id
 )
 
-puts "USER ADDRESSES seeds done !"
+puts "BOOKER ADDRESSES seeds done !"
 puts "====================="
 
 @place = FactoryBot.create(

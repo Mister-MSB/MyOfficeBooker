@@ -1,0 +1,42 @@
+.back_cross
+  = link_to "Accueil",
+    root_path
+
+.containernew
+  center
+    .background_login
+      .header
+        div
+          | Mon compte
+      br
+      .login
+        form.login-form
+        = simple_form_for :booker, url: booker_registration_path, method: :put do |f|
+          = f.error_notification
+          = f.input :email,
+            required: true,
+            label: false,
+            placeholder: 'Courriel'
+          = f.input :firstname,
+            required: true,
+            label: false,
+            placeholder: 'Nom'
+          = f.input :lastname,
+            required: true,
+            label: false,
+            placeholder: 'Prénom'
+          = f.input :phone,
+            required: false,
+            label: false,
+            placeholder: 'Téléphone'
+          = f.input :mobile,
+            required: false,
+            label: false,
+            placeholder: 'Mobile'
+          = f.select :sex,
+            [['Homme','Homme'],['Femme','Femme']],
+            required: false,
+            label: false,
+            placeholder: 'Sexe'
+          = f.button :submit,
+            "Mettre a jour"

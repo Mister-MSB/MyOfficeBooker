@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 2018_08_13_131805) do
     t.string "usage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.index ["user_id"], name: "index_addresses_on_user_id"
+    t.bigint "booker_id"
+    t.index ["booker_id"], name: "index_addresses_on_booker_id"
   end
 
   create_table "admin_users", force: :cascade do |t|
@@ -59,25 +59,7 @@ ActiveRecord::Schema.define(version: 2018_08_13_131805) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
-  create_table "places", force: :cascade do |t|
-    t.string "name"
-    t.float "long"
-    t.float "lat"
-    t.integer "capacity"
-    t.integer "total_price"
-    t.integer "unit_price"
-    t.string "street"
-    t.string "zipcode"
-    t.string "city"
-    t.string "country"
-    t.string "description"
-    t.float "note"
-    t.integer "note_count"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "users", force: :cascade do |t|
+  create_table "bookers", force: :cascade do |t|
     t.string "firstname"
     t.string "lastname"
     t.string "email"
@@ -96,8 +78,26 @@ ActiveRecord::Schema.define(version: 2018_08_13_131805) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["email"], name: "index_bookers_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_bookers_on_reset_password_token", unique: true
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string "name"
+    t.float "long"
+    t.float "lat"
+    t.integer "capacity"
+    t.integer "total_price"
+    t.integer "unit_price"
+    t.string "street"
+    t.string "zipcode"
+    t.string "city"
+    t.string "country"
+    t.string "description"
+    t.float "note"
+    t.integer "note_count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

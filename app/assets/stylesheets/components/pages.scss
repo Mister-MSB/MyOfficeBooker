@@ -533,9 +533,7 @@ a {
 .generic-anchor:visited {
   color: white;
 }
-.generic-anchor:hover {
-  color: #ccc;
-}
+
 
 .flex-rw {
   display: flex;
@@ -559,18 +557,10 @@ footer {
   color: white;
 }
 
-.footer-list-top {
-  width: 33.333%;
-}
-
-.footer-list-top > li {
-  text-align: center;
-  padding-bottom: 10px;
-}
-
 .footer-list-header {
   padding: 10px 0 5px 0;
   color: #fff;
+  font-size: 20px;
 }
 
 .footer-list-anchor {
@@ -597,7 +587,6 @@ footer {
 .footer-social-overlap {
   position: relative;
   z-index: 2;
-  background: #373737;
   padding: 0 20px;
 }
 
