@@ -13,30 +13,34 @@
 
 .navleft_building{
   float: left;
-  width: 20%;
-  height: 1000px;
+  width: 15%;
+  height: 100%;
   background-color: #e8bc44;
+  padding-top: 9px;
+  padding-bottom: 10%;
 }
 
 .onglets{
   text-decoration: none;
   color: black;
   padding: 4%;
+  width: 100%;
 }
 
 .onglets:hover{
   background-color: #81b570;
   color: white;
+  width: 100%;
+  padding: 4%;
 }
 
 .navleft2_building{
-  margin-left: 20%;
-  padding-left: 2%;
-  padding-right: 2%;
+  margin-right: 13%;
+  float: right;
 }
 
 .navleft2_building h3{
-  color: #81b570;
+  color: #5d8cc2;
 }
 
 .input{
@@ -66,7 +70,7 @@
 }
 
 .input_title{
-  color: #5d8cc2;
+  color: #81b570;
   font-weight: bold;
 }
 
@@ -79,9 +83,10 @@
   }
   .navleft2_building{
     width: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
-    margin-left: 25px;
+    margin-left: 4%;
+    text-align: center;
+    margin-right: 4%;
+    float: none;
   }
   .mapouter{
     width: 100%;
