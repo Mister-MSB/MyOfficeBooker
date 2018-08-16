@@ -101,6 +101,13 @@
   background-color: #e8bc44;
 }
 
+.download{
+  margin-left: 20%;
+  width: 20%;
+  border: none;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
   .fournileft{
     background-color: grey;
@@ -117,6 +124,12 @@
 
   .food_service{
     width: 50%;
+  }
+
+  .download{
+    margin-left: 20%;
+    border: none;
+    text-decoration: none;
   }
 
   .myspace{
