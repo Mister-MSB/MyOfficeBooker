@@ -19,6 +19,15 @@ body{
   margin-top: 20%;
 }
 
+.background_signup{
+	width: 30%;
+	height: 50%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 2%;
+	background-color: rgba(190, 190, 190, 0.29);
+}
+
 .background_login{
 	width: 30%;
 	height: auto;
@@ -190,7 +199,7 @@ body{
   	width: 250px;
   	height: 30px;
   	background: transparent;
-  	border: 1px solid black;
+  	border: 1px solid white;
   	border-radius: 2px;
   	color: white;
   	font-family: 'Exo', sans-serif;
@@ -203,7 +212,7 @@ body{
   	width: 250px;
   	height: 30px;
   	background: transparent;
-  	border: 1px solid black;
+  	border: 1px solid white;
   	border-radius: 2px;
   	color: white;
   	font-family: 'Exo', sans-serif;
@@ -245,6 +254,10 @@ body{
 	}
 	.background_login{
 		width: 70%;
+	}
+	.background_signup{
+		width: 70%;
+		height: 12%;
 	}
 	.back_cross a{
 		text-decoration: none;
