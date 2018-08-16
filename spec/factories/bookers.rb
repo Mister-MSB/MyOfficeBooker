@@ -1,9 +1,9 @@
 FactoryBot.define do
-  factory :user do
-    email                 "user@msb.com"
+  factory :booker do
+    email                 "booker@msb.com"
     password              "password"
     password_confirmation "password"
-    firstname             "User"
+    firstname             "Booker"
     lastname              "MSB"
   end
 end

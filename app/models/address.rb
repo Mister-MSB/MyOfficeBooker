@@ -1,5 +1,5 @@
 class Address < ApplicationRecord
-  belongs_to :user
+  belongs_to :booker
 
   validates :street,   presence: true
   validates :zipcode,  presence: true

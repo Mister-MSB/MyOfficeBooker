@@ -1,7 +1,6 @@
 .back_cross
-  = link_to "Acceuil",
+  = link_to "Accueil",
     root_path
-
 
 .containernew
   center
@@ -14,7 +13,7 @@
       br
       .login
         form.login-form
-        = simple_form_for :user, url: user_session_path do |f|
+        = simple_form_for :booker, url: booker_session_path do |f|
           = f.input :email,
             required: true,
             label: false,
@@ -26,7 +25,7 @@
           = f.button :submit,
             'Valider'
 
-        p.messages
-          | Vous n'avez pas encore de compte?
-          a href="#"
-            |  S'inscrire
+          p.messages
+            | Vous n'avez pas encore de compte?
+            a href="#"
+              |  S'inscrire
