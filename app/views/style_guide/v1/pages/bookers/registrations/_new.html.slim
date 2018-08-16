@@ -2,12 +2,14 @@
   = link_to "Accueil",
     root_path
 
-.containernew
+.containernew_ins
   center
-    .background_login
+    .background_signup
       .header
         div
-          | Inscription Utilisateur
+          | My Office
+          span.bookerblack
+            | Booker
       br
       .login
         form.login-form
@@ -35,3 +37,8 @@
             placeholder: 'Prénom'
           = f.button :submit,
             "S'inscrire"
+
+          p.messages
+            | Vous avez déjà un compte?
+            = link_to " Se connecter",
+              booker_session_path
