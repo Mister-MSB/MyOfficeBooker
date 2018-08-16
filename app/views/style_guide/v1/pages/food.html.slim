@@ -55,32 +55,33 @@ h1.create_title
       .radio_food
         input#delivery name="feature" type="checkbox" value="food"
         label for="delivery"
-          | Vous acceptez la livraison de nourriture dans vos locaux
+          |  Vous acceptez la livraison de nourriture dans vos locaux
         br
         br
 
         input#yes name="feature" type="checkbox" value="food"
         label for="yes"
-          | Vous proposez un service de restauration
+          |  Vous proposez un service de restauration
         br
         br
 
         input#no name="feature" type="checkbox" value="food"
         label for="no"
-          | Vous ne souhaitez pas proposer de la restauration dans votre lieu
+          |  Vous ne souhaitez pas proposer de la restauration dans votre lieu
+
+    br
+    br
+    center
+      .btn_add_food
+        input.food_service type="button" value=("Ajouter un produit petits déjeuners")
+        input.food_service type="button" value=("Ajouter un produit menus")
+        input.food_service type="button" value=("Ajouter un produit pauses café")
+        input.food_service type="button" value=("Ajouter un produit boissons")
+
+    br
+    br
+    center
+      input.rent type="button" value="Enregistrer"
 
 
-
-  /! POP UP A METTRE POUR AJOUT COORDONNEES
-    /p.input_title
-    /  | S&#xE9;lectionnez une cat&#xE9;gorie et ajoutez les produits qui la composent.
-    /p.input_title
-    /  | Retrouvez toutes les cat&#xE9;gories dans le menu &#xE0; gauche et cliquez sur une cat&#xE9;gorie pour voir les produits qui la composent.
-    /center
-    /  input.food_service type="button" value=("Ajouter un produit petits déjeuners")
-    /  input.food_service type="button" value=("Ajouter un produit menus")
-    /  input.food_service type="button" value=("Ajouter un produit pauses café")
-    /  input.food_service type="button" value=("Ajouter un produit boissons")
-
-
-  /  input.rent type="button" value="Enregistrer"
+= render partial: "style_guide/v1/components/footer"
