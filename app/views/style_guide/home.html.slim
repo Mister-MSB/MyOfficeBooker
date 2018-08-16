@@ -103,11 +103,17 @@ center
     a href="v1/pages/create_building"
       | Créer un établissement
       br
+    = link_to "Connexion",
+      booker_session_path
     a href="v1/pages/bookers/sessions/_new"
-      | Connexion Booker
+      |
       br
+    = link_to "Inscription",
+      new_booker_registration_path
+    a href="v1/pages/bookers/sessions/_new"
+      |
     a href="v1/pages/bookers/registrations/_new"
-      | Inscription Booker
+      |
       br
     a href="v1/pages/bookers/registrations/_edit"
       | Modification Booker
