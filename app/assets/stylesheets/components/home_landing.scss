@@ -51,6 +51,13 @@ body {
   margin-bottom: 3em;
 }
 
+.flex-form_home {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2%;
+  padding: 1%;
+}
+
 @media screen and (max-width: 640px){
   .catchtitle{
     font-size: 25px;
@@ -81,6 +88,10 @@ body {
 
 ////// SEARCHBAR ////////
 
+#guests{
+  margin-left: 20px;
+}
+
 .searchbuttons{
   display: inline-block;
   background-color: rgba(0,0,0,0.3);
@@ -106,6 +117,14 @@ body {
   border-top: 1px solid #5d8cc2;
   border-bottom: 1px solid #5d8cc2;
   color:white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.town{
+  width: 50%;
+  display: inline-block;
+  float: left;
 }
 
 
@@ -177,6 +196,11 @@ input[type="search"]{
   }
   #dt2{
     display: none;
+  }
+  .town{
+    text-align: center;
+    margin-left: 13%;
+    width: 70%;
   }
 }
 
