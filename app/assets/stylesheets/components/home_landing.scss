@@ -32,7 +32,7 @@ body {
   margin-left: auto;
   border: solid 2px white;
   padding: .15em .60em;
-  background-color: #428CC6;
+  background-color: #5d8cc2;
   color: white;
 }
 .jumbotron nav a {
@@ -69,7 +69,7 @@ body {
 }
 
 .active, .searchbuttons:hover{
-  background:#428CC6;
+  background:#5d8cc2;
   cursor: pointer;
 }
 
@@ -80,9 +80,9 @@ body {
 }
 
 .flex-form input[type="submit"] {
-  background:#428CC6;
-  border-top: 1px solid #428CC6;
-  border-bottom: 1px solid #428CC6;
+  background:#5d8cc2;
+  border-top: 1px solid #5d8cc2;
+  border-bottom: 1px solid #5d8cc2;
   color:white;
 }
 
@@ -180,7 +180,7 @@ input[type="search"]{
 }
 
 .container .title{
-  color: #428CC6;
+  color: #5d8cc2;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -218,7 +218,7 @@ input[type="search"]{
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background: #428CC6;
+  background: #5d8cc2;
   border-radius: 2px;
   box-sizing: border-box;
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
@@ -393,7 +393,7 @@ input[type="search"]{
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #428CC6;
+	color: #5d8cc2;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -404,7 +404,7 @@ input[type="search"]{
 .sharebutton:hover{
 	opacity: 0.8;
   color: #fff;
-  background: #428CC6;
+  background: #5d8cc2;
 }
 
 @media screen and (max-width: 640px){
@@ -446,13 +446,13 @@ input[type="search"]{
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #428CC6;
+    background-color: #5d8cc2;
     color: white;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #428CC6;
+    background-color: #5d8cc2;
     color: white;
 }
 
@@ -461,7 +461,7 @@ input[type="search"]{
     display: none;
     padding: 6px 12px;
     border-top: none;
-    background-color: #428CC6;
+    background-color: #5d8cc2;
     height: 200px;
     color: white;
 }
@@ -494,7 +494,7 @@ a {
   color: white;
 }
 .generic-anchor:hover {
-  color: #428CC6;
+  color: #5d8cc2;
 }
 
 .flex-rw {
@@ -523,7 +523,7 @@ footer {
 }
 
 .footer-list-top h1{
-  color: #428CC6;
+  color: #5d8cc2;
 }
 
 .footer-list-top a{
@@ -587,7 +587,7 @@ footer {
 
 .socials{
   text-decoration: none;
-  color: #428CC6;
+  color: #5d8cc2;
 }
 
 .socials:hover{
