@@ -6,10 +6,9 @@
 
 .jumbotron2 {
   border-radius: 0px;
-  padding: 1%;
-  height: auto;
-  background: #428CC6;
-  background-size: cover;
+  padding: 0;
+  height: 50px;
+  background-color: #5d8cc2;
 }
 .jumbotron2 nav {
   display: flex;
@@ -28,8 +27,9 @@
   margin-left: auto;
   border: solid 2px white;
   padding: .15em .60em;
-  background-color: #428CC6;
-  color: white;
+  background-color: white;
+  color: #5d8cc2;
+  border-radius: 2%;
 }
 .jumbotron2 nav a {
   color: white;
@@ -75,9 +75,9 @@
 }
 
 .flex-form_home input[type="submit"] {
-  background:#428CC6;
-  border-top: 1px solid #428CC6;
-  border-bottom: 1px solid #428CC6;
+  background:#5d8cc2;
+  border-top: 1px solid #5d8cc2;
+  border-bottom: 1px solid #5d8cc2;
   color:white;
 }
 
@@ -245,7 +245,7 @@ input[type="search"]{
 .price {
   color: white;
   text-align: center;
-  background: #428CC6;
+  background: #5d8cc2;
   font-size: 200%;
   width: auto;
   float: left;
@@ -454,7 +454,7 @@ a.slide_btn {
 }
 
 .slide_btn.active, .slide_btn:hover {
-  color: #428CC6;
+  color: #5d8cc2;
   cursor: pointer;
 }
 
@@ -761,13 +761,13 @@ footer {
 
 .product_title{
   font-size: 20px;
-  color: #428CC6;
+  color: #5d8cc2;
   font-weight: bold;
   padding: 2%;
 }
 
 .product_ss_title{
-  color: white;
+  color: #5d8cc2;
 }
 
 .equipement{
@@ -776,7 +776,7 @@ footer {
 }
 
 .maps_title{
-  color: #428CC6;
+  color: #5d8cc2;
   font-weight: bold;
 }
 
@@ -791,7 +791,7 @@ footer {
 }
 
 .food{
-  color: #428CC6;
+  color: #5d8cc2;
   font-weight: bold;
 }
 
@@ -919,7 +919,7 @@ footer {
 }
 
 .contact_title{
-  color: #428CC6;
+  color: #5d8cc2;
   text-align: center;
 }
 
@@ -937,7 +937,7 @@ footer {
 }
 
 .contact_right h5{
-  color: #428CC6;
+  color: #5d8cc2;
   font-weight: bold;
   font-size: 20px;
 }
@@ -962,13 +962,13 @@ form input, form textarea {
   resize: none;
 }
 form input:focus, form textarea:focus {
-  -moz-box-shadow: 0 0px 2px #428CC6 !important;
-  -webkit-box-shadow: 0 0px 2px #428CC6 !important;
-  box-shadow: 0 0px 2px #428CC6 !important;
+  -moz-box-shadow: 0 0px 2px #5d8cc2 !important;
+  -webkit-box-shadow: 0 0px 2px #5d8cc2 !important;
+  box-shadow: 0 0px 2px #5d8cc2 !important;
 }
 form #input-submit {
   color: white;
-  background: #428CC6;
+  background: #5d8cc2;
   cursor: pointer;
   width: 20%;
   margin-left: -15%;
@@ -1068,8 +1068,8 @@ form textarea {
   margin-left:.6em;
   padding: 4px;
   background: none repeat scroll 0% 0% #FFF;
-  border: 2px solid #428CC6;
-  color: #428CC6;
+  border: 2px solid #5d8cc2;
+  color: #5d8cc2;
   text-align: center;
   font: 28px HelveticaNeueW01-45Ligh;
   display: inline-block;
@@ -1078,7 +1078,7 @@ form textarea {
   content: "";
   display: inline-block;
   height: 1px;
-  background-color: #428CC6;
+  background-color: #5d8cc2;
   max-width: 100%;
   position: absolute;
   margin-right: 16px;
@@ -1095,7 +1095,7 @@ form textarea {
 }
 .normal{
   display:block;
-  color:#428CC6;
+  color:#5d8cc2;
   margin-top: 1em;
 }
 .progression li:nth-child(4) .normal{
@@ -1159,7 +1159,7 @@ form textarea {
 }
 
 .right_why{
-  background-color: #428CC6;
+  background-color: #5d8cc2;
 }
 
 .radio_left{
