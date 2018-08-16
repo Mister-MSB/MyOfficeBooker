@@ -79,6 +79,9 @@
   border-top: 1px solid #5d8cc2;
   border-bottom: 1px solid #5d8cc2;
   color:white;
+  width: 20%;
+  display: inline-block;
+  margin-left: 30px;
 }
 
 
@@ -136,6 +139,10 @@ input[type="search"]{
   }
   #dt2{
     display: none;
+  }
+  .flex-form_home input[type="submit"]{
+    width: 20%;
+    margin-right: 35px;
   }
 }
 
