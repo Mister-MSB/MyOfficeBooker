@@ -764,6 +764,7 @@ footer {
   display: inline-block;
   padding-left: 0px;
   background-color: #428CC6;
+  padding: 1%;
 }
 
 .product_title{
@@ -774,7 +775,7 @@ footer {
 }
 
 .product_ss_title{
-  color: #5d8cc2;
+  color: white;
 }
 
 .equipement{
@@ -910,7 +911,7 @@ footer {
 
 ///// contact page //////
 .contact{
-  background-color: rgba(5, 15, 244, 0.11);
+  background-color: #7fc0d7;
   padding-top: 5%;
   height: auto;
   padding: 2%;
@@ -1045,7 +1046,7 @@ form textarea {
     background: #428CC6;
     cursor: pointer;
     width: 20%;
-    margin-left: 38%;
+    margin-left: 40%;
   }
 }
 /* Clearfix */
