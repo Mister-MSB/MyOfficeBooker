@@ -4,47 +4,61 @@ h1.create_title
   | Photos
 .building_left
   .navleft_building
-    a.onglets href="#"
-      | Accéder à l'établissement
-    a.onglets href="#"
-      | Contact  horaires
-    a.onglets href="#"
-      | Service restauration
-    a.onglets href="#"
-      | Service hébergement
-    a.onglets href="#"
-      | Photos de l'établissement
-    a.onglets href="#"
-      | Liste des salles
-    a.onglets href="#"
-      | Créer une salle
-    input.rent type="button" value=("retour à mon compte")
+    = link_to "Accéder à l'établissement",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Contact & horaires",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Service restauration",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Photos de l'établissement",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Liste des salles",
+      "",
+      class: "onglets"
+    br
+    br
+    br
+    br
+    center
+      input.rent type="button" value=("Créer une salle")
+      br
+      br
+      input.rent type="button" value=("Mon compte")
 
-  .navleft2_building
-    p
-      | Photos de l'établissement
-    p
-      | Ajoutez ici au minimum 3 photos de votre établissement
-    p
-      | Nous vous recommandons de mettre des photos des accès, des parties communes et de l'extérieur du bâtiment.
-      | Les photos de l'intérieur des salles de l'établissement, seront à ajouter lors d'une prochaine étape.
-    p.input_title
-      | Ajoutez une image
-    p
-      | Poids maximum par photo : 2Mo.
-    form action="/action_page.php"
-      input accept="image/*" name="pic" type="file"
-      input type="submit"
-    input.rent type="button" value="Enregistrer"
+  .navleft3_building
+    br
+    center
+      h3
+        | Photos de l'établissement
+      br
+      p
+        | Ajoutez ici au minimum 3 photos de votre établissement
+      br
+      p
+        | Nous vous recommandons de mettre des photos des accès, des parties communes et de l'extérieur du bâtiment.
+        | Les photos de l'intérieur des salles de l'établissement, seront à ajouter lors d'une prochaine étape.
+      br
+      p.input_title
+        | Ajoutez une image
+      p
+        | Poids maximum par photo : 2Mo.
+      br
+      form class="download" action="/action_page.php"
+        input accept="image/*" name="pic" type="file"
+      br
+      input.rent type="button" value="Enregistrer"
 
 
-  .building_right
-    .bloc_right
-      p
-        | Qu'est-ce qu'un établissement ?
-      p
-        | Un établissement est localisé à une adresse. Il réunit une ou plusieurs salles quel que soit leur taille.
-      p
-        | Si vos salles sont situées à différentes adresses, vous devez créer autant d'établissements que d'adresses.
-      p
-        | Chaque établissement a ses propres horaires, contact sur place et spécificités d'acc&#xE8;s.
+= render partial: "style_guide/v1/components/footer"
