@@ -228,7 +228,7 @@ input[type="search"]{
 	width: 50%;
 	font-size: 1rem;
 	text-decoration: none;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
 	overflow: hidden;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
@@ -252,7 +252,7 @@ input[type="search"]{
 .price {
   color: white;
   text-align: center;
-  background: #5d8cc2;
+  background: #81b570;
   font-size: 200%;
   width: auto;
   float: left;
@@ -262,6 +262,11 @@ input[type="search"]{
   font-weight: bold;
 }
 
+.results_title{
+  padding-left: 10%;
+  color: #5d8cc2;
+}
+
 .information {
   text-align: center;
   margin-right: 10%;
@@ -269,11 +274,12 @@ input[type="search"]{
 
 .name {
   font-size: 22px;
+  color: #5d8cc2;
 }
 
 .store {
   font-size: 16px;
-  color: #8c98a8;
+  color: #d86d3e;
   margin-bottom: 3%;
 }
 
