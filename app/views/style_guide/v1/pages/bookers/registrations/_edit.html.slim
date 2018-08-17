@@ -1,42 +1,70 @@
-.back_cross
-  = link_to "Accueil",
-    root_path
+= render partial: "style_guide/v1/components/navbar"
 
-.containernew
-  center
-    .background_login
-      .header
-        div
-          | Mon compte
+h1.create_title
+  | Mon Compte
+
+.building_left
+  .navleft_building
+    = link_to "Mes établissements",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Mes informations",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Synchroniser agenda",
+      "",
+      class: "onglets"
+    br
+    br
+    br
+    br
+    center
+      h3
+        | Connecter à Paul Variand
       br
-      .login
-        form.login-form
-        = simple_form_for :booker, url: booker_registration_path, method: :put do |f|
-          = f.error_notification
-          = f.input :email,
-            required: true,
-            label: false,
-            placeholder: 'Courriel'
-          = f.input :firstname,
-            required: true,
-            label: false,
-            placeholder: 'Nom'
-          = f.input :lastname,
-            required: true,
-            label: false,
-            placeholder: 'Prénom'
-          = f.input :phone,
-            required: false,
-            label: false,
-            placeholder: 'Téléphone'
-          = f.input :mobile,
-            required: false,
-            label: false,
-            placeholder: 'Mobile'
-          = f.select :sex,
-            [['Homme','Homme'],['Femme','Femme']],
-            required: false,
-            label: false,
-            placeholder: 'Sexe'
-          = f.button :submit,
-            "Mettre a jour"
+      br
+      input.rent type="button" value=("Accueil")
+
+
+
+  .navleft2_building
+    br
+    center
+      h3
+        | Mes établissements
+      br
+
+      br
+      li.product
+        a.product-image href="#" style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
+          img alt="town_picture" src="https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg" /
+        a.product-description href="#" target="_blank"
+          .information
+            h3
+              | Royal Hotel
+            h5
+              | Londres
+            br
+            P
+              | Nombre de salles créées
+            p
+              | Nombre de salles en cours de validation
+            p
+             | Nombre de salles en ligne
+            br
+            = link_to "Voir les salles",
+              "#",
+              class: 'btn_account'
+            =< link_to "Modifier",
+              "#",
+              class: 'btn_account'
+            br
+            br
+
+      input.rent type="button" value=("Créer un établissement")
+
+= render partial: "style_guide/v1/components/footer"
