@@ -511,6 +511,8 @@ input[type="search"]{
     background-color: #5d8cc2;
     height: 200px;
     color: white;
+    width: 83%;
+    margin-left: 7.7%;
 }
 
 .tabtext{
@@ -523,6 +525,9 @@ input[type="search"]{
     float: none;
   }
   .tab{
+    display: none;
+  }
+  .tabtext {
     display: none;
   }
 }
