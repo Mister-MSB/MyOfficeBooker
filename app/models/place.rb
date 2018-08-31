@@ -1,4 +1,6 @@
 class Place < ApplicationRecord
+  belongs_to :owner
+
   validates :name,        presence: true
   validates :long,        presence: true
   validates :lat,         presence: true
