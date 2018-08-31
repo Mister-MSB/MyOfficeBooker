@@ -347,14 +347,10 @@ input[type="search"]{
 .howitworks{
   padding: 1em 0;
   float: left;
-  width: 84.8%;
+  width: 100%;
   text-align: center;
   background-color: #81b570;
-  border: 5px solid white;
-  margin-left: 7.3%;
   color: white;
-  margin-top: 30px;
-  margin-bottom: 40px;
 }
 
 .howitworks .title{
@@ -473,10 +469,12 @@ input[type="search"]{
 /* Style the tab */
 .tab {
     overflow: hidden;
-    background-color: white;
-    width: 50%;
-    margin-left: 25%;
-    padding-top: 3%;
+    background-color: #e8bc44;
+    width: 100%;
+}
+
+.tablinks{
+  width: 20%;
 }
 
 /* Style the buttons inside the tab */
@@ -506,13 +504,11 @@ input[type="search"]{
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
     border-top: none;
     background-color: #5d8cc2;
     height: 200px;
     color: white;
-    width: 83%;
-    margin-left: 7.7%;
+    width: 100%;
 }
 
 .tabtext{
@@ -555,7 +551,7 @@ a {
 .flex-rw {
   display: flex;
   flex-flow: row wrap;
-  background: lightgrey;
+  background: #93629d;
 }
 
 footer {
@@ -578,7 +574,7 @@ footer {
 }
 
 .footer-list-top h1{
-  color: #5d8cc2;
+  color: #e8bc44;
 }
 
 .footer-list-top a{
