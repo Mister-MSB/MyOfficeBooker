@@ -364,7 +364,8 @@ input[type="search"]{
 ////// bloc comment ça marche //////
 
 .howitworks{
-  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   float: left;
   width: 100%;
   text-align: center;
@@ -534,6 +535,10 @@ input[type="search"]{
   padding-top: 4%;
   padding-left: 1%;
   padding-right: 1%;
+}
+
+.tabtext h3{
+  color: #e8bc44;
 }
 
 @media screen and (max-width: 640px){
