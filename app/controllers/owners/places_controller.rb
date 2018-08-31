@@ -1,5 +1,6 @@
 class Owners::PlacesController < ApplicationController
   before_action :check_booker_redirection
+  layout 'style_guide'
 
   def index
   end
