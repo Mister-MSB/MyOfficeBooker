@@ -48,7 +48,7 @@ puts "====================="
   zipcode: "75001",
   city:    "Paris",
   usage:    "Living",
-  booker_id: @booker1.id
+  booker_id: @booker1.id,
 )
 
 puts "BOOKER ADDRESSES seeds done !"
