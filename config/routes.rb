@@ -17,5 +17,9 @@ Rails.application.routes.draw do
   get 'owners/home', to: 'owners_home#index', as: :owners_home
   root 'home#index'
 
+  namespace :owners do
+    resources :places
+  end
+
 
 end
