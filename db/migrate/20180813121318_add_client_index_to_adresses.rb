@@ -1,5 +1,5 @@
 class AddClientIndexToAdresses < ActiveRecord::Migration[5.2]
   def change
-    add_index(:addresses, :booker)
+    add_reference(:addresses, :booker)
   end
 end
