@@ -51,6 +51,13 @@ body {
   margin-bottom: 3em;
 }
 
+.flex-form_home {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2%;
+  padding: 1%;
+}
+
 @media screen and (max-width: 640px){
   .catchtitle{
     font-size: 25px;
@@ -81,6 +88,10 @@ body {
 
 ////// SEARCHBAR ////////
 
+#guests{
+  margin-left: 20px;
+}
+
 .searchbuttons{
   display: inline-block;
   background-color: rgba(0,0,0,0.3);
@@ -106,6 +117,14 @@ body {
   border-top: 1px solid #5d8cc2;
   border-bottom: 1px solid #5d8cc2;
   color:white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.town{
+  width: 50%;
+  display: inline-block;
+  float: left;
 }
 
 
@@ -178,6 +197,11 @@ input[type="search"]{
   #dt2{
     display: none;
   }
+  .town{
+    text-align: center;
+    margin-left: 13%;
+    width: 70%;
+  }
 }
 
 /* CONTAINER */
@@ -240,7 +264,7 @@ input[type="search"]{
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background: #5d8cc2;
+  background: #7fc0d7;
   border-radius: 2px;
   box-sizing: border-box;
   box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
@@ -283,7 +307,7 @@ input[type="search"]{
      width: 100%;
      display: block;
      margin-bottom: .75rem;
-
+     height: 40%;
   }
 
   .title, .description {
@@ -324,7 +348,7 @@ input[type="search"]{
   float: left;
   width: 84.8%;
   text-align: center;
-  background-color: rgba(112, 209, 127,100);
+  background-color: #81b570;
   border: 5px solid white;
   margin-left: 7.3%;
   color: white;
@@ -383,7 +407,7 @@ input[type="search"]{
 }
 
 .contentshare{
-
+  margin-top: 8%;
 }
 
 .share .title{

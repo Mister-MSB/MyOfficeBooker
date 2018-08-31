@@ -1,5 +1,6 @@
 /! NAVBAR
 = render partial: "style_guide/v1/components/navbar"
+br
 /! SEARCHBAR
 = render partial: "style_guide/v1/components/searchbar"
 script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.js"
@@ -9,10 +10,15 @@ javascript:
    rome(dt2, { time: false });
    $(".flex-form").submit(function(){    $(".submitBtn").attr("disabled", true);return true;
    });
-#myDIV
-  button.searchbuttons.active Coworking
-  button.searchbuttons Bureau
-  button.searchbuttons Réunion
+br
+center
+  #myDIV
+      button.searchbuttons.active
+        | Coworking
+      button.searchbuttons
+        | Bureau
+      button.searchbuttons
+        | Réunion
 javascript:
   /!/ Add active class to the current button (highlight it)
    var header = document.getElementById("myDIV");
@@ -46,5 +52,8 @@ javascript:
        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
          " - $" + $( "#slider-range" ).slider( "values", 1 ) );
      } );
+
 /! PRODUCTS BLOC
 = render partial: "style_guide/v1/components/products_bloc"
+
+= render partial: "style_guide/v1/components/footer"

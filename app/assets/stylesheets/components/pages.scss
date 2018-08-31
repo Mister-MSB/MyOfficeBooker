@@ -79,6 +79,9 @@
   border-top: 1px solid #5d8cc2;
   border-bottom: 1px solid #5d8cc2;
   color:white;
+  width: 20%;
+  display: inline-block;
+  margin-left: 30px;
 }
 
 
@@ -136,6 +139,10 @@ input[type="search"]{
   }
   #dt2{
     display: none;
+  }
+  .flex-form_home input[type="submit"]{
+    width: 20%;
+    margin-right: 35px;
   }
 }
 
@@ -221,7 +228,7 @@ input[type="search"]{
 	width: 50%;
 	font-size: 1rem;
 	text-decoration: none;
-  margin-bottom: 1%;
+  margin-bottom: 4%;
 	overflow: hidden;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
 	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
@@ -245,7 +252,7 @@ input[type="search"]{
 .price {
   color: white;
   text-align: center;
-  background: #5d8cc2;
+  background: #81b570;
   font-size: 200%;
   width: auto;
   float: left;
@@ -255,6 +262,11 @@ input[type="search"]{
   font-weight: bold;
 }
 
+.results_title{
+  padding-left: 10%;
+  color: #5d8cc2;
+}
+
 .information {
   text-align: center;
   margin-right: 10%;
@@ -262,11 +274,12 @@ input[type="search"]{
 
 .name {
   font-size: 22px;
+  color: #5d8cc2;
 }
 
 .store {
   font-size: 16px;
-  color: #8c98a8;
+  color: #d86d3e;
   margin-bottom: 3%;
 }
 
@@ -757,6 +770,7 @@ footer {
   display: inline-block;
   padding-left: 0px;
   background-color: #428CC6;
+  padding: 1%;
 }
 
 .product_title{
@@ -767,7 +781,7 @@ footer {
 }
 
 .product_ss_title{
-  color: #5d8cc2;
+  color: white;
 }
 
 .equipement{
@@ -903,7 +917,7 @@ footer {
 
 ///// contact page //////
 .contact{
-  background-color: rgba(5, 15, 244, 0.11);
+  background-color: #7fc0d7;
   padding-top: 5%;
   height: auto;
   padding: 2%;
@@ -1038,7 +1052,7 @@ form textarea {
     background: #428CC6;
     cursor: pointer;
     width: 20%;
-    margin-left: 38%;
+    margin-left: 40%;
   }
 }
 /* Clearfix */
