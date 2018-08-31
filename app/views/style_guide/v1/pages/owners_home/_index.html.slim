@@ -1,8 +1,12 @@
-= render partial: "style_guide/v1/components/entete_fournisseur"
-= render partial: "style_guide/v1/components/rentmyspace"
-= render partial: "style_guide/v1/components/rentexplication"
-
-= render partial: "style_guide/v1/components/like_pictures"
-
-/! FOOTER
-= render partial: "style_guide/v1/components/footer"
+- if current_owner
+  = render partial: "style_guide/v1/components/entete_fournisseur_connect"
+  = render partial: "style_guide/v1/components/rentmyspace"
+  = render partial: "style_guide/v1/components/rentexplication"
+  = render partial: "style_guide/v1/components/like_pictures"
+  = render partial: "style_guide/v1/components/footer"
+- else
+  = render partial: "style_guide/v1/components/entete_fournisseur_unconnect"
+  = render partial: "style_guide/v1/components/rentmyspace"
+  = render partial: "style_guide/v1/components/rentexplication"
+  = render partial: "style_guide/v1/components/like_pictures"
+  = render partial: "style_guide/v1/components/footer"

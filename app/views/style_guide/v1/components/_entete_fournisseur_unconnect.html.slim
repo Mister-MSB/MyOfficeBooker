@@ -1,8 +1,11 @@
 .jumbotron
   nav.text-capitalize
-    a href="#"  my office booker
-    a href="#"  Inscription
-    a href="#"  Connexion
+    = link_to "my office booker",
+      root_path
+    = link_to "Inscription",
+      new_owner_registration_path
+    = link_to "Connexion",
+      new_owner_session_path
   #title_fournisseur.text-uppercase
     h1.catchtitle
       | Louez votre salle de réunion
