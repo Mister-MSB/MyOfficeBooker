@@ -29,4 +29,6 @@
       | Trouvez la salle de réunion parfaite pour votre séance de coaching professionnel, pour une réunion d’équipe ou un entretien de recrutement.
 
   center
-    input.rent type="button" value=("Louer ma salle")
+    = link_to "Louer ma salle",
+      new_owners_place_path,
+      class: "rent"

@@ -2,8 +2,6 @@ class Place < ApplicationRecord
   belongs_to :owner
 
   validates :name,        presence: true
-  validates :long,        presence: true
-  validates :lat,         presence: true
   validates :capacity,    presence: true
   validates :total_price, presence: true
   validates :unit_price,  presence: true
@@ -12,6 +10,4 @@ class Place < ApplicationRecord
   validates :city,        presence: true
   validates :country,     presence: true
   validates :description, presence: true
-  validates :note,        presence: true
-  validates :note_count,  presence: true
 end
