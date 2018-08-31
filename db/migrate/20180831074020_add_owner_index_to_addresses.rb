@@ -1,5 +1,5 @@
 class AddOwnerIndexToAddresses < ActiveRecord::Migration[5.2]
   def change
-    add_reference(:addresses, :owner, null: true)
+    add_index(:addresses, :owner)
   end
 end
