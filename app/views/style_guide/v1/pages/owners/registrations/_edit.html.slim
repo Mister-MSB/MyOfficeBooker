@@ -1,0 +1,70 @@
+= render partial: "style_guide/v1/components/navbar"
+
+h1.create_title
+  | Mon Compte
+
+.building_left
+  .navleft_building
+    = link_to "Mes établissements",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Mes informations",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Synchroniser agenda",
+      "",
+      class: "onglets"
+    br
+    br
+    br
+    br
+    center
+      h3
+        | Connecter à Paul Variand
+      br
+      br
+      input.rent type="button" value=("Accueil")
+
+
+
+  .navleft2_building
+    br
+    center
+      h3
+        | Mes établissements
+      br
+
+      br
+      li.product
+        a.product-image href="#" style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
+          img alt="town_picture" src="https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg" /
+        a.product-description href="#" target="_blank"
+          .information
+            h3
+              | Royal Hotel
+            h5
+              | Londres
+            br
+            P
+              | Nombre de salles créées
+            p
+              | Nombre de salles en cours de validation
+            p
+             | Nombre de salles en ligne
+            br
+            = link_to "Voir les salles",
+              "#",
+              class: 'btn_account'
+            =< link_to "Modifier",
+              "#",
+              class: 'btn_account'
+            br
+            br
+
+      input.rent type="button" value=("Créer un établissement")
+
+= render partial: "style_guide/v1/components/footer"
