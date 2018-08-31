@@ -63,6 +63,8 @@ group :development, :test do
   gem "better_errors"
   gem "binding_of_caller"
   gem 'xray-rails'
+  gem 'rails-erd'
+  gem 'graphviz'
 end
 
 group :development do
