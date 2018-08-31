@@ -22,6 +22,8 @@ body {
   align-items: flex-start;
   padding-right: 1em;
   padding-top: .50em;
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.36);
 }
 .jumbotron nav a:nth-of-type(2) {
   margin-left: auto;
@@ -211,6 +213,7 @@ input[type="search"]{
   float: left;
   width: 100%;
   text-align: center;
+  background-color: #7fc0d7;
 }
 @media screen and (max-width: 640px){
   .container{
@@ -226,9 +229,15 @@ input[type="search"]{
 }
 
 .container .title{
-  color: #5d8cc2;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.subtitle_container{
+  font-weight: bold;
 }
 
 .content {
@@ -267,14 +276,24 @@ input[type="search"]{
   background: #7fc0d7;
   border-radius: 2px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
+  border: 1px solid white;
   padding: 1rem 0;
   overflow:hidden;
   display: inline-block;
-  margin-right: 2px;
+  margin-right: 10px;
   margin-top: 2px;
   padding-top: 0;
   margin-bottom: 1%;
+
+.title_card{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text_card{
+  color: black;
+}
 
   a {
     text-decoration: none;
@@ -345,7 +364,7 @@ input[type="search"]{
 ////// bloc comment ça marche //////
 
 .howitworks{
-  padding: 1em 0;
+  padding: 1%;
   float: left;
   width: 100%;
   text-align: center;
@@ -513,6 +532,8 @@ input[type="search"]{
 
 .tabtext{
   padding-top: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 @media screen and (max-width: 640px){
