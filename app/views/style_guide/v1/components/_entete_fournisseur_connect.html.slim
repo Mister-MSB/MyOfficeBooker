@@ -1,0 +1,15 @@
+.jumbotron
+  nav.text-capitalize
+    = link_to "my office booker",
+      root_path
+    = link_to "Bienvenue #{current_owner.firstname} #{current_owner.lastname}",
+      edit_owner_registration_path
+    = link_to "se déconnecter",
+      destroy_owner_session_path,
+      method: :delete
+  #title_fournisseur.text-uppercase
+    h1.catchtitle
+      | Louez votre salle de réunion
+    br
+    p
+      | Bird Office vous permet de louer en toute sécurité votre salle de réunion, formation ou séminaire

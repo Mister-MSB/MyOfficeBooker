@@ -1,0 +1,31 @@
+.back_cross
+  = link_to "Accueil",
+    owners_home_path
+
+.containernew
+  center
+    .background_login
+      .header
+        div
+          | My Office
+          span.bookerblack
+            | Booker
+      br
+      .login
+        form.login-form
+        = simple_form_for :owner, url: owner_session_path do |f|
+          = f.input :email,
+            required: true,
+            label: false,
+            placeholder: 'addresse mail'
+          = f.input :password,
+            required: true,
+            label: false,
+            placeholder: 'Mot de passe'
+          = f.button :submit,
+            'Valider'
+
+          p.messages
+            | Vous n'avez pas encore de compte?
+            = link_to " S'inscrire",
+              new_owner_registration_path
