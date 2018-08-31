@@ -97,19 +97,23 @@ center
     a href="v1/pages/product_page"
       | Page Produit
       br
-    a href="v1/pages/fournisseur_home_page"
+    a href="v1/pages/owners_home/_index"
       | Fournisseurs home page
       br
-    a href="v1/pages/create_building"
+    a href="v1/pages/owners/places/_new"
       | Créer un établissement
       br
-    = link_to "Connexion",
+    = link_to "Connexion Booker",
       booker_session_path
-    a href="v1/pages/bookers/sessions/new"
-      |
-      br
-    = link_to "Inscription",
+    br
+    = link_to "Inscription Booker",
       new_booker_registration_path
+    br
+    = link_to "Connexion Owner",
+      owner_session_path
+    br
+    = link_to "Inscription Owner",
+      new_owner_registration_path
     a href="v1/pages/bookers/sessions/_new"
       |
     a href="v1/pages/bookers/registrations/_new"
