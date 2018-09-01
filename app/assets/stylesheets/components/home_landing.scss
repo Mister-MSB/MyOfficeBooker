@@ -229,7 +229,7 @@ input[type="search"]{
 }
 
 .container .title{
-  color: white;
+  color: #e8bc44;
   font-weight: bold;
   font-size: 30px;
   text-align: center;
@@ -238,6 +238,7 @@ input[type="search"]{
 
 .subtitle_container{
   font-weight: bold;
+  color: white;
 }
 
 .content {
@@ -273,7 +274,7 @@ input[type="search"]{
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background: #7fc0d7;
+  background: #5d8cc2;
   border-radius: 2px;
   box-sizing: border-box;
   border: 1px solid white;
@@ -286,13 +287,13 @@ input[type="search"]{
   margin-bottom: 1%;
 
 .title_card{
-  color: white;
+  color: #e8bc44;
   font-weight: bold;
   font-size: 30px;
 }
 
 .text_card{
-  color: black;
+  color: white;
 }
 
   a {
@@ -364,8 +365,8 @@ input[type="search"]{
 ////// bloc comment ça marche //////
 
 .howitworks{
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   float: left;
   width: 100%;
   text-align: center;
