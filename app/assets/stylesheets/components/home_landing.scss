@@ -55,7 +55,7 @@ body {
 
 .flex-form_home {
   width: 30%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:  rgba(0, 0, 0, 0.36);
   border-radius: 2%;
   padding: 1%;
 }
@@ -96,7 +96,7 @@ body {
 
 .searchbuttons{
   display: inline-block;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.36);
   height: 40px;
   width: 100px;
   color: white;
@@ -213,7 +213,7 @@ input[type="search"]{
   float: left;
   width: 100%;
   text-align: center;
-  background-color: #7fc0d7;
+  background-color: #93629d;
 }
 @media screen and (max-width: 640px){
   .container{
@@ -274,7 +274,7 @@ input[type="search"]{
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background: #5d8cc2;
+  background: #bd3f84;
   border-radius: 2px;
   box-sizing: border-box;
   border: 1px solid white;
@@ -375,7 +375,7 @@ input[type="search"]{
 }
 
 .howitworks .title{
-
+  color: #d86d3e;
 }
 
 .textworks {
@@ -398,6 +398,7 @@ input[type="search"]{
 .textcolumn h5{
   font-size: 20px;
   font-weight: bold;
+  color: #d86d3e;
 }
 
 @media screen and (max-width: 640px){
@@ -429,7 +430,7 @@ input[type="search"]{
 }
 
 .share .title{
-
+  color: #5d8cc2;
 }
 
 .textshare {
@@ -438,6 +439,7 @@ input[type="search"]{
   margin: auto;
   overflow: hidden;
   display: inline-block;
+  padding-top: 5%;
 }
 
 .sharecolumn{
@@ -445,14 +447,14 @@ input[type="search"]{
   display: inline-block;
 }
 
-.sharecolumn h5{
+.sub_title_share{
   font-size: 20px;
   font-weight: bold;
+  color: #5d8cc2;
 }
 
 .sharebutton{
 	width: 260px;
-	height: 35px;
 	background: #fff;
 	border: 1px solid #fff;
 	cursor: pointer;
@@ -461,8 +463,10 @@ input[type="search"]{
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
-	padding: 6px;
+	padding: 3%;
 	margin-top: 70px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .sharebutton:hover{
