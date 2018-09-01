@@ -1,3 +1,31 @@
+.jumbotron_sg nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 1em;
+  padding-top: .50em;
+  padding: 1%;
+  background-color: #d86d3e;
+}
+.jumbotron_sg nav a:nth-of-type(2) {
+  margin-left: auto;
+  border: solid 2px white;
+  padding: .15em .60em;
+}
+.jumbotron_sg nav a:nth-of-type(2):hover {
+  margin-left: auto;
+  border: solid 2px white;
+  padding: .15em .60em;
+  background-color: #5d8cc2;
+  color: white;
+}
+.jumbotron_sg nav a {
+  color: white;
+  margin: auto .80em;
+  text-decoration: none;
+  text-shadow: 0 1px 2px black;
+}
+
 .my_color{
   color: #7fc0d7;
 }

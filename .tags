@@ -154,3 +154,25 @@ footer	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/hom
 @media only screen and (max-width: 568px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media only screen and (max-width: 568px) {$/;"	function	line:714
 .footer-list-top	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-list-top {$/;"	function	line:716
 .icon_socials	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .icon_socials {$/;"	function	line:722
+.jumbotron_sg nav	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.jumbotron_sg nav {$/;"	function	line:1
+.jumbotron_sg nav a:nth-of-type(2)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.jumbotron_sg nav a:nth-of-type(2) {$/;"	function	line:10
+.jumbotron_sg nav a:nth-of-type(2):hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.jumbotron_sg nav a:nth-of-type(2):hover {$/;"	function	line:15
+.jumbotron_sg nav a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.jumbotron_sg nav a {$/;"	function	line:22
+.my_color	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.my_color{$/;"	function	line:29
+.office_color	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.office_color{$/;"	function	line:33
+.booker_color	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.booker_color{$/;"	function	line:37
+.sstitle_color	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.sstitle_color{$/;"	function	line:41
+.styleguide_home	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.styleguide_home{$/;"	function	line:45
+.atoms a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.atoms a{$/;"	function	line:49
+.atoms a:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.atoms a:hover{$/;"	function	line:54
+.atoms	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.atoms{$/;"	function	line:58
+.styleguide_home h3	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.styleguide_home h3{$/;"	function	line:62
+.components a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.components a{$/;"	function	line:67
+.components a:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.components a:hover{$/;"	function	line:72
+.components	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.components{$/;"	function	line:76
+.pages a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.pages a{$/;"	function	line:80
+.pages a:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.pages a:hover{$/;"	function	line:85
+.pages	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.pages{$/;"	function	line:89
+.colors_style	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.colors_style{$/;"	function	line:93
+.round_colors	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.round_colors{$/;"	function	line:97
+.color_name	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.color_name{$/;"	function	line:104
