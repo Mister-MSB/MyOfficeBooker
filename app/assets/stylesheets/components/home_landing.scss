@@ -13,7 +13,7 @@ body {
   border-radius: 0px;
   padding: 0;
   height: 400px;
-  background: black url("https://bora.co/wp-content/uploads/2015/12/bora_FINEDesignGroup_06.jpg") no-repeat;
+  background: black url("http://www.mfco.com.au/app/uploads/2014/08/blur_8.jpg") no-repeat;
   background-size: cover;
 }
 .jumbotron nav {
@@ -213,7 +213,7 @@ input[type="search"]{
   float: left;
   width: 100%;
   text-align: center;
-  background-color: #93629d;
+  background-color: #7fc0d7;
 }
 @media screen and (max-width: 640px){
   .container{
@@ -418,15 +418,14 @@ input[type="search"]{
   width: 100%;
   height: 500px;
   text-align: center;
-  background-image: url("http://cdn.home-designing.com/wp-content/uploads/2018/03/home-office-setup.jpg");
+  background-image: url("https://static1.squarespace.com/static/5100ced9e4b0f6a8c8f3ad99/t/54d6a659e4b0adb809836ef2/1423353435421/office-blur.jpg?format=1500w");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  margin-bottom: 40px;
 }
 
 .contentshare{
-  margin-top: 8%;
+  margin-top: 7%;
 }
 
 .share .title{
@@ -455,11 +454,11 @@ input[type="search"]{
 
 .sharebutton{
 	width: 260px;
-	background: #fff;
+	background: #5d8cc2;
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #5d8cc2;
+	color: white;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -471,8 +470,8 @@ input[type="search"]{
 
 .sharebutton:hover{
 	opacity: 0.8;
-  color: #fff;
-  background: #5d8cc2;
+  color: #5d8cc2;
+  background: white;
 }
 
 @media screen and (max-width: 640px){
@@ -576,7 +575,7 @@ a {
   color: white;
 }
 .generic-anchor:hover {
-  color: #5d8cc2;
+  color: #e8bc44;
 }
 
 .flex-rw {
@@ -592,6 +591,12 @@ footer {
   font-size: 12px;
   color: white;
   text-align: center;
+}
+
+.footer_right{
+  text-align: right;
+  width: 100%;
+  padding-right: 2%;
 }
 
 .center_footer{
@@ -665,19 +670,6 @@ footer {
 
 .footer-social-overlap > a:not(:first-child) {
   margin-left: 0.38em;
-}
-
-.socials{
-  text-decoration: none;
-  color: #5d8cc2;
-}
-
-.socials:hover{
-  color: white;
-}
-
-.icon_socials{
-  width: 3%;
 }
 
 .footer-bottom-section {

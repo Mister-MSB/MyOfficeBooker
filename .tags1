@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+.myspace	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.myspace{$/;"	function	line:1
+.content_explication	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.content_explication{$/;"	function	line:9
+.explication	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication{$/;"	function	line:14
+.explication p	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication p{$/;"	function	line:25
+.explication h2	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication h2{$/;"	function	line:29
+#title_fournisseur	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^#title_fournisseur{$/;"	function	line:33
+.catchtitle	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.catchtitle{$/;"	function	line:41
+.catchsubtitle	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.catchsubtitle{$/;"	function	line:46
+#title_fournisseur p	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^#title_fournisseur p{$/;"	function	line:50
+.bloc_rent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.bloc_rent{$/;"	function	line:56
+.fournileft	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fournileft{$/;"	function	line:61
+.fourniright	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fourniright{$/;"	function	line:69
+.fournitext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fournitext{$/;"	function	line:77
+.rent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.rent{$/;"	function	line:84
+.rent:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.rent:hover{$/;"	function	line:93
+.food_service	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.food_service{$/;"	function	line:99
+.food_service:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.food_service:hover{$/;"	function	line:111
+.download	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.download{$/;"	function	line:115
+@media only screen and (max-width: 600px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^@media only screen and (max-width: 600px) {$/;"	function	line:122
+.fournileft	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fournileft{$/;"	function	line:123
+.btn_add_food	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .btn_add_food{$/;"	function	line:131
+.food_service	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .food_service{$/;"	function	line:136
+.download	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .download{$/;"	function	line:140
+.myspace	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .myspace{$/;"	function	line:146
+#title_fournisseur	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  #title_fournisseur{$/;"	function	line:151
+.fourniright	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fourniright{$/;"	function	line:155
+.fournitext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fournitext{$/;"	function	line:162
