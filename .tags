@@ -1,3 +1,30 @@
+.myspace	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.myspace{$/;"	function	line:1
+.content_explication	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.content_explication{$/;"	function	line:9
+.explication	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication{$/;"	function	line:14
+.explication p	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication p{$/;"	function	line:25
+.explication h2	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication h2{$/;"	function	line:29
+#title_fournisseur	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^#title_fournisseur{$/;"	function	line:33
+.catchtitle	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.catchtitle{$/;"	function	line:41
+.catchsubtitle	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.catchsubtitle{$/;"	function	line:46
+#title_fournisseur p	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^#title_fournisseur p{$/;"	function	line:50
+.bloc_rent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.bloc_rent{$/;"	function	line:56
+.fournileft	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fournileft{$/;"	function	line:61
+.fourniright	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fourniright{$/;"	function	line:69
+.fournitext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fournitext{$/;"	function	line:77
+.rent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.rent{$/;"	function	line:84
+.rent:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.rent:hover{$/;"	function	line:93
+.food_service	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.food_service{$/;"	function	line:99
+.food_service:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.food_service:hover{$/;"	function	line:111
+.download	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.download{$/;"	function	line:115
+@media only screen and (max-width: 600px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^@media only screen and (max-width: 600px) {$/;"	function	line:122
+.fournileft	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fournileft{$/;"	function	line:123
+.btn_add_food	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .btn_add_food{$/;"	function	line:131
+.food_service	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .food_service{$/;"	function	line:136
+.download	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .download{$/;"	function	line:140
+.myspace	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .myspace{$/;"	function	line:146
+#title_fournisseur	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  #title_fournisseur{$/;"	function	line:151
+.fourniright	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fourniright{$/;"	function	line:155
+.fournitext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fournitext{$/;"	function	line:162
 *	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^* {$/;"	function	line:1
 body	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^body {$/;"	function	line:6
 .jumbotron	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.jumbotron {$/;"	function	line:12
@@ -73,84 +100,57 @@ p:last-of-type	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/compon
 .share .title	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.share .title{$/;"	function	line:431
 .textshare	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.textshare {$/;"	function	line:435
 .sharecolumn	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.sharecolumn{$/;"	function	line:444
-.sub_title_share	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.sub_title_share{$/;"	function	line:449
-.sharebutton	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.sharebutton{$/;"	function	line:455
-.sharebutton:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.sharebutton:hover{$/;"	function	line:471
-@media screen and (max-width: 640px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media screen and (max-width: 640px){$/;"	function	line:477
-.sharecolumn	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .sharecolumn{$/;"	function	line:478
-.share	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .share{$/;"	function	line:483
-.contentshare	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .contentshare{$/;"	function	line:486
-.tab	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tab {$/;"	function	line:494
-.tablinks	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tablinks{$/;"	function	line:500
-.tab button	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tab button {$/;"	function	line:505
-.tab button:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tab button:hover {$/;"	function	line:517
-.tab button.active	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tab button.active {$/;"	function	line:523
-.tabcontent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tabcontent {$/;"	function	line:529
-.tabtext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tabtext{$/;"	function	line:538
-.tabtext h3	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tabtext h3{$/;"	function	line:544
-@media screen and (max-width: 640px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media screen and (max-width: 640px){$/;"	function	line:548
-.tab button	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .tab button{$/;"	function	line:549
-.tab	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .tab{$/;"	function	line:553
-.tabtext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .tabtext {$/;"	function	line:556
-ul	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^ul {$/;"	function	line:563
-a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^a {$/;"	function	line:567
-.generic-anchor	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.generic-anchor {$/;"	function	line:571
-.generic-anchor:visited	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.generic-anchor:visited {$/;"	function	line:574
-.generic-anchor:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.generic-anchor:hover {$/;"	function	line:577
-.flex-rw	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.flex-rw {$/;"	function	line:581
-footer	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^footer {$/;"	function	line:587
-.footer_right	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer_right{$/;"	function	line:596
-.center_footer	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.center_footer{$/;"	function	line:602
-.footer-list-top	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-top {$/;"	function	line:606
-.footer-list-top h1	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-top h1{$/;"	function	line:612
-.footer-list-top a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-top a{$/;"	function	line:616
-.footer-list-top > li	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-top > li {$/;"	function	line:621
-.footer-list-header	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-header {$/;"	function	line:626
-.footer-list-anchor	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-anchor {$/;"	function	line:631
-.footer-social-section	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-section {$/;"	function	line:634
-.footer-social-section::after	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-section::after {$/;"	function	line:640
-.footer-social-overlap	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-overlap {$/;"	function	line:650
-.footer-social-connect	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-connect {$/;"	function	line:657
-.footer-social-small	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-small {$/;"	function	line:662
-.footer-social-overlap > a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-overlap > a {$/;"	function	line:667
-.footer-social-overlap > a:not(:first-child)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-overlap > a:not(:first-child) {$/;"	function	line:671
-.footer-bottom-section	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-bottom-section {$/;"	function	line:675
-.footer-bottom-section > div:first-child	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-bottom-section > div:first-child {$/;"	function	line:682
-.footer-bottom-wrapper	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-bottom-wrapper {$/;"	function	line:686
-.footer-address	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-address {$/;"	function	line:691
-@media only screen and (max-width: 768px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media only screen and (max-width: 768px) {$/;"	function	line:696
-.footer-list-header	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-list-header {$/;"	function	line:697
-.footer-list-anchor	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-list-anchor {$/;"	function	line:700
-.footer-social-connect	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-social-connect {$/;"	function	line:703
-.footer-social-overlap > a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-social-overlap > a {$/;"	function	line:706
-.footer-bottom-wrapper	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-bottom-wrapper {$/;"	function	line:709
-@media only screen and (max-width: 568px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media only screen and (max-width: 568px) {$/;"	function	line:712
-.footer-list-top	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-list-top {$/;"	function	line:714
-.icon_socials	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .icon_socials {$/;"	function	line:720
-.myspace	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.myspace{$/;"	function	line:1
-.content_explication	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.content_explication{$/;"	function	line:9
-.explication	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication{$/;"	function	line:14
-.explication p	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication p{$/;"	function	line:25
-.explication h2	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.explication h2{$/;"	function	line:29
-#title_fournisseur	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^#title_fournisseur{$/;"	function	line:33
-.catchtitle	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.catchtitle{$/;"	function	line:41
-.catchsubtitle	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.catchsubtitle{$/;"	function	line:46
-#title_fournisseur p	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^#title_fournisseur p{$/;"	function	line:50
-.bloc_rent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.bloc_rent{$/;"	function	line:56
-.fournileft	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fournileft{$/;"	function	line:61
-.fourniright	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fourniright{$/;"	function	line:69
-.fournitext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fournitext{$/;"	function	line:77
-.rent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.rent{$/;"	function	line:84
-.rent:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.rent:hover{$/;"	function	line:93
-.food_service	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.food_service{$/;"	function	line:99
-.food_service:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.food_service:hover{$/;"	function	line:111
-.download	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.download{$/;"	function	line:115
-@media only screen and (max-width: 600px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^@media only screen and (max-width: 600px) {$/;"	function	line:122
-.fournileft	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fournileft{$/;"	function	line:123
-.btn_add_food	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .btn_add_food{$/;"	function	line:131
-.food_service	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .food_service{$/;"	function	line:136
-.download	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .download{$/;"	function	line:140
-.myspace	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .myspace{$/;"	function	line:146
-#title_fournisseur	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  #title_fournisseur{$/;"	function	line:151
-.fourniright	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fourniright{$/;"	function	line:155
-.fournitext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^  .fournitext{$/;"	function	line:162
+.sub_title_share	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.sub_title_share{$/;"	function	line:451
+.sharebutton	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.sharebutton{$/;"	function	line:457
+.sharebutton:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.sharebutton:hover{$/;"	function	line:473
+@media screen and (max-width: 640px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media screen and (max-width: 640px){$/;"	function	line:479
+.sharecolumn	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .sharecolumn{$/;"	function	line:480
+.share	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .share{$/;"	function	line:485
+.contentshare	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .contentshare{$/;"	function	line:488
+.tab	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tab {$/;"	function	line:496
+.tablinks	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tablinks{$/;"	function	line:502
+.tab button	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tab button {$/;"	function	line:507
+.tab button:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tab button:hover {$/;"	function	line:519
+.tab button.active	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tab button.active {$/;"	function	line:525
+.tabcontent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tabcontent {$/;"	function	line:531
+.tabtext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tabtext{$/;"	function	line:540
+.tabtext h3	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.tabtext h3{$/;"	function	line:546
+@media screen and (max-width: 640px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media screen and (max-width: 640px){$/;"	function	line:550
+.tab button	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .tab button{$/;"	function	line:551
+.tab	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .tab{$/;"	function	line:555
+.tabtext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .tabtext {$/;"	function	line:558
+ul	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^ul {$/;"	function	line:565
+a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^a {$/;"	function	line:569
+.generic-anchor	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.generic-anchor {$/;"	function	line:573
+.generic-anchor:visited	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.generic-anchor:visited {$/;"	function	line:576
+.generic-anchor:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.generic-anchor:hover {$/;"	function	line:579
+.flex-rw	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.flex-rw {$/;"	function	line:583
+footer	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^footer {$/;"	function	line:589
+.footer_right	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer_right{$/;"	function	line:598
+.center_footer	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.center_footer{$/;"	function	line:604
+.footer-list-top	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-top {$/;"	function	line:608
+.footer-list-top h1	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-top h1{$/;"	function	line:614
+.footer-list-top a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-top a{$/;"	function	line:618
+.footer-list-top > li	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-top > li {$/;"	function	line:623
+.footer-list-header	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-header {$/;"	function	line:628
+.footer-list-anchor	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-list-anchor {$/;"	function	line:633
+.footer-social-section	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-section {$/;"	function	line:636
+.footer-social-section::after	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-section::after {$/;"	function	line:642
+.footer-social-overlap	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-overlap {$/;"	function	line:652
+.footer-social-connect	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-connect {$/;"	function	line:659
+.footer-social-small	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-small {$/;"	function	line:664
+.footer-social-overlap > a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-overlap > a {$/;"	function	line:669
+.footer-social-overlap > a:not(:first-child)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-social-overlap > a:not(:first-child) {$/;"	function	line:673
+.footer-bottom-section	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-bottom-section {$/;"	function	line:677
+.footer-bottom-section > div:first-child	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-bottom-section > div:first-child {$/;"	function	line:684
+.footer-bottom-wrapper	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-bottom-wrapper {$/;"	function	line:688
+.footer-address	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^.footer-address {$/;"	function	line:693
+@media only screen and (max-width: 768px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media only screen and (max-width: 768px) {$/;"	function	line:698
+.footer-list-header	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-list-header {$/;"	function	line:699
+.footer-list-anchor	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-list-anchor {$/;"	function	line:702
+.footer-social-connect	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-social-connect {$/;"	function	line:705
+.footer-social-overlap > a	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-social-overlap > a {$/;"	function	line:708
+.footer-bottom-wrapper	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-bottom-wrapper {$/;"	function	line:711
+@media only screen and (max-width: 568px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^@media only screen and (max-width: 568px) {$/;"	function	line:714
+.footer-list-top	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .footer-list-top {$/;"	function	line:716
+.icon_socials	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/home_landing.scss	/^  .icon_socials {$/;"	function	line:722
