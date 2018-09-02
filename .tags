@@ -176,3 +176,19 @@ footer	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/hom
 .colors_style	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.colors_style{$/;"	function	line:93
 .round_colors	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.round_colors{$/;"	function	line:97
 .color_name	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.color_name{$/;"	function	line:104
+.tab_st	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.tab_st {$/;"	function	line:113
+.tablinks_st	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.tablinks_st{$/;"	function	line:119
+.tab_st button	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.tab_st button {$/;"	function	line:124
+.tab_st button:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.tab_st button:hover {$/;"	function	line:136
+.tab_st button.active	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.tab_st button.active {$/;"	function	line:142
+.tabcontent_st	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.tabcontent_st {$/;"	function	line:148
+.tabtext_st	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.tabtext_st{$/;"	function	line:157
+.tabtext_st h3	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^.tabtext_st h3{$/;"	function	line:163
+@media screen and (max-width: 640px)	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^@media screen and (max-width: 640px){$/;"	function	line:167
+.tab_st button	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^  .tab_st button{$/;"	function	line:168
+.tab_st	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^  .tab_st{$/;"	function	line:172
+.tabtext_st	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/styleguide.scss	/^  .tabtext_st {$/;"	function	line:175
+whoarewe	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/javascripts/all_js.js	/^  function whoarewe(evt, useName) {$/;"	function	line:2
+whoarewe	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/javascripts/all_js.js	/^  function whoarewe(evt, useName) {$/;"	function	line:2
+tabstyleguide	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/javascripts/all_js.js	/^  function tabstyleguide(evt, useName) {$/;"	function	line:20
+tabstyleguide	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/javascripts/all_js.js	/^  function tabstyleguide(evt, useName) {$/;"	function	line:20
