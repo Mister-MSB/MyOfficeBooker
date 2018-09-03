@@ -8,6 +8,5 @@ Feature: Booker can log in
     When I go to home page
     And I click on "Connexion" link
     And I log as a booker
-    Then I see "Bienvenue" on this page
     Then I see "Louer une salle à Paris" on this page
     Then I see "Top Recherche" on this page
