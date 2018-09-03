@@ -197,7 +197,7 @@ input[type="search"]{
 ////// product test   ///////
 .product-image {
 	display: block;
-	min-height: 20rem; /* layout hack */
+	min-height: 30rem; /* layout hack */
 	background: #fff center center no-repeat;
 	background-size: cover;
 }
@@ -238,6 +238,7 @@ input[type="search"]{
 	color: black;
 	text-decoration: none;
   height: auto;
+  margin-top: -20%;
 }
 
 .product-description > h2 {
@@ -268,40 +269,45 @@ input[type="search"]{
 
 .information {
   text-align: center;
-  margin-right: 10%;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .name {
-  font-size: 22px;
-  color: #5d8cc2;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
 }
 
 .store {
-  font-size: 16px;
-  color: #d86d3e;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
   margin-bottom: 3%;
 }
 
 .left_right_contents{
   display: inline-block;
   width: 100%;
-  padding-left: 30%;
-  margin-top: -5%;
+  padding-left: 15%;
 }
 
 .nbrs{
   display: inline-block;
   float: left;
+  color: white;
 }
 
 .stars{
   display: inline-block;
   float: right;
   width: 70%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .size_stars{
-  width: 20%;
+  width: 5%;
   display: inline-block;
 }
 
@@ -386,148 +392,6 @@ input[type="search"]{
   width:100%;
   margin-top: 20px;
 }
-
-
-
-
-
-/*SLIDER*/
-
-.slider {
-  margin: 0 auto;
-  max-width: 940px;
-  width: 100%;
-}
-
-.slide_viewer {
-  height: 340px;
-  overflow: hidden;
-  position: relative;
-}
-
-.slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-.slide {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.slide:first-child {
-  display: block;
-}
-
-.slide:nth-of-type(1) {
-  background-image: url("http://www.croatia-holidayhome.com/wp-content/uploads/2018/03/creative-office-new-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide:nth-of-type(2) {
-  background-image: url("http://dreamstop.com/wp-content/uploads/2013/07/office-dream-meaning.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide:nth-of-type(3) {
-  background-image: url("https://www.officelovin.com/wp-content/uploads/2016/01/ragged-edge-london-office-6.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide:nth-of-type(4) {
-  background-image: url("http://wiredwriters.net/wp-content/uploads/2016/02/1748-56cc448f28226.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.slide_buttons {
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  visibility: hidden;
-}
-
-a.slide_btn {
-  color: #474544;
-  font-size: 42px;
-  margin: 0 0.175em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.slide_btn.active, .slide_btn:hover {
-  color: #5d8cc2;
-  cursor: pointer;
-}
-
-.directional_nav {
-  height: 340px;
-  margin: 0 auto;
-  max-width: 940px;
-  position: relative;
-  top: -340px;
-}
-
-.previous_btn {
-  bottom: 0;
-  left: 100px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-}
-
-.next_btn {
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  right: 100px;
-  top: 0;
-}
-
-.previous_btn, .next_btn {
-  cursor: pointer;
-  height: 65px;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  width: 65px;
-}
-
-.previous_btn:hover, .next_btn:hover {
-  opacity: 1;
-}
-
-@media only screen and (max-width: 767px) {
-  .slider {
-    max-width: 940px;
-    width: 100%;
-  }
-  .slide_viewer {
-    overflow: hidden;
-    position: relative;
-  }
-  .previous_btn {
-    left: 50px;
-  }
-  .next_btn {
-    right: 50px;
-  }
-}
-
-
 
 ////// FOOTER//////
 
@@ -1182,4 +1046,125 @@ display: inline-block;
 .radio_right{
 display: inline-block;
 padding-left: 10px;
+}
+
+
+
+/////// résults  ///////
+
+.wrapper {
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+span {
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
 }
