@@ -54,29 +54,17 @@ html
 
     .jumbotron_sg
       nav.text-capitalize
-        = link_to "my office booker styleguide",
-          root_path
-        = link_to "Partagez votre salle",
-          owners_home_path
-        = link_to "#",
-          href: "tel:+33654321276",
-          class: 'link_phone' do
-          i.fa.fa-phone
-          span
-            |  06 54 32 12 76
+        = link_to "My Office Booker Styleguide",
+          "home"
 
-        = link_to "Inscription",
-          new_booker_registration_path
-        = link_to "Connexion",
-          new_booker_session_path
+        .links_styleguide
+          = link_to "Atoms",
+            "atoms"
+          = link_to "Composants",
+            "components"
+          = link_to "Pages",
+            "pages"
 
-      .links_styleguide
-        = link_to "Atoms",
-          "atoms"
-        = link_to "Composants",
-          "components"
-        = link_to "Pages",
-          "pages"
     br
 
     = yield
