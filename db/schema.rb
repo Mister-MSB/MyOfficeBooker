@@ -38,10 +38,10 @@ ActiveRecord::Schema.define(version: 2018_08_31_085846) do
     t.string "usage"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
+    t.bigint "booker_id"
     t.bigint "owner_id"
+    t.index ["booker_id"], name: "index_addresses_on_booker_id"
     t.index ["owner_id"], name: "index_addresses_on_owner_id"
-    t.index ["user_id"], name: "index_addresses_on_user_id"
   end
 
   create_table "admin_users", force: :cascade do |t|
@@ -59,6 +59,29 @@ ActiveRecord::Schema.define(version: 2018_08_31_085846) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
+  create_table "bookers", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
+    t.date "birthdate"
+    t.string "mobile"
+    t.string "phone"
+    t.string "sex"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer "sign_in_count", default: 0, null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
+    t.index ["email"], name: "index_bookers_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_bookers_on_reset_password_token", unique: true
   end
 
   create_table "owners", force: :cascade do |t|
@@ -102,29 +125,6 @@ ActiveRecord::Schema.define(version: 2018_08_31_085846) do
     t.datetime "updated_at", null: false
     t.bigint "owner_id"
     t.index ["owner_id"], name: "index_places_on_owner_id"
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "firstname"
-    t.string "lastname"
-    t.string "email"
-    t.date "birthdate"
-    t.string "mobile"
-    t.string "phone"
-    t.string "sex"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer "sign_in_count", default: 0, null: false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.inet "current_sign_in_ip"
-    t.inet "last_sign_in_ip"
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
 end
