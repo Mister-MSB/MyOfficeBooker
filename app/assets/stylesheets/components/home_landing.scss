@@ -13,7 +13,7 @@ body {
   border-radius: 0px;
   padding: 0;
   height: 400px;
-  background: black url("https://bora.co/wp-content/uploads/2015/12/bora_FINEDesignGroup_06.jpg") no-repeat;
+  background: black url("http://www.mfco.com.au/app/uploads/2014/08/blur_8.jpg") no-repeat;
   background-size: cover;
 }
 .jumbotron nav {
@@ -22,6 +22,8 @@ body {
   align-items: flex-start;
   padding-right: 1em;
   padding-top: .50em;
+  padding: 1%;
+  background-color: rgba(0, 0, 0, 0.36);
 }
 .jumbotron nav a:nth-of-type(2) {
   margin-left: auto;
@@ -53,7 +55,7 @@ body {
 
 .flex-form_home {
   width: 30%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:  rgba(0, 0, 0, 0.36);
   border-radius: 2%;
   padding: 1%;
 }
@@ -94,7 +96,7 @@ body {
 
 .searchbuttons{
   display: inline-block;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.36);
   height: 40px;
   width: 100px;
   color: white;
@@ -211,6 +213,7 @@ input[type="search"]{
   float: left;
   width: 100%;
   text-align: center;
+  background-color: #7fc0d7;
 }
 @media screen and (max-width: 640px){
   .container{
@@ -226,9 +229,16 @@ input[type="search"]{
 }
 
 .container .title{
-  color: #5d8cc2;
+  color: #e8bc44;
+  font-weight: bold;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.subtitle_container{
+  font-weight: bold;
+  color: white;
 }
 
 .content {
@@ -264,17 +274,27 @@ input[type="search"]{
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background: #7fc0d7;
+  background: #bd3f84;
   border-radius: 2px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.1);
+  border: 1px solid white;
   padding: 1rem 0;
   overflow:hidden;
   display: inline-block;
-  margin-right: 2px;
+  margin-right: 10px;
   margin-top: 2px;
   padding-top: 0;
   margin-bottom: 1%;
+
+.title_card{
+  color: #e8bc44;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text_card{
+  color: white;
+}
 
   a {
     text-decoration: none;
@@ -345,20 +365,17 @@ input[type="search"]{
 ////// bloc comment ça marche //////
 
 .howitworks{
-  padding: 1em 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
   float: left;
-  width: 84.8%;
+  width: 100%;
   text-align: center;
   background-color: #81b570;
-  border: 5px solid white;
-  margin-left: 7.3%;
   color: white;
-  margin-top: 30px;
-  margin-bottom: 40px;
 }
 
 .howitworks .title{
-
+  color: #d86d3e;
 }
 
 .textworks {
@@ -381,6 +398,7 @@ input[type="search"]{
 .textcolumn h5{
   font-size: 20px;
   font-weight: bold;
+  color: #d86d3e;
 }
 
 @media screen and (max-width: 640px){
@@ -398,21 +416,20 @@ input[type="search"]{
   padding: 1em 0;
   float: left;
   width: 100%;
-  height: 500px;
+  height: auto;
   text-align: center;
-  background-image: url("http://cdn.home-designing.com/wp-content/uploads/2018/03/home-office-setup.jpg");
+  background-image: url("https://static1.squarespace.com/static/5100ced9e4b0f6a8c8f3ad99/t/54d6a659e4b0adb809836ef2/1423353435421/office-blur.jpg?format=1500w");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  margin-bottom: 40px;
 }
 
 .contentshare{
-  margin-top: 8%;
+
 }
 
 .share .title{
-
+  color: #5d8cc2;
 }
 
 .textshare {
@@ -421,37 +438,42 @@ input[type="search"]{
   margin: auto;
   overflow: hidden;
   display: inline-block;
+  padding-top: 5%;
 }
 
 .sharecolumn{
-  width: 30%;
+  width: 40%;
   display: inline-block;
-}
-
-.sharecolumn h5{
   font-size: 20px;
   font-weight: bold;
 }
 
+.sub_title_share{
+  font-size: 20px;
+  font-weight: bold;
+  color: #5d8cc2;
+}
+
 .sharebutton{
 	width: 260px;
-	height: 35px;
-	background: #fff;
+	background: #5d8cc2;
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #5d8cc2;
+	color: white;
 	font-family: 'Exo', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
-	padding: 6px;
+	padding: 3%;
 	margin-top: 70px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .sharebutton:hover{
 	opacity: 0.8;
-  color: #fff;
-  background: #5d8cc2;
+  color: #5d8cc2;
+  background: white;
 }
 
 @media screen and (max-width: 640px){
@@ -473,10 +495,12 @@ input[type="search"]{
 /* Style the tab */
 .tab {
     overflow: hidden;
-    background-color: white;
-    width: 50%;
-    margin-left: 25%;
-    padding-top: 3%;
+    background-color: #e8bc44;
+    width: 100%;
+}
+
+.tablinks{
+  width: 20%;
 }
 
 /* Style the buttons inside the tab */
@@ -506,17 +530,21 @@ input[type="search"]{
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 12px;
     border-top: none;
     background-color: #5d8cc2;
     height: 200px;
     color: white;
-    width: 83%;
-    margin-left: 7.7%;
+    width: 100%;
 }
 
 .tabtext{
   padding-top: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.tabtext h3{
+  color: #e8bc44;
 }
 
 @media screen and (max-width: 640px){
@@ -549,13 +577,13 @@ a {
   color: white;
 }
 .generic-anchor:hover {
-  color: #5d8cc2;
+  color: #e8bc44;
 }
 
 .flex-rw {
   display: flex;
   flex-flow: row wrap;
-  background: lightgrey;
+  background: #93629d;
 }
 
 footer {
@@ -565,6 +593,12 @@ footer {
   font-size: 12px;
   color: white;
   text-align: center;
+}
+
+.footer_right{
+  text-align: right;
+  width: 100%;
+  padding-right: 2%;
 }
 
 .center_footer{
@@ -578,7 +612,7 @@ footer {
 }
 
 .footer-list-top h1{
-  color: #5d8cc2;
+  color: #e8bc44;
 }
 
 .footer-list-top a{
@@ -638,19 +672,6 @@ footer {
 
 .footer-social-overlap > a:not(:first-child) {
   margin-left: 0.38em;
-}
-
-.socials{
-  text-decoration: none;
-  color: #5d8cc2;
-}
-
-.socials:hover{
-  color: white;
-}
-
-.icon_socials{
-  width: 3%;
 }
 
 .footer-bottom-section {

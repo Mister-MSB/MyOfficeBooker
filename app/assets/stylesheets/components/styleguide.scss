@@ -1,3 +1,36 @@
+.jumbotron_sg nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 1em;
+  padding-top: .50em;
+  padding: 1%;
+  background-color: #d86d3e;
+}
+
+.jumbotron_sg nav a {
+  color: white;
+  margin: auto .80em;
+  text-decoration: none;
+  text-shadow: 0 1px 2px black;
+}
+
+.links_styleguide{
+  background-color: #d86d3e;
+  padding: 1%;
+  margin-left: 60%;
+}
+
+.home_sg{
+  margin-top: 5%;
+}
+
+.home_sg h4{
+  color: #5d8cc2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .my_color{
   color: #7fc0d7;
 }
@@ -31,7 +64,7 @@
   color: #5d8cc2;
 }
 
-.styleguide_home h3{
+.styleguide_home h1{
   float: left;
   margin-left: 5%;
 }
@@ -62,18 +95,111 @@
   color: #e8bc44;
 }
 
+.db_view{
+  float: right;
+  padding-right: 10%;
+  color: #d86d3e;
+  margin-top: 10%;
+}
+
+.db_view a{
+  color: #d86d3e;
+}
+
 .colors_style{
-  margin-left: 10%;
+  width: 10%;
+  display: inline-block;
+  padding: 3%;
 }
 
 .round_colors{
   border-radius: 50%;
-  width: 12%;
+  width: 100%;
   height: 20%;
   display: inline-block;
+  margin-top: 10%;
+}
+
+.lines_colors{
+  text-align: center;
 }
 
 .color_name{
   display: inline-block;
   font-weight: bold;
+  padding-top: 10%;
+}
+
+.color_title{
+  display: inline-block;
+}
+
+////// tab pour styleguide //////
+
+/* Style the tab */
+.tab_st {
+    overflow: hidden;
+    background-color: #e8bc44;
+    width: 100%;
+}
+
+.tablinks_st{
+  width: 20%;
+}
+
+/* Style the buttons inside the tab */
+.tab_st button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab_st button:hover {
+    background-color: #5d8cc2;
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tab_st button.active {
+    background-color: #5d8cc2;
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent_st {
+    display: none;
+    border-top: none;
+    background-color: #5d8cc2;
+    height: 200px;
+    color: white;
+    width: 100%;
+}
+
+.tabtext_st{
+  padding-top: 4%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.tabtext_st h3{
+  color: #e8bc44;
+}
+
+@media screen and (max-width: 640px){
+  .tab_st button{
+    display: block;
+    float: none;
+  }
+  .tab_st{
+    display: none;
+  }
+  .tabtext_st {
+    display: none;
+  }
 }
