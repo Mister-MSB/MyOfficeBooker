@@ -8,6 +8,7 @@ class Booker < ApplicationRecord
          :timeoutable
 
   has_many :addresses
+  has_many :notes
 
   validates :firstname, presence: true
   validates :lastname,  presence: true
