@@ -7,23 +7,28 @@
   center
     h5.product_title
       | Louer salle de réunion joliment décorée pour 12 personnes à Paris 9
-    p
+    p.product_subtitle
       | Avenue des Champs Elysées - 75009 Paris - France
     br
     = image_tag "http://www.croatia-holidayhome.com/wp-content/uploads/2018/03/creative-office-new-1.jpg",
       class: "product_image"
 
-  center
-    .text_left
-      p
-        | Notre plus grande salle de réunion se situe tout en haut de notre bâtiment du 9ème arrondissement de Paris. Elle est baignée de lumière avec une belle surface vitrée qui vous immerge dans l'énergie du lieu.
-      p
-        | Une grande LEDTV HD, un adaptateur Mac, un branchement HDMI , et un paperboard seront à votre disposition. 12 personnes pourront s'asseoir autour de cette belle table en bois et participer à votre événement professionnel.
-      p
-        | Cet espace de 22m2 est à votre disposition pour une durée de 2 heures ou plus en fonction de vos besoins. Le métro Liège situé sur la ligne 13 vous permettra d'accéder à notre établissement le plus facilement possible.
-      p
-        | Profitez de nombreuses formules de restauration proposées par l'établissement afin de faciliter l'organisation de votre journée et réjouir vos collègues.
-      br
+
+  .text_left
+    p
+      | Notre plus grande salle de réunion se situe tout en haut de notre bâtiment du 9ème arrondissement de Paris. Elle est baignée de lumière avec une belle surface vitrée qui vous immerge dans l'énergie du lieu.
+    br
+    p
+      | Une grande LEDTV HD, un adaptateur Mac, un branchement HDMI , et un paperboard seront à votre disposition. 12 personnes pourront s'asseoir autour de cette belle table en bois et participer à votre événement professionnel.
+    br
+    p
+      | Cet espace de 22m2 est à votre disposition pour une durée de 2 heures ou plus en fonction de vos besoins. Le métro Liège situé sur la ligne 13 vous permettra d'accéder à notre établissement le plus facilement possible.
+    br
+    p
+      | Profitez de nombreuses formules de restauration proposées par l'établissement afin de faciliter l'organisation de votre journée et réjouir vos collègues.
+    br
+  .text_infos
+    center
       h5
         | Superficie 22 m2
       br
@@ -34,15 +39,12 @@
         | Modification sans frais possible jusqu’à 9 jours avant la date réservée. Non modifiable à moins de 9 jours avant la date réservée.
       p.smalltext
         | Annulation possible jusqu’à 9 jours avant la date réservée, frais d’annulation à hauteur de 20% du montant total de la réservation et d’un minimum de 20€ HT. A moins de 9 jours avant la date réservée, le montant total de la réservation est dû.
-center
-  .product_infos
 
-    hr color="#428CC6" width="100%"
+.infos_maps
+  .product_infos
     br
     p.product_ss_title
       | Caractéristiques de l'établissement
-    i.fas.fa-home
-    i.fas.fa-utensils
     p.product_ss_title
       | Caractéristiques de la salle
     i.fas.fa-home
@@ -68,24 +70,17 @@ center
       p
         | Café inclus
     br
-  center
-    .maps_product
-      br
-      br
-      p.maps_title
-        | Carte
-      br
-      .mapouter
-        .gmap_canvas
-          iframe#gmap_canvas frameborder="0" height="330" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=champ%20elys%C3%A9es&t=&z=13&ie=UTF8&iwloc=&output=embed" width="335"
-        css:
-          .mapouter text-align:right;height:330px;width:335px;}.gmap_canvas {overflow:hidden;background:none!important;height:330px;width:335px;
-br
-hr color="#428CC6" width="100%"
-br
-h5.product_title
-  | Restauration disponible
+  .maps_product
+    .mapouter
+      .gmap_canvas
+        iframe#gmap_canvas frameborder="0" height="330" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=champ%20elys%C3%A9es&t=&z=13&ie=UTF8&iwloc=&output=embed" width="712"
+
+
 .food_bloc
+  h5.food_product_title
+    | Restauration disponible
+  br
+  br
   .menus
     p.food
       | Petits Déjeuners
@@ -111,13 +106,15 @@ h5.product_title
       | - Eau plate &amp; gazeuse
   .menus
     br
+    hr style="border: 1px dashed #81b570;"
+    br
     p.food
       | Menu
     br
     p.food2
       | Coffret repas    40 €
     br
-    p
+    p.ss_food2
       | Menu Poisson
     br
     p
@@ -131,7 +128,7 @@ h5.product_title
     p
       | - Eau 33 cl
     br
-    p
+    p.ss_food2
       | Menu Volaille
     br
     p
@@ -145,6 +142,8 @@ h5.product_title
     p
       | - Eau 33 cl
   .menus
+    br
+    hr style="border: 1px dashed #81b570;"
     br
     p.food
       | Pause café

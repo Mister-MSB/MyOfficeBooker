@@ -51,4 +51,20 @@ html
       'data-turbolinks-track': 'reload'
 
   body
+
+    .jumbotron_sg
+      nav.text-capitalize
+        = link_to "My Office Booker Styleguide",
+          "home"
+
+        .links_styleguide
+          = link_to "Atoms",
+            "atoms"
+          = link_to "Composants",
+            "components"
+          = link_to "Pages",
+            "pages"
+
+    br
+
     = yield
