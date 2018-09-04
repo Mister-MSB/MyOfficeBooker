@@ -238,7 +238,7 @@ input[type="search"]{
 	color: black;
 	text-decoration: none;
   height: auto;
-  margin-top: -22%;
+  margin-top: -23%;
 }
 
 .product-description > h2 {
@@ -293,17 +293,16 @@ input[type="search"]{
 .nbrs{
   display: inline-block;
   color: white;
-  padding-left: 10%;
-  width: 50%;
+  width: 100%;
 }
 
 .stars{
   display: inline-block;
   float: right;
   width: 100%;
-  background-color: white;
+  background-color: #e8bc44;
   padding: 1%;
-  color: #81b570;
+  color: #5d8cc2;
   font-size: 40px;
   font-weight: bold;
 }
@@ -325,14 +324,14 @@ input[type="search"]{
     text-align: center;
     margin-right: 0%;
   }
-  .stars{
-    width: 50%;
-  }
   .left_right_contents{
     display: inline-block;
     width: 100%;
     padding-left: 0%;
     margin-top: 0%;
+  }
+  .product-description {
+    margin-top: -37%;
   }
 }
 
