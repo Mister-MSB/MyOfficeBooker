@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   namespace :owners do
-    resources :places
+    resources :buildings
   end
 
 
