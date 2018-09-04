@@ -288,20 +288,22 @@ input[type="search"]{
 .left_right_contents{
   display: inline-block;
   width: 100%;
-  padding-left: 15%;
 }
 
 .nbrs{
   display: inline-block;
-  float: left;
   color: white;
+  padding-left: 10%;
+  width: 50%;
 }
 
 .stars{
   display: inline-block;
   float: right;
-  width: 70%;
-  color: white;
+  width: 100%;
+  background-color: white;
+  padding: 1%;
+  color: #81b570;
   font-size: 40px;
   font-weight: bold;
 }
