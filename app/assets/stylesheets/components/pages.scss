@@ -613,6 +613,7 @@ footer {
 
 .product_left{
   width: 100%;
+  background-color: #e8bc44;
 }
 
 .product_image{
@@ -621,20 +622,31 @@ footer {
 
 .text_left{
   padding: 2%;
-  width: 70%;
+  width: 60%;
+  color: white;
+  display: inline-block;
+  margin-left: 20%;
+  font-weight: bold;
+}
+
+.text_infos h5{
+  color: #428CC6;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .smalltext{
   font-size: 9px;
   font-style: italic;
-  color: grey;
+  color: white;
+  padding-bottom: 1%;
 }
 
 .product_infos{
   display: inline-block;
-  padding-left: 0px;
-  background-color: #428CC6;
-  padding: 1%;
+  width: 50%;
+  float: left;
+  text-align: center;
 }
 
 .product_title{
@@ -644,18 +656,49 @@ footer {
   padding: 2%;
 }
 
-.product_ss_title{
+.product_subtitle{
   color: white;
+  font-weight: bold;
+}
+
+.product_ss_title{
+  color: #e8bc44;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .equipement{
-  width: 40%;
+  width: 30%;
+  color: white;
   display: inline-block;
+  padding: 1%;
+}
+
+.infos_maps{
+  background-color: #5d8cc2;
+  width: 100%;
+  height: auto;
+}
+
+.maps_product{
+  display: inline-block;
+  width: 50%;
 }
 
 .maps_title{
   color: #5d8cc2;
   font-weight: bold;
+}
+
+.mapouter{
+  height:330px;
+  width:100%;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:330px;
+  width:712px;
 }
 
 .food_bloc{
