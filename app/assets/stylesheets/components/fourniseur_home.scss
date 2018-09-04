@@ -2,8 +2,7 @@
   padding: 3%;
   text-align: center;
   background-color: #7fc0d7;
-  color: black;
-  margin-bottom: 40px;
+  color: white;
 }
 
 .content_explication{
@@ -39,7 +38,7 @@
 }
 
 .catchtitle{
-  color: #5d8cc2;
+  color: white;
   font-size: 40px;
 }
 
@@ -48,7 +47,7 @@
 }
 
 #title_fournisseur p{
-  color: #5d8cc2;
+  color: #e8bc44;
   font-size: 25px;
   font-weight: bold;
 }
@@ -91,9 +90,13 @@
 }
 
 .rent:hover{
-  background-color: white;
-  color: #e8bc44;
-  box-shadow: 1px 1px 1px;
+  background-color: #a5bfdd;
+  color: white;
+}
+
+.textspace {
+  overflow: hidden;
+  display: inline-block;
 }
 
 .food_service{

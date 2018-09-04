@@ -339,9 +339,15 @@ input[type="search"]{
 
 /////////////////
 .ideas{
-   width: 80%;
-   margin-top: 5%;
-   margin-bottom: 5%;
+  width: 100%;
+  padding-top: 8%;
+  background-color: #81b570;
+ }
+
+ .ideas h2{
+   color: #d86d3e;
+   font-weight: bold;
+   font-size: 30px;
  }
 
 .pictures_idea{
