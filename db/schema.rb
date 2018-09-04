@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_31_085846) do
+ActiveRecord::Schema.define(version: 2018_09_04_150336) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -84,6 +84,21 @@ ActiveRecord::Schema.define(version: 2018_08_31_085846) do
     t.index ["reset_password_token"], name: "index_bookers_on_reset_password_token", unique: true
   end
 
+  create_table "buildings", force: :cascade do |t|
+    t.string "name"
+    t.float "long"
+    t.float "lat"
+    t.string "street"
+    t.string "complement"
+    t.string "zipcode"
+    t.string "city"
+    t.string "country"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "owner_id"
+    t.index ["owner_id"], name: "index_buildings_on_owner_id"
+  end
+
   create_table "owners", force: :cascade do |t|
     t.string "firstname"
     t.string "lastname"
@@ -105,26 +120,6 @@ ActiveRecord::Schema.define(version: 2018_08_31_085846) do
     t.inet "last_sign_in_ip"
     t.index ["email"], name: "index_owners_on_email", unique: true
     t.index ["reset_password_token"], name: "index_owners_on_reset_password_token", unique: true
-  end
-
-  create_table "places", force: :cascade do |t|
-    t.string "name"
-    t.float "long"
-    t.float "lat"
-    t.integer "capacity"
-    t.integer "total_price"
-    t.integer "unit_price"
-    t.string "street"
-    t.string "zipcode"
-    t.string "city"
-    t.string "country"
-    t.string "description"
-    t.float "note"
-    t.integer "note_count"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "owner_id"
-    t.index ["owner_id"], name: "index_places_on_owner_id"
   end
 
 end

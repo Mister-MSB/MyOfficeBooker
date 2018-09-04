@@ -67,10 +67,10 @@ puts "====================="
 puts "OWNER ADDRESSES seeds done !"
 puts "====================="
 
-@place = FactoryBot.create(
-  :place,
+@owner_building = FactoryBot.create(
+  :building,
   owner_id: @owner1.id
 )
 
-puts "OWNER PLACES seeds done !"
+puts "OWNER BUILDINGs seeds done !"
 puts "====================="

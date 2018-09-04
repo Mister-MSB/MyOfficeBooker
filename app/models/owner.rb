@@ -8,7 +8,7 @@ class Owner < ApplicationRecord
          :timeoutable
 
   has_many :addresses
-  has_many :places
+  has_many :buildings
 
   validates :firstname, presence: true
   validates :lastname,  presence: true
