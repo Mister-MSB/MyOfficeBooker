@@ -656,6 +656,13 @@ footer {
   padding: 2%;
 }
 
+.food_product_title{
+  font-size: 30px;
+  color: #81b570;
+  font-weight: bold;
+  padding: 2%;
+}
+
 .product_subtitle{
   color: white;
   font-weight: bold;
@@ -703,17 +710,19 @@ footer {
 
 .food_bloc{
   width: 100%;
-  display: flex;
+  display: inline-block;
+  background-color: #d86d3e;
 }
 
 .menus{
-  display: inline-block;
-  padding-left: 85px;
+  text-align: center;
+  color: white;
 }
 
 .food{
-  color: #5d8cc2;
+  color: #81b570;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .food2{
@@ -721,10 +730,24 @@ footer {
   font-weight: bold;
 }
 
+.ss_food2{
+  color: #81b570;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 600px){
   .food_bloc{
     width: 100%;
     display: block;
+  }
+  .mapouter{
+    display: none;
+  }
+  .gmap_canvas {
+    display: none;
+  }
+  .product_infos{
+    width: 100%;
   }
 }
 
