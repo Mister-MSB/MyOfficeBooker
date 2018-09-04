@@ -12,14 +12,15 @@ Rails.application.routes.draw do
 
   ActiveAdmin.routes(self)
 
-  get "/style_guide/*id" => 'style_guide#show', as: :page, format: false
-
-  get 'owners/home', to: 'owners_home#index', as: :owners_home
   root 'home#index'
 
   namespace :owners do
     resources :buildings
+    resources :places
   end
+
+  get "/style_guide/*id" => 'style_guide#show', as: :page, format: false
+  get 'owners/home', to: 'owners_home#index', as: :owners_home
 
 
 end

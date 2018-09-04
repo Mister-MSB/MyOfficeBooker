@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_04_150336) do
+ActiveRecord::Schema.define(version: 2018_09_04_161728) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -120,6 +120,18 @@ ActiveRecord::Schema.define(version: 2018_09_04_150336) do
     t.inet "last_sign_in_ip"
     t.index ["email"], name: "index_owners_on_email", unique: true
     t.index ["reset_password_token"], name: "index_owners_on_reset_password_token", unique: true
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string "name"
+    t.integer "capacity"
+    t.integer "total_price"
+    t.integer "unit_price"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "building_id"
+    t.index ["building_id"], name: "index_places_on_building_id"
   end
 
 end

@@ -74,3 +74,11 @@ puts "====================="
 
 puts "OWNER BUILDINGs seeds done !"
 puts "====================="
+
+@owner_building = FactoryBot.create(
+  :place,
+  building_id: @owner_building.id
+)
+
+puts "BUILDING PLACES seeds done !"
+puts "====================="

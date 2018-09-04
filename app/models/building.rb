@@ -1,5 +1,6 @@
 class Building < ApplicationRecord
   belongs_to :owner
+  has_many :places
 
   validates :name,    presence: true
   validates :lat,     presence: true
