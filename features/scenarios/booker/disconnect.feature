@@ -9,9 +9,9 @@ Feature: Booker can log out
     And I click on "Connexion" link
     And I log as a booker
     Then I see "Bienvenue" on this page
-    Then I see "Louer une salle à Paris" on this page
+    Then I see "Vos salles de séminaires" on this page
     Then I see "Top Recherche" on this page
     And I click on "se déconnecter" link
     Then I see "Connexion" on this page
-    Then I see "Louer une salle à Paris" on this page
+    Then I see "Vos salles de séminaires" on this page
     Then I see "Top Recherche" on this page
