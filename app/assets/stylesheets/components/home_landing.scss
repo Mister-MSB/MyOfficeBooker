@@ -277,11 +277,21 @@ input[type="search"]{
   text-align: center;
 }
 
+.card_line1{
+  width: 100%;
+  display: block;
+}
+
+.card_line2{
+  width: 100%;
+  display: block;
+}
+
 .card {
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background: #bd3f84;
+  background: #bc9fc3;
   border-radius: 2px;
   box-sizing: border-box;
   border: 1px solid white;
@@ -294,7 +304,7 @@ input[type="search"]{
   margin-bottom: 1%;
 
 .title_card{
-  color: #e8bc44;
+  color: #5d8cc2;
   font-weight: bold;
   font-size: 30px;
 }
