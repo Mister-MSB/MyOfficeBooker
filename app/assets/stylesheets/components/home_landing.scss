@@ -544,6 +544,7 @@ input[type="search"]{
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    width: 25%;
 }
 
 /* Change background color of buttons on hover */
@@ -570,12 +571,15 @@ input[type="search"]{
 
 .tabtext{
   padding-top: 4%;
-  padding-left: 1%;
-  padding-right: 1%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .tabtext h3{
   color: #e8bc44;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 640px){
