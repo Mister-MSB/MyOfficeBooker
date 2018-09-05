@@ -1,5 +1,6 @@
 class Place < ApplicationRecord
   belongs_to :building
+  has_many :notes
 
   validates :name,        presence: true
   validates :capacity,    presence: true

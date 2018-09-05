@@ -51,19 +51,18 @@ html
       'data-turbolinks-track': 'reload'
 
   body
-
-    .jumbotron_sg
-      nav.text-capitalize
-        = link_to "My Office Booker Styleguide",
-          "home"
-
-        .links_styleguide
-          = link_to "Atoms",
-            root_path + "style_guide/atoms"
-          = link_to "Composants",
-            root_path + "style_guide/components"
-          = link_to "Pages",
-            root_path + "style_guide/pages"
+    - unless request.url.match?(/pages./)
+      .jumbotron_sg
+        nav.text-capitalize
+          = link_to "My Office Booker Styleguide",
+            "home"
+          .links_styleguide
+            = link_to "Atoms",
+              root_path + "style_guide/atoms"
+            = link_to "Composants",
+              root_path + "style_guide/components"
+            = link_to "Pages",
+              root_path + "style_guide/pages"
 
     br
 
