@@ -49,7 +49,7 @@ body {
 }
 
 .flex-form_home {
-  width: 30%;
+  width: 70%;
   background-color:  rgba(0, 0, 0, 0.36);
   border-radius: 2%;
   padding: 1%;
@@ -64,7 +64,7 @@ body {
 
 .catchsubtitle{
   font-size: 30px;
-  color: #5d8cc2;
+  color: white;
 }
 
 @media screen and (max-width: 640px){
@@ -105,12 +105,26 @@ body {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.36);
   height: 40px;
-  width: 100px;
+  width: 200px;
+  color: white;
+  border: none;
+}
+
+#big{
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.36);
+  height: 40px;
+  width: 200px;
   color: white;
   border: none;
 }
 
 .active, .searchbuttons:hover{
+  background:#5d8cc2;
+  cursor: pointer;
+}
+
+.active, #big:hover{
   background:#5d8cc2;
   cursor: pointer;
 }
@@ -291,7 +305,7 @@ input[type="search"]{
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background: #bc9fc3;
+  background: #d86d3e;
   border-radius: 2px;
   box-sizing: border-box;
   border: 1px solid white;
@@ -304,13 +318,13 @@ input[type="search"]{
   margin-bottom: 1%;
 
 .title_card{
-  color: #5d8cc2;
+  color: white;
   font-weight: bold;
   font-size: 30px;
 }
 
 .text_card{
-  color: white;
+  color: black;
 }
 
   a {
