@@ -449,14 +449,15 @@ input[type="search"]{
   width: 100%;
   height: auto;
   text-align: center;
-  background-image: url("https://static1.squarespace.com/static/5100ced9e4b0f6a8c8f3ad99/t/54d6a659e4b0adb809836ef2/1423353435421/office-blur.jpg?format=1500w");
+  background-image: url("office-blur.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
 }
 
-.contentshare{
-
+.contentshare p{
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .share .title{
@@ -465,15 +466,13 @@ input[type="search"]{
 
 .textshare {
   position: relative;
-  width: 100%;
+  width: 50%;
   margin: auto;
   overflow: hidden;
-  display: inline-block;
   padding-top: 5%;
 }
 
 .sharecolumn{
-  width: 40%;
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
@@ -544,6 +543,7 @@ input[type="search"]{
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    font-weight: bold;
     width: 25%;
 }
 

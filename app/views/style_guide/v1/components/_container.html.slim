@@ -11,9 +11,11 @@
   br
 
   .card_line1
+
     .card
       a href="#"
-        img.photo src="http://image.noelshack.com/fichiers/2015/32/1438608275-10101.jpg"
+        = image_tag "paris",
+          class: "photo"
         h3.title_card
           | Paris
         br
@@ -33,7 +35,8 @@
 
     .card
       a href="#"
-        img.photo src="http://www.autocars-migratour.fr/wp-content/uploads/2014/07/fete-lumiere-lyon3.jpg"
+        = image_tag "lyon",
+          class: "photo"
         h3.title_card
           | Lyon
         br
