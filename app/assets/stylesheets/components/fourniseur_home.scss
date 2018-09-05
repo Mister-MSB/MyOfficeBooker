@@ -1,8 +1,8 @@
 .myspace{
   padding: 3%;
   text-align: center;
-  background-color: #7fc0d7;
-  color: white;
+  background-color: #f6f7fe;
+  color: black;
 }
 
 .content_explication{
@@ -10,13 +10,17 @@
   background-color: #e8bc44;
 }
 
+.content_explication h3{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 2%;
+}
+
 .explication{
   position: relative;
   width: 250px;
-  height: 200px;
-  max-width: 400px;
-  margin: auto;
-  overflow: hidden;
   display: inline-block;
   padding: 2%;
 }
@@ -26,7 +30,15 @@
 }
 
 .explication h2{
+  color: black;
+  font-weight: bold;
+}
+
+.textexplication{
   color: white;
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 #title_fournisseur{
@@ -38,7 +50,7 @@
 }
 
 #title_fournisseur p{
-  color: #e8bc44;
+  color: white;
   font-size: 25px;
   font-weight: bold;
 }
@@ -178,5 +190,11 @@
     margin-left: 10%;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .textexplication{
+    color: white;
+    width: 80%;
+    font-size: 20px;
+    font-weight: bold;
   }
 }
