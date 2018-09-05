@@ -90,6 +90,12 @@
   display: inline-block;
 }
 
+.textcolumn_space{
+  width: 30%;
+  display: inline-block;
+  padding-left: 30px;
+}
+
 .food_service{
   text-align: center;
   background-color: #5d8cc2;
@@ -145,6 +151,15 @@
   .myspace{
     text-align: inherit;
     padding-left: 5%;
+  }
+  .textspace{
+    margin-right: 10%;
+  }
+  .textcolumn_space{
+    padding-top: 20px;
+    width: 80%;
+    display: inline-block;
+    padding-left: 30px;
   }
 
   #title_fournisseur{
