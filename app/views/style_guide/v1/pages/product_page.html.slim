@@ -1,7 +1,15 @@
 /! NAVBAR
 = render partial: "style_guide/v1/components/navbar"
-/! SEARCHBAR
-= render partial: "style_guide/v1/components/searchbar"
+
+.header_price
+
+  h3
+    | 360 € 1/2 (4H)
+
+  h3
+    | 680 € jour (8H)
+
+  input.button_price type="button" value=("Réserver")
 
 .product_left
   center
@@ -10,43 +18,30 @@
     p.product_subtitle
       | Avenue des Champs Elysées - 75009 Paris - France
     br
-    = image_tag "http://www.croatia-holidayhome.com/wp-content/uploads/2018/03/creative-office-new-1.jpg",
-      class: "product_image"
+  = image_tag "http://www.croatia-holidayhome.com/wp-content/uploads/2018/03/creative-office-new-1.jpg",
+    class: "product_image"
 
-
-  .text_left
-    p
-      | Notre plus grande salle de réunion se situe tout en haut de notre bâtiment du 9ème arrondissement de Paris. Elle est baignée de lumière avec une belle surface vitrée qui vous immerge dans l'énergie du lieu.
-    br
-    p
-      | Une grande LEDTV HD, un adaptateur Mac, un branchement HDMI , et un paperboard seront à votre disposition. 12 personnes pourront s'asseoir autour de cette belle table en bois et participer à votre événement professionnel.
-    br
-    p
-      | Cet espace de 22m2 est à votre disposition pour une durée de 2 heures ou plus en fonction de vos besoins. Le métro Liège situé sur la ligne 13 vous permettra d'accéder à notre établissement le plus facilement possible.
-    br
-    p
-      | Profitez de nombreuses formules de restauration proposées par l'établissement afin de faciliter l'organisation de votre journée et réjouir vos collègues.
-    br
-  .text_infos
-    center
-      h5
-        | Superficie 22 m2
-      br
-      h5
-        | Référence de l'annonce : 131539
-      br
-      p.smalltext
-        | Modification sans frais possible jusqu’à 9 jours avant la date réservée. Non modifiable à moins de 9 jours avant la date réservée.
-      p.smalltext
-        | Annulation possible jusqu’à 9 jours avant la date réservée, frais d’annulation à hauteur de 20% du montant total de la réservation et d’un minimum de 20€ HT. A moins de 9 jours avant la date réservée, le montant total de la réservation est dû.
-
-.infos_maps
   .product_infos
     br
     p.product_ss_title
       | Caractéristiques de l'établissement
+    br
+    p
+      | 7 salles
+    p
+      | Restauration
+
+    br
     p.product_ss_title
       | Caractéristiques de la salle
+    br
+    p
+      | 12 personnes
+    p
+      | lumière du jour
+    p
+      | cuisine partagée
+    br
     i.fas.fa-home
     p.product_ss_title
       | Les équipements inclus
@@ -69,6 +64,64 @@
         | Micro-ondes
       p
         | Café inclus
+
+  .text_left
+    p
+      | Notre plus grande salle de réunion se situe tout en haut de notre bâtiment du 9ème arrondissement de Paris. Elle est baignée de lumière avec une belle surface vitrée qui vous immerge dans l'énergie du lieu.
+    br
+    p
+      | Une grande LEDTV HD, un adaptateur Mac, un branchement HDMI , et un paperboard seront à votre disposition. 12 personnes pourront s'asseoir autour de cette belle table en bois et participer à votre événement professionnel.
+    br
+    p
+      | Cet espace de 22m2 est à votre disposition pour une durée de 2 heures ou plus en fonction de vos besoins. Le métro Liège situé sur la ligne 13 vous permettra d'accéder à notre établissement le plus facilement possible.
+    br
+    p
+      | Profitez de nombreuses formules de restauration proposées par l'établissement afin de faciliter l'organisation de votre journée et réjouir vos collègues.
+    br
+  .text_infos
+    center
+      h5
+        | Superficie : 22 m2
+      br
+      h5
+        | Référence de l'annonce : 131539
+      br
+      p.smalltext
+        | Modification sans frais possible jusqu’à 9 jours avant la date réservée. Non modifiable à moins de 9 jours avant la date réservée.
+      p.smalltext
+        | Annulation possible jusqu’à 9 jours avant la date réservée, frais d’annulation à hauteur de 20% du montant total de la réservation et d’un minimum de 20€ HT. A moins de 9 jours avant la date réservée, le montant total de la réservation est dû.
+
+.infos_maps
+  .product_infosbis
+    br
+    h2
+      | Carte
+    br
+    h4
+      | Comment s'y rendre ?
+    br
+    br
+    br
+    br
+    .transports
+      h4
+        | Transports publics
+      br
+      p
+        | Garibaldi
+      p
+        | Terreaux
+
+    .parking
+      h4
+        | Parking
+      br
+      p
+        | Resaplace
+      p
+        | Ducourt
+      p
+        | Foch
     br
   .maps_product
     .mapouter

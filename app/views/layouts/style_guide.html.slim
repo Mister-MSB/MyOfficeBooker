@@ -55,7 +55,7 @@ html
       .jumbotron_sg
         nav.text-capitalize
           = link_to "My Office Booker Styleguide",
-            "home"
+            root_path + "style_guide/home"
           .links_styleguide
             = link_to "Atoms",
               root_path + "style_guide/atoms"
@@ -63,7 +63,5 @@ html
               root_path + "style_guide/components"
             = link_to "Pages",
               root_path + "style_guide/pages"
-
-    br
 
     = yield
