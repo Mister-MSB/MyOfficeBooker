@@ -617,19 +617,56 @@ footer {
 
 /////////  PRODUCT PAGE //////////
 
+.header_price{
+  display: inline-block;
+  background-color: #7fc0d7;
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+}
+
+.header_price h3{
+  display: inline-block;
+}
+
+.header_price h3:nth-child(1){
+
+}
+
+.header_price h3:nth-child(2){
+  margin-left: 10%;
+}
+
+.button_price{
+  background-color: #5d8cc2;
+  color: white;
+  border: none;
+  padding: 0.5%;
+  font-size: 150%;
+  z-index: 100;
+  margin-left: 10%;
+}
+
+.button_price:hover{
+  background-color: #a5bfdd;
+  color: white;
+}
+
 .product_left{
   width: 100%;
-  background-color: #e8bc44;
+  background-color: #f6f7fe;
 }
 
 .product_image{
   width: 50%;
+  float: left;
+  height: 450px;
 }
 
 .text_left{
   padding: 2%;
   width: 60%;
-  color: white;
+  color: black;
   display: inline-block;
   margin-left: 20%;
   font-weight: bold;
@@ -644,15 +681,51 @@ footer {
 .smalltext{
   font-size: 9px;
   font-style: italic;
-  color: white;
+  color: black;
   padding-bottom: 1%;
 }
 
 .product_infos{
   display: inline-block;
   width: 50%;
+  height: 450px;
+  float: right;
+  text-align: center;
+  color: white;
+  background-color: #5d8cc2;
+}
+
+.product_infosbis{
+  display: inline-block;
+  width: 50%;
+  height: 330px;
   float: left;
   text-align: center;
+  color: #5d8cc2;
+  background-color: #e8bc44;
+}
+
+.product_infosbis h2{
+  font-size: 30px;
+}
+
+.product_infosbis h4{
+  color: white;
+  font-size: 20px;
+}
+
+.transports{
+  float: left;
+  margin-left: 20%;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.parking{
+  float: right;
+  margin-right: 20%;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .product_title{
@@ -670,8 +743,9 @@ footer {
 }
 
 .product_subtitle{
-  color: white;
+  color: black;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .product_ss_title{
@@ -688,7 +762,7 @@ footer {
 }
 
 .infos_maps{
-  background-color: #5d8cc2;
+  background-color: #f6f7fe;
   width: 100%;
   height: auto;
 }
@@ -717,12 +791,12 @@ footer {
 .food_bloc{
   width: 100%;
   display: inline-block;
-  background-color: #d86d3e;
+  background-color: white;
 }
 
 .menus{
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .food{
@@ -754,6 +828,12 @@ footer {
   }
   .product_infos{
     width: 100%;
+  }
+  .product_image{
+    width: 100%;
+  }
+  .infos_maps{
+    display: none;
   }
 }
 
