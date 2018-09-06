@@ -59,12 +59,6 @@
   .mini_inscription{
     display: none;
   }
-  #guests{
-    display: none;
-  }
-  #prices{
-    display: none;
-  }
   .datepicker{
     display: none;
   }
@@ -126,12 +120,6 @@ input[type="search"]{
 }
 
 @media screen and (max-width: 640px){
-  #guests{
-    display: none;
-  }
-  #prices{
-    display: none;
-  }
   .flex-form{
     display: block;
     width: 80%;
@@ -141,15 +129,12 @@ input[type="search"]{
   .datepicker{
     display: none;
   }
-  #dt{
-    display: none;
-  }
-  #dt2{
-    display: none;
-  }
   .flex-form_home input[type="submit"]{
     width: 20%;
     margin-right: 35px;
+  }
+  #guests_home{
+    display: none;
   }
 }
 
@@ -222,7 +207,6 @@ input[type="search"]{
 
 .product-list {
 	display: block;
-	margin: 1rem auto;
 	padding: 2%;
   padding-left: 2%;
 	font-size: 0;
