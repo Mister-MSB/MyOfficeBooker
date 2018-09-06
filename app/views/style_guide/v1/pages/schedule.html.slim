@@ -1,53 +1,47 @@
 = render partial: "style_guide/v1/components/navbar"
 
 h1.create_title
-  | HORAIRES D'OUVERTURE
+  | Horaires d'ouverture
 .building_left
   .navleft_building
     = link_to "Accéder à l'établissement",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Contact & horaires",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Service restauration",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Photos de l'établissement",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Liste des salles",
       "",
       class: "onglets"
+
     br
     br
     br
     br
     center
       input.rent type="button" value=("Créer une salle")
-      br
-      br
+
       input.rent type="button" value=("Mon compte")
+    br
+    br
 
   .navleft2_building
     br
     center
       h3
         | Horaires d'ouverture
-    br
-    p
-      | Indiquez la fourchette horaire maximale au cours de laquelle votre établissement est ouvert et que vous êtes en capacité d'accueillir des clients
+      br
+      p.schedule_subtitle
+        | Indiquez la fourchette horaire maximale au cours de laquelle votre établissement est ouvert et que vous êtes en capacité d'accueillir des clients
     br
     center
-      .textcolumn
+      .textcolumn_schedule
         h5
           | Jour
         br
@@ -72,7 +66,7 @@ h1.create_title
         p
           | Dimanche
 
-      .textcolumn
+      .textcolumn_schedule
         h5
           | Ouvert/Fermé
         br
@@ -132,7 +126,7 @@ h1.create_title
           | fermé
 
 
-      .textcolumn
+      .textcolumn_schedule
         h5
           | Horaires
         br
@@ -162,6 +156,7 @@ h1.create_title
     br
     center
       input.rent type="button" value="Enregistrer"
+    br
+    br
 
-br
 = render partial: "style_guide/v1/components/footer"

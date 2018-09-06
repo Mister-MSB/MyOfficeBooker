@@ -7,46 +7,40 @@ h1.create_title
     = link_to "Accéder à l'établissement",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Contact & horaires",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Service restauration",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Photos de l'établissement",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Liste des salles",
       "",
       class: "onglets"
+
     br
     br
     br
     br
     center
       input.rent type="button" value=("Créer une salle")
-      br
-      br
+
       input.rent type="button" value=("Mon compte")
+    br
+    br
 
 
-  .navleft3_building
+  .navleft2_building
     br
     center
       h3
         | Service restauration
       br
-      p
+      p.schedule_subtitle
         | Ajoutez ici les différents produits qui composent votre offre restauration.
-      p
+      p.schedule_subtitle
         | Si vous n'offrez pas de service restauration, merci d'indiquer si vous acceptez la livraison de nourriture dans vos locaux par un de nos partenaires traiteurs.
 
       br
@@ -82,6 +76,7 @@ h1.create_title
     br
     center
       input.rent type="button" value="Enregistrer"
-
+    br
+    br
 
 = render partial: "style_guide/v1/components/footer"

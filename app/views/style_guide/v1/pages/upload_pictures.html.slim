@@ -1,64 +1,63 @@
 = render partial: "style_guide/v1/components/navbar"
 
 h1.create_title
-  | Photos
+  | Photos de l'établissement
 .building_left
   .navleft_building
     = link_to "Accéder à l'établissement",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Contact & horaires",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Service restauration",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Photos de l'établissement",
       "",
       class: "onglets"
-    br
-    br
     = link_to "Liste des salles",
       "",
       class: "onglets"
+
     br
     br
     br
     br
     center
       input.rent type="button" value=("Créer une salle")
-      br
-      br
-      input.rent type="button" value=("Mon compte")
 
-  .navleft3_building
+      input.rent type="button" value=("Mon compte")
+    br
+    br
+
+  .navleft2_building
     br
     center
       h3
         | Photos de l'établissement
       br
-      p
+      br
+      p.schedule_subtitle
         | Ajoutez ici au minimum 3 photos de votre établissement
       br
-      p
+      p.schedule_subtitle
         | Nous vous recommandons de mettre des photos des accès, des parties communes et de l'extérieur du bâtiment.
         | Les photos de l'intérieur des salles de l'établissement, seront à ajouter lors d'une prochaine étape.
       br
-      p.input_title
+      br
+      h2.input_title
         | Ajoutez une image
+      br
       p
         | Poids maximum par photo : 2Mo.
       br
       form class="download" action="/action_page.php"
         input accept="image/*" name="pic" type="file"
       br
+      br
       input.rent type="button" value="Enregistrer"
-
+      br
+      br
 
 = render partial: "style_guide/v1/components/footer"

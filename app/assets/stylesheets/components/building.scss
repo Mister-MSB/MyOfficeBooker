@@ -130,15 +130,62 @@
 ///////// horaires toggle////////
 
 //////// service restauration ///////
+.textcolumn_schedule{
+  width: 30%;
+  display: inline-block;
+  padding-top: 20px;
+}
 
+.textcolumn_schedule h5{
+  font-size: 20px;
+  font-weight: bold;
+  color: #d86d3e;
+}
+
+.schedule_subtitle{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn_add_food{
+  width: 100%;
+}
+
+.food_service{
+  background-color: #5d8cc2;
+  color: white;
+  text-align: center;
+  padding: 1%;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid #e8bc44;
+}
+
+.food_service:hover{
+  background-color: #e8bc44;
+}
 
 .radio_food{
   text-align: left;
-  margin-left: 40%;
+  margin-left: 35%;
 }
 
-.navleft3_building h3{
-  color: #5d8cc2;
+.download{
+  width: 20%;
+  border: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 640px){
+  .textcolumn_schedule{
+    width: 80%;
+    display: inline-block;
+    padding-left: 30px;
+  }
+  .download{
+    border: none;
+    text-decoration: none;
+  }
 }
 
 //////  my account  //////
@@ -161,4 +208,6 @@
 
 .agenda_ss_title{
   color: #81b570;
+  font-weight: bold;
+  font-size: 15px;
 }
