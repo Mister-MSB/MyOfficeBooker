@@ -1,0 +1,65 @@
+.navleft2_building
+  br
+  center
+    h3
+      | Accéder à l'établissement
+    br
+    p
+      | Renseignez toutes les informations nécessaires pour permettre à vos clients de trouver facilement votre établissement
+    p
+      | Toutes ces informations sont divulguées uniquement lorsque vous confirmez une réservation de salle.
+
+    br
+    br
+    br
+    br
+
+  .inputs
+    .input_building
+      p.input_title
+        | Nom de l'établissement:
+      br
+      input.input name="name" type="text"
+      br
+      br
+      p.input_title
+        | Adresse de l'établissement:
+      br
+      input.input name="street" type="text"
+      br
+      br
+      p.input_title
+        | Code pour accéder à l'établissement
+      br
+      input.input name="code" type="text"
+      br
+      br
+      p.input_title
+        | Description
+      br
+      input.input name="description" type="text"
+
+    .input_building#input_right
+      p.input_title
+        br
+        | Interphone
+      br
+      input.input name="door_code" type="text"
+      br
+      br
+      p.input_title
+        | Étage de l'établissement
+      br
+      input.input name="floor" type="text"
+      br
+      br
+      p.input_title
+        | Plus de détails sur l'établissement
+      br
+      textarea.input name="details" type="text"
+      br
+      br
+  center
+    input.rent type="button" value="Enregistrer"
+  br
+  br

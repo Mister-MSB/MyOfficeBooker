@@ -31,33 +31,6 @@ h1.create_title
     br
     br
 
-  .navleft2_building
-    br
-    center
-      h3
-        | Photos de l'établissement
-      br
-      br
-      p.schedule_subtitle
-        | Ajoutez ici au minimum 3 photos de votre établissement
-      br
-      p.schedule_subtitle
-        | Nous vous recommandons de mettre des photos des accès, des parties communes et de l'extérieur du bâtiment.
-        | Les photos de l'intérieur des salles de l'établissement, seront à ajouter lors d'une prochaine étape.
-      br
-      br
-      h2.input_title
-        | Ajoutez une image
-      br
-      p
-        | Poids maximum par photo : 2Mo.
-      br
-      form class="download" action="/action_page.php"
-        input accept="image/*" name="pic" type="file"
-      br
-      br
-      input.rent type="button" value="Enregistrer"
-      br
-      br
+    = render partial: "style_guide/v1/components/downpic"
 
 = render partial: "style_guide/v1/components/footer"
