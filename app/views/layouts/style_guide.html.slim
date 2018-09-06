@@ -54,8 +54,11 @@ html
     - unless request.url.match?(/pages./)
       .jumbotron_sg
         nav.text-capitalize
+          = image_tag "logo_mob",
+            class: "logo_sg"
           = link_to "My Office Booker Styleguide",
             root_path + "style_guide/home"
+
           .links_styleguide
             = link_to "Atoms",
               root_path + "style_guide/atoms"
