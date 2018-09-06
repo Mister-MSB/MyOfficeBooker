@@ -1,1 +1,23 @@
-= render partial: "style_guide/v1/components/entete_fournisseur_unconnect"
+#sg_atoms_page
+  .sg_atomic_page_title
+    br
+    h1
+      | Entête Fournisseur
+  br
+  hr
+  br
+  .sg_atoms_container
+    .sg_atom.sg_atom--big
+      .sg_atom_visual
+        = render partial: "style_guide/v1/components/entete_fournisseur_unconnect"
+
+      .sg_atom_details
+        div
+          p.sg_atom_title
+            | Entête Fournisseur
+
+        .sg_atom_html
+          code: textarea.html_area(
+            readonly = "true"
+          )
+            | = render partial: "style_guide/v1/components/entete_fournisseur_unconnect"
