@@ -90,9 +90,6 @@ body {
   #myDIV{
     display: none;
   }
-  #guests{
-    display: none;
-  }
   .flex-form_home {
     width: 100%;
     margin: 0px;
@@ -105,18 +102,24 @@ body {
 ////// SEARCHBAR ////////
 
 #guests{
-  margin-left: 20px;
+  width: 15%;
+}
+
+#prices{
+  width: 15%;
+}
+
+#dt{
+  display: inline-block;
+  width: 20%;
 }
 
 .searchbuttons{
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.36);
   height: 40px;
   width: 200px;
   color: white;
   border: none;
-  font-weight: bold;
-  font-size: 15px;
 }
 
 #big{
@@ -140,8 +143,7 @@ body {
 
 /*Hack to get them to align properly */
 .flex-form > *:not([type="date"]) {
-  border-top:1px solid white;
-  border-bottom:1px solid white;
+  width: 40%;
 }
 
 .flex-form input[type="submit"] {
@@ -150,7 +152,9 @@ body {
   border-bottom: 1px solid #5d8cc2;
   color:white;
   display: inline-block;
-  margin-left: 10px;
+  margin-top: -2%;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .town{
@@ -163,9 +167,9 @@ body {
 .flex-form > * {
   border:0;
   padding:10px;
-  background:white;
   margin:10px;
   border-radius:5px;
+  border: none;
   outline:0;
   -webkit-appearance:none;
 }
@@ -180,7 +184,7 @@ body {
   z-index:10;
   background:rgba(0, 0, 0, 0.36);
   border-radius:5px;
-  display:flex;
+  display:inline-block;
   width: 60%;
   justify-content: center;
 }
@@ -205,12 +209,16 @@ input[type="search"]{
   font-weight: bold;
 }
 
-@media screen and (max-width: 640px){
+.color_results{
+  background-color: #f6f7fe;
+}
+
+@media screen and (max-width: 600px){
   #guests{
-    display: none;
+
   }
   #prices{
-    display: none;
+
   }
   .flex-form{
     display: block;
@@ -224,15 +232,15 @@ input[type="search"]{
     display: none;
   }
   #dt{
-    display: none;
-  }
-  #dt2{
-    display: none;
+
   }
   .town{
     text-align: center;
     margin-left: 13%;
     width: 70%;
+  }
+  .flex-form > *:not([type="date"]) {
+    width: 80%;
   }
 }
 
