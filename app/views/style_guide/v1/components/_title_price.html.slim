@@ -13,23 +13,42 @@
     p.product_ss_title
       | Caractéristiques de l'établissement
     br
-    p
-      | 7 salles
-    p
-      | Restauration
+    .first_icons
+      .icons
+        = image_tag "home",
+          class: "icons_price"
+        p
+          | 7 salles
+      .icons
+        = image_tag "meeting",
+          class: "icons_price"
+        p
+          | Restauration
 
+    br
     br
     p.product_ss_title
       | Caractéristiques de la salle
     br
-    p
-      | 12 personnes
-    p
-      | lumière du jour
-    p
-      | cuisine partagée
+    .first_icons
+      .icons2
+        = image_tag "meeting",
+          class: "icons_price"
+        p
+          | 12 personnes
+      .icons2
+        = image_tag "sun",
+          class: "icons_price"
+        p
+          | lumière du jour
+      .icons2
+        = image_tag "cook",
+          class: "icons_price"
+        p
+          | cuisine partagée
     br
-    i.fas.fa-home
+    br
+
     p.product_ss_title
       | Les équipements inclus
     br
