@@ -12,15 +12,7 @@
 
   .card_line1
 
-    .card
-      a href="#"
-        = image_tag "paris",
-          class: "photo"
-        h3.title_card
-          | Paris
-        br
-        p.text_card
-          | Une réunion dans la plus belle ville du monde !
+    = render partial: "style_guide/v1/components/card"
 
     .card
       a href="#"
