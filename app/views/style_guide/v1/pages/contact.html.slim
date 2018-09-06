@@ -2,69 +2,12 @@
 
 br
 
-center
-  .contact_txt
-    h1.contact_title
-      | Contactez my office booker
-    br
-    p.contact_subtitle
-      | N'hésitez pas à nous écrire.
-    br
-    br
-    h4
-      | Contactez My Office Booker, le site qui vous permet de réserver une salle de réunion ou de formation pour des locations de courte durée.
-    br
-    p
-      | Vous êtes un prestataire de services et vous souhaitez monter un partenariat avec My Office Booker ? Nous sommes toujours à la recherche de nouveaux services à proposer à nos clients ! Petit-déjeuner, plateaux repas, traducteurs et hôtes d'accueil, n'hésitez pas à nous contacter.
-    br
-    p
-      | Vous organisez une conférence ou un séminaire d'entreprise ? Réservez la salle qu'il vous faut directement en ligne sur My Office Booker et n'hésitez pas à nous contacter si vous avez une question.
-  br
-  .contact
-    .contact_left
-      br
-      form.cf
-        h1
-          | NOUS SOMMES LÀ POUR VOUS AIDER !
-        br
-        .half.left.cf
-          input#input-name placeholder="Name" type="text"
-          input#input-email placeholder=("Email address") type="email"
-          input#input-subject placeholder="Subject" type="text"
-        .half.right.cf
-          textarea#input-message name="message" placeholder="Message" type="text"
-          br
-        input#input-submit type="submit" value="Envoyer"
-          br
+  = render partial: "style_guide/v1/components/entete_contact"
+
+  = render partial: "style_guide/v1/components/send_mail"
+
 br
 
-.contact_right
-  h5
-    | Email
-  p
-    b
-      | contact@myofficebooker.com
-  br
-  h5
-    | Téléphone
-  p
-    | France :
-    b
-      |  +33 1 86 76 10 87
-  p
-    | Belgique :
-    b
-      |  +32 3 808 7381
-  p
-    | Royaume Uni :
-    b
-      |  +44 23 8214 8300
-  br
-  h5
-    | Adresse
-  p
-    b
-      | 277 rue Saint Honoré, 75008 Paris
+= render partial: "style_guide/v1/components/contact_infos"
 
-  br
 = render partial: "style_guide/v1/components/footer"
