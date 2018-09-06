@@ -1,0 +1,46 @@
+.navleft2_building
+  br
+  center
+    h3
+      | Service restauration
+    br
+    p.schedule_subtitle
+      | Ajoutez ici les différents produits qui composent votre offre restauration.
+    p.schedule_subtitle
+      | Si vous n'offrez pas de service restauration, merci d'indiquer si vous acceptez la livraison de nourriture dans vos locaux par un de nos partenaires traiteurs.
+
+    br
+    br
+
+    .radio_food
+      input#delivery name="feature" type="checkbox" value="food"
+      label for="delivery"
+        |  Vous acceptez la livraison de nourriture dans vos locaux
+      br
+      br
+
+      input#yes name="feature" type="checkbox" value="food"
+      label for="yes"
+        |  Vous proposez un service de restauration
+      br
+      br
+
+      input#no name="feature" type="checkbox" value="food"
+      label for="no"
+        |  Vous ne souhaitez pas proposer de la restauration dans votre lieu
+
+  br
+  br
+  center
+    .btn_add_food
+      input.food_service type="button" value=("Ajouter un produit petits déjeuners")
+      input.food_service type="button" value=("Ajouter un produit menus")
+      input.food_service type="button" value=("Ajouter un produit pauses café")
+      input.food_service type="button" value=("Ajouter un produit boissons")
+
+  br
+  br
+  center
+    input.rent type="button" value="Enregistrer"
+  br
+  br

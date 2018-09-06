@@ -1,56 +1,28 @@
 = render partial: "style_guide/v1/components/navbar"
 
 h1.create_title
-  | Synchroniser agenda
-
+  | Synchroniser agendas
 .building_left
-  .navleft_building
-    = link_to "Mes établissements",
-      "",
-      class: "onglets"
-    br
-    br
-    = link_to "Mes informations",
-      "",
-      class: "onglets"
-    br
-    br
-    = link_to "Synchroniser agenda",
-      "",
-      class: "onglets"
-    br
-    br
-    br
-    br
-    center
-      h3
-        | Connecter à Paul Variand
+  center
+    .navleft_building
+      = link_to "Mes établissements",
+        "",
+        class: "onglets"
+      = link_to "Mes informations",
+        "",
+        class: "onglets"
+      = link_to "Synchroniser agenda",
+        "",
+        class: "onglets"
       br
       br
-      input.rent type="button" value=("Accueil")
-
-
-
-  .navleft3_building
-    br
-    center
-      h3
-        | Synchroniser mes agendas
+      br
+      br
+      center
+        input.rent type="button" value=("Accueil")
+      br
       br
 
-      h5.agenda_ss_title
-        | Connexion Google agenda
-      br
-      p
-        | Synchronisez les agendas de vos salles à l'agenda Bird Office. Permettez ainsi aux clients de voir les disponibilités de vos salles en temps réel et de réserver sur les créneaux libres.
-      br
-      hr
-      br
-
-      h5.agenda_ss_title
-        | Connectez-vous à votre compte Google Agenda
-      br
-
-      input.rent type="button" value=("Connexion")
+      = render partial: "style_guide/v1/components/agenda"
 
 = render partial: "style_guide/v1/components/footer"

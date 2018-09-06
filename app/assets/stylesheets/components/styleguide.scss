@@ -5,7 +5,7 @@
   padding-right: 1em;
   padding-top: .50em;
   padding: 1%;
-  background-color: #d86d3e;
+  background-color: rgba(216, 109, 62, 0.66);
 }
 
 .jumbotron_sg nav a {
@@ -16,13 +16,17 @@
 }
 
 .links_styleguide{
-  background-color: #d86d3e;
-  padding: 1%;
+  background-color: transparent;
+  padding: 2%;
   margin-left: 60%;
 }
 
 .home_sg{
   margin-top: 5%;
+}
+
+.logo_sg{
+  width: 5%;
 }
 
 .home_sg h4{
@@ -34,6 +38,7 @@
 .sg_col{
   display: inline-block;
   width: 20%;
+  padding-top: 10%;
 }
 
 .my_color{

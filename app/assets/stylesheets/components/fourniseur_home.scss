@@ -108,29 +108,6 @@
   padding-left: 30px;
 }
 
-.food_service{
-  text-align: center;
-  background-color: #5d8cc2;
-  color: white;
-  border: none;
-  width: 30%;
-  height: 30px;
-  text-align: center;
-  padding: 1%;
-  border: 3px solid #e8bc44;
-}
-
-.food_service:hover{
-  background-color: #e8bc44;
-}
-
-.download{
-  margin-left: 20%;
-  width: 20%;
-  border: none;
-  text-decoration: none;
-}
-
 @media only screen and (max-width: 600px) {
   .fournileft{
     background-color: grey;
@@ -144,22 +121,6 @@
     color: white;
     font-weight: bold;
   }
-
-  .btn_add_food{
-    width: 100%;
-    margin-left: 6%;
-  }
-
-  .food_service{
-    width: 50%;
-  }
-
-  .download{
-    margin-left: 20%;
-    border: none;
-    text-decoration: none;
-  }
-
   .myspace{
     text-align: inherit;
     padding-left: 5%;
