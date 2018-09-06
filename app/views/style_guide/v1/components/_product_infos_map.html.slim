@@ -1,0 +1,37 @@
+.infos_maps
+  .product_infosbis
+    br
+    h2
+      | Carte
+    br
+    h4
+      | Comment s'y rendre ?
+    br
+    br
+    br
+    .transports
+      = image_tag "subway"
+      h4
+        | Transports publics
+      br
+      p
+        | Garibaldi
+      p
+        | Terreaux
+
+    .parking
+      = image_tag "parking"
+      h4
+        | Parking
+      br
+      p
+        | Resaplace
+      p
+        | Ducourt
+      p
+        | Foch
+    br
+  .maps_product
+    .mapouter
+      .gmap_canvas
+        iframe#gmap_canvas frameborder="0" height="330" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=champ%20elys%C3%A9es&t=&z=13&ie=UTF8&iwloc=&output=embed" width="712"

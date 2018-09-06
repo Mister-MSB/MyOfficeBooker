@@ -42,6 +42,11 @@
     margin: 20px auto;
 }
 
+.icon_tel{
+  width: 12%;
+  line-height: 2px;
+}
+
 @media screen and (max-width:600px) {
   .jumbotron2 {
     padding-bottom: 5px;
@@ -61,6 +66,9 @@
     display: none;
   }
   .datepicker{
+    display: none;
+  }
+  .icon_tel{
     display: none;
   }
 }
@@ -342,6 +350,10 @@ input[type="search"]{
   width: 100%;
   padding-top: 8%;
   background-color: #f6f7fe;
+ }
+
+ .text_ideas{
+   width: 20%;
  }
 
  .ideas h2{
@@ -752,6 +764,30 @@ footer {
   color: #e8bc44;
   font-weight: bold;
   font-size: 20px;
+}
+
+.icons_price{
+  width: 15%;
+  display: inline-block;
+}
+
+.first_icons{
+  width: 100%;
+  display: inline-block;
+}
+
+.icons{
+  display: inline-block;
+  width: 50%;
+}
+
+.icons2{
+  display: inline-block;
+  width: 30%;
+}
+
+.icons3{
+  display: inline-block;
 }
 
 .equipement{
