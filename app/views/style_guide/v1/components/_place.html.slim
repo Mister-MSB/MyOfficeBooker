@@ -1,0 +1,34 @@
+.navleft2_building
+  br
+  center
+    h3
+      | Créer une nouvelle salle
+    br
+    p
+      | Renseignez toutes les informations nécessaires pour permettre à vos clients de trouver facilement votre salle
+    p
+      | Toutes ces informations sont divulguées uniquement lorsque celui-ci confirme une réservation de salle.
+
+    br
+    br
+    br
+    br
+
+    = simple_form_for place, url: owners_places_path do |f|
+      = f.input :name,
+        label: "Nom"
+      = f.input :description,
+        label: "Description"
+      = f.input :capacity,
+        label: "Capacité"
+      = f.input :total_price,
+        label: "Prix total"
+      = f.input :unit_price,
+        label: "Prix par personne"
+      = f.input :building_id,
+        as: :select,
+        collection: current_owner.buildings,
+        label: "Etablissement rattaché"
+      = f.submit "Créer la salle"
+  br
+  br
