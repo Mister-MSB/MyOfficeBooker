@@ -9,58 +9,98 @@
     br
     br
     br
-    a href="v1/pages/home/_index"
-      | Home Landing
+    .sg_col
+      h4
+        | Home Page
       br
-    a href="v1/pages/results"
-      | Résultats recherche
+      a href="v1/pages/home/_index"
+        | Home Landing
+        br
+    .sg_col
+      h4
+        | Products Page
       br
-    a href="v1/pages/product_page"
-      | Page Produit
+      a href="v1/pages/results"
+        | Résultats recherche
       br
-    a href="v1/pages/owners_home/_index"
-      | Fournisseurs home page
+    .sg_col
+      h4
+        | Product Page
       br
-    a href="v1/pages/owners/buildings/_new"
-      | Créer un établissement
+      a href="v1/pages/product_page"
+        | Page Produit
+        br
+    .sg_col
+      h4
+        | Fournisseur Landing
       br
-    = link_to "Connexion Booker",
-      booker_session_path
-    br
-    = link_to "Inscription Booker",
-      new_booker_registration_path
-    br
-    = link_to "Connexion Owner",
-      owner_session_path
-    br
-    = link_to "Inscription Owner",
-      new_owner_registration_path
-    a href="v1/pages/bookers/sessions/_new"
-      |
-    a href="v1/pages/bookers/registrations/_new"
-      |
+      a href="v1/pages/owners_home/_index"
+        | Fournisseurs home page
+        br
+    .sg_col
+      h4
+        | Connexion
       br
-    a href="v1/pages/bookers/registrations/_edit"
-      | Modification Booker
+      = link_to "Connexion Booker",
+        booker_session_path
       br
-    a href="v1/pages/schedule"
-      | Horaires d'ouverture
+      = link_to "Connexion Owner",
+        owner_session_path
       br
-    a href="v1/pages/food"
-      | Service restauration
+    .sg_col
+      h4
+        | Inscription
       br
-    a href="v1/pages/upload_pictures"
-      | Photos établissement
+      = link_to "Inscription Booker",
+        new_booker_registration_path
       br
-    a href="v1/pages/contact"
-      | Contact page
+      = link_to "Inscription Owner",
+        new_owner_registration_path
+      a href="v1/pages/bookers/sessions/_new"
+        |
+      a href="v1/pages/bookers/registrations/_new"
+        |
+        br
+      a href="v1/pages/bookers/registrations/_edit"
+        | Modification Booker
+        br
+    .sg_col
+      h4
+        | Création Pages
       br
-    a href="v1/pages/bookers/registrations/_agenda_account"
-      | Mon compte Agenda
+      a href="v1/pages/owners/buildings/_new"
+        | Créer un établissement
+        br
+      a href="v1/pages/schedule"
+        | Horaires d'ouverture
+        br
+      a href="v1/pages/food"
+        | Service restauration
+        br
+      a href="v1/pages/upload_pictures"
+        | Photos établissement
+        br
+    .sg_col
+      h4
+        | My Account Pages
       br
-    a href="v1/pages/paiement_first"
-      | Etape paiement 1
+      a href="v1/pages/bookers/registrations/_agenda_account"
+        | Mon compte Agenda
+        br
+    .sg_col
+      h4
+        | Contact
       br
-    a href="v1/pages/paiement_second"
-      | Etape paiement 2
+      a href="v1/pages/contact"
+        | Contact page
+        br
+    .sg_col
+      h4
+        | Payment Pages
       br
+      a href="v1/pages/paiement_first"
+        | Etape paiement 1
+        br
+      a href="v1/pages/paiement_second"
+        | Etape paiement 2
+        br
