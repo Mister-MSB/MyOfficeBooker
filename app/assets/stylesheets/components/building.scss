@@ -129,6 +129,44 @@
 ///////// horaires toggle////////
 
 //////// service restauration ///////
+.schedule_table{
+  border-collapse: collapse;
+  width: 80%;
+  height: 30%;
+  background-color: #f6f7fe;
+}
+
+.schedule_table td, th{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.schedule_table th{
+  color: #5d8cc2;
+  font-weight: bold;
+}
+
+.blue_title_table{
+  color: #5d8cc2;
+  font-weight: bold;
+}
+
+.th_vanish{
+  background-color: #f6f7fe;
+  border-left: none;
+  border-top: none;
+}
+
+.schedule_infos{
+  margin-left: 10%;
+  font-weight: bold;
+}
+
+.first_white_line{
+  background-color: white;
+}
+
 .textcolumn_schedule{
   width: 30%;
   display: inline-block;
