@@ -19,6 +19,10 @@ Rails.application.routes.draw do
     resources :places
   end
 
+  namespace :bookers do
+    resources :places
+  end
+
   get "/style_guide/*id" => 'style_guide#show', as: :page, format: false
   get 'owners/home', to: 'owners_home#index', as: :owners_home
 

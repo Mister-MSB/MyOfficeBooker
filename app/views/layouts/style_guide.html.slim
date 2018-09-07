@@ -51,20 +51,21 @@ html
       'data-turbolinks-track': 'reload'
 
   body
-    - unless request.url.match?(/pages./)
-      .jumbotron_sg
-        nav.text-capitalize
-          = image_tag "logo_mob",
-            class: "logo_sg"
-          = link_to "My Office Booker Styleguide",
-            root_path + "style_guide/home"
+    - if params[:controller] == 'style_guide'
+      - unless request.url.match?(/pages./)
+        .jumbotron_sg
+          nav.text-capitalize
+            = image_tag "logo_mob.png",
+              class: "logo_sg"
+            = link_to "My Office Booker Styleguide",
+              root_path + "style_guide/home"
 
-          .links_styleguide
-            = link_to "Atoms",
-              root_path + "style_guide/atoms"
-            = link_to "Composants",
-              root_path + "style_guide/components"
-            = link_to "Pages",
-              root_path + "style_guide/pages"
-
+            .links_styleguide
+              = link_to "Atoms",
+                root_path + "style_guide/atoms"
+              = link_to "Composants",
+                root_path + "style_guide/components"
+              = link_to "Pages",
+                root_path + "style_guide/pages"
+    = render partial: 'layouts/flash_error'
     = yield

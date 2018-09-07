@@ -1,6 +1,7 @@
 = render partial: "style_guide/v1/components/navbar"
 
 h1.create_title
+
   | CRÉATION D'UN NOUVEL ÉTABLISSEMENT
 .building_left
   .navleft_building
@@ -39,65 +40,7 @@ h1.create_title
 
 
 
-  .navleft2_building
-    br
-    center
-      h3
-        | Accéder à l'établissement
-      br
-      p
-        | Renseignez toutes les informations nécessaires pour permettre à vos clients de trouver facilement votre établissement
-      p
-        | Toutes ces informations sont divulguées uniquement lorsque vous confirmez une réservation de salle.
+  = render partial: "style_guide/v1/components/place"
 
-    br
-    p.input_title
-      | Nom de l'établissement:
-    input.input name="name" type="text"
-    br
-    br
-    p.input_title
-      | Adresse de l'établissement:
-    input.input name="street" type="text"
-    br
-    br
-
-    .mapouter
-      .gmap_canvas
-        iframe#gmap_canvas frameborder="0" height="250" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%"
-        a href="https://www.pureblack.de"
-      css:
-        .mapouter height:250px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:250px;width:100%;
-    br
-    br
-    p.input_title
-      | Code pour accéder à l'établissement
-    input.input name="code" type="text"
-    br
-    br
-    p.input_title
-      | Description
-    input.input name="description" type="text"
-    br
-    br
-    hr
-    br
-    p.input_title
-      | Interphone
-    input.input name="door_code" type="text"
-    br
-    br
-    p.input_title
-      | Étage de l'établissement
-    input.input name="floor" type="text"
-    br
-    br
-    p.input_title
-      | Plus de détails sur l'établissement
-    textarea.input name="details" type="text"
-    br
-    br
-    center
-      input.rent type="button" value="Enregistrer"
 
 = render partial: "style_guide/v1/components/footer"
