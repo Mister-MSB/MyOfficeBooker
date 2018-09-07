@@ -1,0 +1,52 @@
+/! NAVBAR
+= render partial: "style_guide/v1/components/navbar"
+
+.header_price
+
+  h3
+    | #{place.unit_price}€ par personne
+
+  h3
+    | #{place.total_price}€ pour une reservation complète
+
+  = link_to "Réserver",
+    "#",
+    class: "button_price"
+
+.product_left
+  center
+    h5.product_title
+      | Louer #{place.name} pour #{place.capacity} personnes à #{place.building.city}
+    p.product_subtitle
+      | #{place.building.street} - #{place.building.zipcode} #{place.building.city} - #{place.building.country}
+    br
+  = image_tag "http://www.croatia-holidayhome.com/wp-content/uploads/2018/03/creative-office-new-1.jpg",
+    class: "product_image"
+
+  .product_infos
+    br
+    p.product_ss_title
+      | Caractéristiques de l'établissement
+    br
+    .first_icons
+      .icons
+        = image_tag "home",
+          class: "icons_price"
+        p
+          | #{place.building.places.count} salles
+
+    br
+    br
+    p.product_ss_title
+      | Caractéristiques de la salle
+    br
+    .first_icons
+      .icons2
+        = image_tag "meeting",
+          class: "icons_price"
+        p
+          | #{place.capacity} personnes
+  .text_left
+    p
+      | #{place.description}
+= render partial: "style_guide/v1/components/footer"
