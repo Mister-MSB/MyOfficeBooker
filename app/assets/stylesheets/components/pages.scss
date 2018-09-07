@@ -215,8 +215,9 @@ input[type="search"]{
 }
 
 .product {
-	display: block;
-	width: 50%;
+	display: inline-block;
+	width: 40%;
+  padding-left: 2%;
 	font-size: 1rem;
 	text-decoration: none;
   margin-bottom: 4%;
@@ -268,6 +269,7 @@ input[type="search"]{
   font-size: 30px;
   font-weight: bold;
   color: white;
+  float: left;
 }
 
 .store {
@@ -275,17 +277,20 @@ input[type="search"]{
   font-weight: bold;
   color: white;
   margin-bottom: 3%;
+  float: left;
 }
 
 .left_right_contents{
   display: inline-block;
   width: 100%;
+  text-align: right;
 }
 
 .nbrs{
   display: inline-block;
   color: white;
   width: 100%;
+  margin-top: -10%;
 }
 
 .stars{
