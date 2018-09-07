@@ -7,117 +7,126 @@
     p.schedule_subtitle
       | Indiquez la fourchette horaire maximale au cours de laquelle votre établissement est ouvert et que vous êtes en capacité d'accueillir des clients
   br
+  br
+  .schedule_infos
+    p
+      | Matinée = 9h - 12h
+    p
+      | Après-midi = 14h - 17h
+    p
+      | Soir = 18h - 21h
+  br
   center
-    .textcolumn_schedule
-      h5
-        | Jour
-      br
-      p
-        | Lundi
-      br
-      p
-        | Mardi
-      br
-      p
-        | Mercredi
-      br
-      p
-        | Jeudi
-      br
-      p
-        | Vendredi
-      br
-      p
-        | Samedi
-      br
-      p
-        | Dimanche
-
-    .textcolumn_schedule
-      h5
-        | Ouvert/Fermé
-      br
-      input#huey checked="checked" name="ouvert" type="radio" /
-      label for="ouvert"
-        | ouvert
-      input#huey checked="checked" name="ferme" type="radio" /
-      label for="ferme"
-        | fermé
-      br
-      br
-      input#huey checked="checked" name="ouvert" type="radio" /
-      label for="ouvert"
-        | ouvert
-      input#huey checked="checked" name="ferme" type="radio" /
-      label for="ferme"
-        | fermé
-      br
-      br
-      input#huey checked="checked" name="ouvert" type="radio" /
-      label for="ouvert"
-        | ouvert
-      input#huey checked="checked" name="ferme" type="radio" /
-      label for="ferme"
-        | fermé
-      br
-      br
-      input#huey checked="checked" name="ouvert" type="radio" /
-      label for="ouvert"
-        | ouvert
-      input#huey checked="checked" name="ferme" type="radio" /
-      label for="ferme"
-        | fermé
-      br
-      br
-      input#huey checked="checked" name="ouvert" type="radio" /
-      label for="ouvert"
-        | ouvert
-      input#huey checked="checked" name="ferme" type="radio" /
-      label for="ferme"
-        | fermé
-      br
-      br
-      input#huey checked="checked" name="ouvert" type="radio" /
-      label for="ouvert"
-        | ouvert
-      input#huey checked="checked" name="ferme" type="radio" /
-      label for="ferme"
-        | fermé
-      br
-      br
-      input#huey checked="checked" name="ouvert" type="radio" /
-      label for="ouvert"
-        | ouvert
-      input#huey checked="checked" name="ferme" type="radio" /
-      label for="ferme"
-        | fermé
-
-
-    .textcolumn_schedule
-      h5
-        | Horaires
-      br
-      p
-        | 10h - 19h
-      br
-      p
-        | 10h - 19h
-      br
-      p
-        | 10h - 19h
-      br
-      p
-        | 10h - 19h
-      br
-      p
-        | 10h - 19h
-      br
-      p
-        | 10h - 19h
-      br
-      p
-        | 10h - 19h
-
+    table.schedule_table
+      tr.first_white_line
+        th.th_vanish
+        th
+          | Lundi
+        th
+          | Mardi
+        th
+          | Mercredi
+        th
+          | Jeudi
+        th
+          | Vendredi
+        th
+          | Samedi
+        th
+          | Dimanche
+      tr
+        td.blue_title_table
+          | Matinée
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+      tr.first_white_line
+        td.blue_title_table
+          | Après-midi
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+      tr
+        td.blue_title_table
+          | Soir
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
+        td
+          input type="checkbox" name="open" value="open"
+          label for="open"
+            |  Ouvert
 
   br
   br

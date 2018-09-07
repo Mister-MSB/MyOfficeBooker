@@ -325,11 +325,11 @@ input[type="search"]{
   max-width: 400px;
   width: 100%;
   margin: auto;
-  background: #d86d3e;
+  background: lightgrey;
   border-radius: 2px;
   box-sizing: border-box;
   border: 1px solid white;
-  padding: 1rem 0;
+  padding-bottom: 3px;
   overflow:hidden;
   display: inline-block;
   margin-right: 10px;
@@ -341,10 +341,17 @@ input[type="search"]{
   color: white;
   font-weight: bold;
   font-size: 30px;
+  margin-top: -3%;
 }
 
 .text_card{
   color: black;
+  margin-top: -3%;
+}
+
+.text_card2{
+  color: white;
+  font-weight: bold;
 }
 
   a {
@@ -489,7 +496,7 @@ input[type="search"]{
   width: 50%;
   margin: auto;
   overflow: hidden;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .sharecolumn{
@@ -515,7 +522,7 @@ input[type="search"]{
 	font-size: 16px;
 	font-weight: 400;
 	padding: 3%;
-	margin-top: 70px;
+	margin-top: 30px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -584,13 +591,13 @@ input[type="search"]{
     display: none;
     border-top: none;
     background-color: #5d8cc2;
-    height: 200px;
     color: white;
     width: 100%;
 }
 
 .tabtext{
-  padding-top: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   text-align: center;
   font-weight: bold;
   font-size: 20px;

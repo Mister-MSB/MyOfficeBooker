@@ -2,22 +2,22 @@
   .sg_atomic_page_title
     br
     h1
-      | Download pictures
+      | Création salle
   br
   hr
   br
   .sg_atoms_container
     .sg_atom.sg_atom--big
       .sg_atom_visual
-        = render partial: "style_guide/v1/components/downpic"
+        = render partial: "style_guide/v1/components/create_space"
 
       .sg_atom_details
         div
           p.sg_atom_title
-            | Download pictures
+            | Création salle
 
         .sg_atom_html
           code: textarea.html_area(
             readonly = "true"
           )
-            | = render partial: "style_guide/v1/components/downpic"
+            | = render partial: "style_guide/v1/components/create_space"

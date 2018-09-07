@@ -1,7 +1,43 @@
 = render partial: "style_guide/v1/components/navbar"
 
 h1.create_title
-  | SALLE
+
+  | CRÉATION D'UN NOUVEL ÉTABLISSEMENT
+.building_left
+  .navleft_building
+    = link_to "Accéder à l'établissement",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Contact & horaires",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Service restauration",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Photos de l'établissement",
+      "",
+      class: "onglets"
+    br
+    br
+    = link_to "Liste des salles",
+      "",
+      class: "onglets"
+    br
+    br
+    br
+    br
+    center
+      input.rent type="button" value=("Créer une salle")
+      br
+      br
+      input.rent type="button" value=("Retour à mon compte")
+
 
 
   = render partial: "style_guide/v1/components/place"
