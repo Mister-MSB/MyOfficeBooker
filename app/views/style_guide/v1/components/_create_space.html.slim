@@ -65,8 +65,10 @@
         | Tarif (en € et H.T.)
       br
       br
-      input.rent type="button" value=("Une 1/2 journée")
-      input.rent type="button" value=("Une journée")
+      input type="name" placeholder="" value=("Une 1/2 journée")
+      input type="name" placeholder="" value=("Une journée")
+      br
+      br
       p
         | Ce traif correspond à votre tarif public
       br
@@ -202,17 +204,279 @@
       br
       input.rent type="button" value=("Enregistrer")
 
+
   #photos.tabcontent_space
     .tabtext_space
       h2
-        | Réserver les yeux fermés
+        | Photos de la salle
       br
       p
-        | Vérifiez en un coup d'oeil la disponibilité des salles de réunion, de formation ou de séminaire.
+        | Ajoutez ici au minimum 3 photos de l'intérieur de votre salle. Nous vous recommandons d'ajouter des photos sous différents angles et différentes dispositions.
+      br
+      h4
+        | Ajouter des photos
+      br
+      p
+        | Poids maximum par photo : 2Mo.
+      br
+      p
+        | Attention : la première photo téléchargée sera celle qui apparaîtra en premier lorsqu'un client recherchera une salle.
+      br
+      br
+      input type="file" value="Ajoutez une image"
+      br
+      br
+      br
+      input.rent type="button" value=("Enregistrer")
+
+
   #equipment.tabcontent_space
     .tabtext_space
       h2
-        | Réserver les yeux fermés
+        | Caractéristiques / Equipements
       br
       p
-        | Vérifiez en un coup d'oeil la disponibilité des salles de réunion, de formation ou de séminaire.
+        | Cochez ici les caractéristiques et équipements que comporte votre salle.
+      p
+        | Ces caractéristiques sont incluses dans le prix et disponibles pour toutes les réservation de la salle.
+      br
+      br
+      h4
+        | Caractéristiques
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Lumière du jour
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Climatisation
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Accès handicapé
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Une personne à l'accueil
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Régisseur / Intendant
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Un espace de pause
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Accès terrasse / balcon
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Cuisine partagée
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  ERP
+      br
+      br
+      p
+        | Sélectionnez ici les équipements de la salle. Ces équipements peuvent être gratuits ou non. Si un ou plusieurs équipements ne sont pas inclus dans le prix de la location de salle, merci de les décrire et d'ajouter le tarif.
+      br
+      br
+      center
+        table.schedule_table_2
+          tr.first_white_line
+            th
+              | Equipements
+            th
+              | Gratuit
+            th
+              | Prix
+          tr
+            td#left_align_td
+              input type="checkbox" name="wifi" value="wifi"
+              label for="wifi"
+                |  Wifi
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="fibre" value="fibre"
+              label for="fibre"
+                |  Internet fibré
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="plug" value="plug"
+              label for="plug"
+                |  Prise RJ45
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="mic" value="mic"
+              label for="mic"
+                |  1 micro + sonorisation
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="screen" value="screen"
+              label for="screen"
+                |  Ecran de projection
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="board" value="board"
+              label for="board"
+                |  Paper board
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="iboard" value="iboard"
+              label for="iboard"
+                |  Tableau connecté
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="whiteboard" value="whiteboard"
+              label for="whiteboard"
+                |  Tableau blanc
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="plugin" value="plugin"
+              label for="plugin"
+                |  Prises électriques
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="tv" value="tv"
+              label for="tv"
+                |  Téléviseur
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="computer" value="computer"
+              label for="computer"
+                |  Ordinateur
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="tel" value="tel"
+              label for="tel"
+                |  Téléphone
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="visio" value="visio"
+              label for="visio"
+                |  Visioconférence
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="print" value="print"
+              label for="print"
+                |  Photocopie
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="micro_wave" value="micro_wave"
+              label for="micro_wave"
+                |  Micro-ondes
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="coffe" value="coffe"
+              label for="coffe"
+                |  Café inclus
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="water" value="water"
+              label for="water"
+                |  Fontaine à eau
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="drinks" value="drinks"
+              label for="drinks"
+                |  Bouteilles d'eau
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="pen" value="pen"
+              label for="pen"
+                |  Stylo et bloc note
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="paper" value="paper"
+              label for="paper"
+                |  Signalétique personnalisée
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input type="text" placeholder="Prix"
+
+        br
+        br
+        input.rent type="button" value=("Enregistrer")
+        br
+        br

@@ -136,7 +136,25 @@
   background-color: #f6f7fe;
 }
 
+.schedule_table_2{
+  border-collapse: collapse;
+  width: 80%;
+  height: 30%;
+  background-color: #f6f7fe;
+}
+
+#left_align_td{
+  text-align: left;
+  width: 30%;
+}
+
 .schedule_table td, th{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.schedule_table_2 td, th{
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
