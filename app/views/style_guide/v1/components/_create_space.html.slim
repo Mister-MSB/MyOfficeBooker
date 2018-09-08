@@ -1,28 +1,210 @@
 .navleft2_building
-  br
-  center
-    h3
-      | Ajoutez une salle
-    br
-    br
-    p.schedule_subtitle
-      | Ajoutez ici au minimum 3 photos de votre établissement
-    br
-    p.schedule_subtitle
-      | Nous vous recommandons de mettre des photos des accès, des parties communes et de l'extérieur du bâtiment.
-      | Les photos de l'intérieur des salles de l'établissement, seront à ajouter lors d'une prochaine étape.
-    br
-    br
-    h2.input_title
-      | Ajoutez une image
-    br
-    p
-      | Poids maximum par photo : 2Mo.
-    br
-    form class="download" action="/action_page.php"
-      input accept="image/*" name="pic" type="file"
-    br
-    br
-    input.rent type="button" value="Enregistrer"
-    br
-    br
+  .tab_space
+    button.tablinks_space.active onclick="tabsspace(event, 'infos')"
+      | Information générale
+    button.tablinks_space onclick="tabsspace(event, 'tarifs')"
+      | Tarifs
+    button.tablinks_space onclick="tabsspace(event, 'dispo')"
+      | Disposition & Capacité
+    button.tablinks_space onclick="tabsspace(event, 'photos')"
+      | Photos
+    button.tablinks_space onclick="tabsspace(event, 'equipment')"
+      | Equipements
+  #infos.tabcontent_space
+    .tabtext_space
+      h2
+        | Informations générales de la salle
+      br
+      p
+        | Décrivez ici votre salle. Notez bien que une annonce correspond à une salle.
+      br
+      label
+        | Choisissez votre langue
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
+        | Nom de la salle
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
+        | Titre de votre annonce
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
+        | Description
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      input.rent type="button" value=("Enregistrer")
+
+
+  #tarifs.tabcontent_space
+    .tabtext_space
+      h2
+        | Tarifs de la salle
+      br
+      p
+        | Indiquez ici la durée minimale de réservation de votre salle et son tarif de location par 1/2 journée et/ou journée.
+      br
+      label
+        | Réservation
+      br
+      br
+      input.rent type="button" value=("4h - 1/2 journée")
+      input.rent type="button" value=("8h - journée")
+      br
+      br
+      label
+        | Tarif (en € et H.T.)
+      br
+      br
+      input.rent type="button" value=("Une 1/2 journée")
+      input.rent type="button" value=("Une journée")
+      p
+        | Ce traif correspond à votre tarif public
+      br
+      br
+      input.rent type="button" value=("Enregistrer")
+
+
+  #dispo.tabcontent_space
+    .tabtext_space
+      h2
+        | Dispositions & Capacité de la salle
+      br
+      p
+        | Cliquez sur les dispositions possibles de la salle et indiquez la capacité maximale correspondante.
+      br
+      br
+      center
+        table.schedule_table
+          tr.first_white_line
+            th
+              | Disposition de la salle
+            th
+              | Capacité (maximum)
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle de classe
+            td
+              input type="name" placeholder=""
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle en U
+            td
+              input type="name" placeholder=""
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Réception / Cocktail
+            td
+              input type="name" placeholder=""
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Théâtre
+            td
+              input type="name" placeholder=""
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Table rectangulaire ou ronde
+            td
+              input type="name" placeholder=""
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Bureau individuel
+            td
+              input type="name" placeholder=""
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |   Cabaret
+            td
+              input type="name" placeholder=""
+
+      br
+      br
+      h2
+        | Usage de la salle
+      br
+      center
+        table.schedule_table
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Poste de travail
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle de formation
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Entretien / Recrutement
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle informatique
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Lieu de prestige
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Présentation / Conférence
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle de réunion
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Showroom / Pop Up Store
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Lieu atypique et espace créatif
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Séminaire au vert
+
+
+  #photos.tabcontent_space
+    .tabtext_space
+      h2
+        | Réserver les yeux fermés
+      br
+      p
+        | Vérifiez en un coup d'oeil la disponibilité des salles de réunion, de formation ou de séminaire.
+  #equipment.tabcontent_space
+    .tabtext_space
+      h2
+        | Réserver les yeux fermés
+      br
+      p
+        | Vérifiez en un coup d'oeil la disponibilité des salles de réunion, de formation ou de séminaire.

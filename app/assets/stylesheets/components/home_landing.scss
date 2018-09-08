@@ -622,6 +622,80 @@ input[type="search"]{
   }
 }
 
+//////create space //////
+
+/* Style the tab */
+.tab_space {
+    overflow: hidden;
+    background-color: #e8bc44;
+    width: 100%;
+}
+
+.tablinks_space{
+  width: 20%;
+}
+
+/* Style the buttons inside the tab */
+.tab_space button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Change background color of buttons on hover */
+.tab_space button:hover {
+    background-color: #f6f7fe;
+    color: black;
+}
+
+/* Create an active/current tablink class */
+.tab_space button.active {
+    background-color: #f6f7fe;
+    color: black;
+}
+
+/* Style the tab content */
+.tabcontent_space {
+    display: none;
+    border-top: none;
+    background-color: #f6f7fe;
+    color: black;
+    width: 100%;
+}
+
+.tabtext_space{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tabtext_space h2{
+  color: #e8bc44;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 640px){
+  .tab_space button{
+    display: block;
+    float: none;
+  }
+  .tab_space{
+    display: none;
+  }
+  .tabtext_space {
+    display: none;
+  }
+}
+
 ////// FOOTER//////
 
 ul {
