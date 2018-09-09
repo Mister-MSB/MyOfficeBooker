@@ -1,0 +1,28 @@
+= render partial: "style_guide/v1/components/navbar"
+
+h1.create_title
+  | Mes Etablissements
+.building_left
+  center
+    .navleft_building
+      = link_to "Mes établissements",
+        "",
+        class: "onglets"
+      = link_to "Mes informations",
+        "",
+        class: "onglets"
+      = link_to "Synchroniser agenda",
+        "",
+        class: "onglets"
+      br
+      br
+      br
+      br
+      center
+        input.rent type="button" value=("Accueil")
+      br
+      br
+
+      = render partial: "style_guide/v1/components/my_buildings"
+
+= render partial: "style_guide/v1/components/footer"

@@ -1,0 +1,242 @@
+.navleft2_building
+  .tab_account
+    button.tablinks_account.active onclick="tabsaccount(event, 'profil')"
+      | Mon profil
+    button.tablinks_account onclick="tabsaccount(event, 'bills')"
+      | Facturation
+    button.tablinks_account onclick="tabsaccount(event, 'bank')"
+      | Données Bancaires
+    button.tablinks_account onclick="tabsaccount(event, 'pay')"
+      | Moyens de paiement
+    button.tablinks_account onclick="tabsaccount(event, 'password')"
+      | Mot de passe
+
+
+  #profil.tabcontent_account
+    .tabtext_account
+      h2
+        | Mon profil
+      br
+      p
+        |
+      br
+      .infos_split
+        label
+          | Raison social
+        br
+        input#input-space placeholder="social" type="text"
+        br
+        br
+        input type="radio" name="m" value="mme"
+        label for="mme"
+          |  Mme
+        input type="radio" name="m" value="m"
+        label for="m"
+          |  M
+        br
+        br
+        label
+          | Nom
+        br
+        input#input-space placeholder="Nom" type="text"
+        br
+        br
+        label
+          | Prénom
+        br
+        input#input-space placeholder="Prénom" type="text"
+        br
+        br
+        label
+          | E-mail
+        br
+        input#input-space placeholder="Mail" type="text"
+
+      .infos_split
+        br
+        br
+        label
+          | Langue
+        br
+        input#input-space placeholder="Langue" type="text"
+        br
+        br
+        label
+          | Téléphone fixe
+        br
+        input#input-space placeholder="Fixe" type="text"
+        br
+        br
+        label
+          | Téléphone portable
+        br
+        input#input-space placeholder="Portable" type="text"
+        br
+        br
+        label
+          | Secteur d'activité
+        br
+        input#input-space placeholder="Secteur" type="text"
+        br
+        br
+        label
+          | Forme juridique
+        br
+        input#input-space placeholder="Juridique" type="text"
+
+      br
+      br
+      input.rent type="button" value=("Valider")
+      br
+      br
+
+
+  #bills.tabcontent_account
+    .tabtext_account
+      h2
+        | Facturation
+      br
+      p
+        |
+      br
+      .infos_split
+        label
+          | SIREN
+        br
+        input#input-space placeholder="Siren" type="text"
+        br
+        br
+        label
+          | Numéro de TVA (facultatif)
+        br
+        input#input-space placeholder="Tva" type="text"
+        br
+        br
+        label
+          | Capital
+        br
+        input#input-space placeholder="Capital" type="text"
+        br
+        br
+        label
+          | RCS
+        br
+        input#input-space placeholder="RCS" type="text"
+        br
+        br
+        label
+          | Code APE
+        br
+        input#input-space placeholder="APE" type="text"
+
+      .infos_split
+        label
+          | Adresse
+        br
+        input#input-space placeholder="Adresse" type="text"
+        br
+        br
+        label
+          | Code postal
+        br
+        input#input-space placeholder="Code postal" type="text"
+        br
+        br
+        label
+          | Ville
+        br
+        input#input-space placeholder="Ville" type="text"
+        br
+        br
+        label
+          | Pays
+        br
+        input#input-space placeholder="Pays" type="text"
+        br
+        br
+
+      br
+      br
+      input.rent type="button" value=("Valider")
+      br
+      br
+
+
+  #bank.tabcontent_account
+    .tabtext_account
+      h2
+        | Données bancaires
+      br
+      p
+        | Les RIB sont transmis à notre banque afin d'effectuer les virements en fin de mois suite aux prestations réalisées dans vos salles.
+      br
+      br
+      center
+
+        input.rent type="button" value=("Ajouter un nouveau RIB")
+        br
+        br
+
+
+  #pay.tabcontent_account
+    .tabtext_account
+      h2
+        | Moyens de paiement
+      br
+      p
+        | Liste des moyens de paiement possibles. Ajoutez ici vos cartes bancaires et/ou données bancaires (pour les règlements par prélèvement).
+      br
+      h4
+        | Ajouter une nouvelle carte (VISA, AMERICAN EXPRESS, MASTER CARD)
+      br
+      label
+        | Numéro de carte
+      br
+      input#input-space placeholder="CB" type="text"
+      br
+      br
+      label
+        | Date d'expiration
+      br
+      input#input-space placeholder="Mois" type="text"
+      br
+      br
+      input#input-space placeholder="Année" type="text"
+      br
+      br
+      br
+      br
+      label
+        | Cryptogramme visuel
+      br
+      input#input-space placeholder="Cryptogramme" type="text"
+
+      br
+      br
+      input.rent type="button" value=("Valider")
+      br
+      br
+
+
+  #password.tabcontent_account
+    .tabtext_account
+      h2
+        | Caractéristiques / Equipements
+      br
+      p
+        |
+        label
+          | Créer votre mot de passe
+        br
+        input#input-space placeholder="Mot de passe" type="text"
+        br
+        br
+        label
+          | Retaper votre mot de passe
+        br
+        input#input-space placeholder="Mot de passe" type="text"
+        br
+        br
+        input.rent type="button" value=("Valider")
+        br
+        br
