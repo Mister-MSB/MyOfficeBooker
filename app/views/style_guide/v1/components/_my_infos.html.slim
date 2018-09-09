@@ -165,132 +165,17 @@
   #bank.tabcontent_account
     .tabtext_account
       h2
-        | Dispositions & Capacité de la salle
+        | Données bancaires
       br
       p
-        | Cliquez sur les dispositions possibles de la salle et indiquez la capacité maximale correspondante.
+        | Les RIB sont transmis à notre banque afin d'effectuer les virements en fin de mois suite aux prestations réalisées dans vos salles.
       br
       br
       center
-        table.schedule_table
-          tr.first_white_line
-            th
-              | Disposition de la salle
-            th
-              | Capacité (maximum)
-          tr
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Salle de classe
-            td
-              input#input-space type="name" placeholder=""
-          tr.first_white_line
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Salle en U
-            td
-              input#input-space type="name" placeholder=""
-          tr
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Réception / Cocktail
-            td
-              input#input-space type="name" placeholder=""
-          tr.first_white_line
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Théâtre
-            td
-              input#input-space type="name" placeholder=""
-          tr
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Table rectangulaire ou ronde
-            td
-              input#input-space type="name" placeholder=""
-          tr.first_white_line
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Bureau individuel
-            td
-              input#input-space type="name" placeholder=""
-          tr
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |   Cabaret
-            td
-              input#input-space type="name" placeholder=""
 
-      br
-      br
-      h2
-        | Usage de la salle
-      br
-      center
-        table.schedule_table
-          tr.first_white_line
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Poste de travail
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Salle de formation
-          tr
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Entretien / Recrutement
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Salle informatique
-          tr.first_white_line
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Lieu de prestige
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Présentation / Conférence
-          tr
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Salle de réunion
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Showroom / Pop Up Store
-          tr.first_white_line
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Lieu atypique et espace créatif
-            td
-              input type="checkbox" name="open" value="open"
-              label for="open"
-                |  Séminaire au vert
-      br
-      label
-        | Dimensions de la salle (surface en m2)
-      br
-      input#input-space name="m2" type="text"
-
-      br
-      br
-      input.rent type="button" value=("Enregistrer")
-      br
-      br
+        input.rent type="button" value=("Ajouter un nouveau RIB")
+        br
+        br
 
 
   #pay.tabcontent_account
