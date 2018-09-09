@@ -1,0 +1,492 @@
+.navleft2_building
+  .tab_account
+    button.tablinks_account.active onclick="tabsaccount(event, 'profil')"
+      | Mon profil
+    button.tablinks_account onclick="tabsaccount(event, 'bills')"
+      | Facturation
+    button.tablinks_account onclick="tabsaccount(event, 'bank')"
+      | Données Bancaires
+    button.tablinks_account onclick="tabsaccount(event, 'pay')"
+      | Moyens de paiement
+    button.tablinks_account onclick="tabsaccount(event, 'password')"
+      | Mot de passe
+
+
+  #profil.tabcontent_account
+    .tabtext_account
+      h2
+        | Mon profil
+      br
+      p
+        |
+      br
+      label
+        | Raison social
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
+        | Nom de la salle
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
+        | Titre de votre annonce
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
+        | Description
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      input.rent type="button" value=("Enregistrer")
+      br
+      br
+
+
+  #bills.tabcontent_account
+    .tabtext_account
+      h2
+        | Tarifs de la salle
+      br
+      p
+        | Indiquez ici la durée minimale de réservation de votre salle et son tarif de location par 1/2 journée et/ou journée.
+      br
+      label
+        | Réservation
+      br
+      br
+      input.rent type="button" value=("4h - 1/2 journée")
+      input.rent type="button" value=("8h - journée")
+      br
+      br
+      label
+        | Tarif (en € et H.T.)
+      br
+      br
+      input#input-space type="name" placeholder="Une 1/2 journée" value=("")
+      input#input-space type="name" placeholder="Une journée" value=("")
+      br
+      br
+      p
+        | Ce traif correspond à votre tarif public
+      br
+      br
+      input.rent type="button" value=("Enregistrer")
+      br
+      br
+
+
+  #bank.tabcontent_account
+    .tabtext_account
+      h2
+        | Dispositions & Capacité de la salle
+      br
+      p
+        | Cliquez sur les dispositions possibles de la salle et indiquez la capacité maximale correspondante.
+      br
+      br
+      center
+        table.schedule_table
+          tr.first_white_line
+            th
+              | Disposition de la salle
+            th
+              | Capacité (maximum)
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle de classe
+            td
+              input#input-space type="name" placeholder=""
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle en U
+            td
+              input#input-space type="name" placeholder=""
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Réception / Cocktail
+            td
+              input#input-space type="name" placeholder=""
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Théâtre
+            td
+              input#input-space type="name" placeholder=""
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Table rectangulaire ou ronde
+            td
+              input#input-space type="name" placeholder=""
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Bureau individuel
+            td
+              input#input-space type="name" placeholder=""
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |   Cabaret
+            td
+              input#input-space type="name" placeholder=""
+
+      br
+      br
+      h2
+        | Usage de la salle
+      br
+      center
+        table.schedule_table
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Poste de travail
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle de formation
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Entretien / Recrutement
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle informatique
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Lieu de prestige
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Présentation / Conférence
+          tr
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Salle de réunion
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Showroom / Pop Up Store
+          tr.first_white_line
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Lieu atypique et espace créatif
+            td
+              input type="checkbox" name="open" value="open"
+              label for="open"
+                |  Séminaire au vert
+      br
+      label
+        | Dimensions de la salle (surface en m2)
+      br
+      input#input-space name="m2" type="text"
+
+      br
+      br
+      input.rent type="button" value=("Enregistrer")
+      br
+      br
+
+
+  #pay.tabcontent_account
+    .tabtext_account
+      h2
+        | Photos de la salle
+      br
+      p
+        | Ajoutez ici au minimum 3 photos de l'intérieur de votre salle. Nous vous recommandons d'ajouter des photos sous différents angles et différentes dispositions.
+      br
+      h4
+        | Ajouter des photos
+      br
+      p
+        | Poids maximum par photo : 2Mo.
+      br
+      p
+        | Attention : la première photo téléchargée sera celle qui apparaîtra en premier lorsqu'un client recherchera une salle.
+      br
+      br
+      input type="file" value="Ajoutez une image"
+      br
+      br
+      br
+      input.rent type="button" value=("Enregistrer")
+      br
+      br
+
+
+  #password.tabcontent_account
+    .tabtext_account
+      h2
+        | Caractéristiques / Equipements
+      br
+      p
+        | Cochez ici les caractéristiques et équipements que comporte votre salle.
+      p
+        | Ces caractéristiques sont incluses dans le prix et disponibles pour toutes les réservation de la salle.
+      br
+      br
+      h4
+        | Caractéristiques
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Lumière du jour
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Climatisation
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Accès handicapé
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Une personne à l'accueil
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Régisseur / Intendant
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Un espace de pause
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Accès terrasse / balcon
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  Cuisine partagée
+      br
+      input type="checkbox" name="open" value="open"
+      label for="open"
+        |  ERP
+      br
+      br
+      p
+        | Sélectionnez ici les équipements de la salle. Ces équipements peuvent être gratuits ou non. Si un ou plusieurs équipements ne sont pas inclus dans le prix de la location de salle, merci de les décrire et d'ajouter le tarif.
+      br
+      br
+      center
+        table.schedule_table_2
+          tr.first_white_line
+            th
+              | Equipements
+            th
+              | Gratuit
+            th
+              | Prix
+          tr
+            td#left_align_td
+              input type="checkbox" name="wifi" value="wifi"
+              label for="wifi"
+                |  Wifi
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="fibre" value="fibre"
+              label for="fibre"
+                |  Internet fibré
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="plug" value="plug"
+              label for="plug"
+                |  Prise RJ45
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="mic" value="mic"
+              label for="mic"
+                |  1 micro + sonorisation
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="screen" value="screen"
+              label for="screen"
+                |  Ecran de projection
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="board" value="board"
+              label for="board"
+                |  Paper board
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="iboard" value="iboard"
+              label for="iboard"
+                |  Tableau connecté
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="whiteboard" value="whiteboard"
+              label for="whiteboard"
+                |  Tableau blanc
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="plugin" value="plugin"
+              label for="plugin"
+                |  Prises électriques
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="tv" value="tv"
+              label for="tv"
+                |  Téléviseur
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="computer" value="computer"
+              label for="computer"
+                |  Ordinateur
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="tel" value="tel"
+              label for="tel"
+                |  Téléphone
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="visio" value="visio"
+              label for="visio"
+                |  Visioconférence
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="print" value="print"
+              label for="print"
+                |  Photocopie
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="micro_wave" value="micro_wave"
+              label for="micro_wave"
+                |  Micro-ondes
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="coffe" value="coffe"
+              label for="coffe"
+                |  Café inclus
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="water" value="water"
+              label for="water"
+                |  Fontaine à eau
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="drinks" value="drinks"
+              label for="drinks"
+                |  Bouteilles d'eau
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr
+            td#left_align_td
+              input type="checkbox" name="pen" value="pen"
+              label for="pen"
+                |  Stylo et bloc note
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+          tr.first_white_line
+            td#left_align_td
+              input type="checkbox" name="paper" value="paper"
+              label for="paper"
+                |  Signalétique personnalisée
+            td
+              input type="checkbox" name="open" value="open"
+            td
+              input#input-space type="text" placeholder="Prix"
+
+        br
+        br
+        input.rent type="button" value=("Enregistrer")
+        br
+        br
