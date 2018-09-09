@@ -20,31 +20,73 @@
       p
         |
       br
-      label
-        | Raison social
+      .infos_split
+        label
+          | Raison social
+        br
+        input#input-space placeholder="social" type="text"
+        br
+        br
+        input type="radio" name="m" value="mme"
+        label for="mme"
+          |  Mme
+        input type="radio" name="m" value="m"
+        label for="m"
+          |  M
+        br
+        br
+        label
+          | Nom
+        br
+        input#input-space placeholder="Nom" type="text"
+        br
+        br
+        label
+          | Prénom
+        br
+        input#input-space placeholder="Prénom" type="text"
+        br
+        br
+        label
+          | E-mail
+        br
+        input#input-space placeholder="Mail" type="text"
+
+      .infos_split
+        br
+        br
+        label
+          | Langue
+        br
+        input#input-space placeholder="Langue" type="text"
+        br
+        br
+        label
+          | Téléphone fixe
+        br
+        input#input-space placeholder="Fixe" type="text"
+        br
+        br
+        label
+          | Téléphone portable
+        br
+        input#input-space placeholder="Portable" type="text"
+        br
+        br
+        label
+          | Secteur d'activité
+        br
+        input#input-space placeholder="Secteur" type="text"
+        br
+        br
+        label
+          | Forme juridique
+        br
+        input#input-space placeholder="Juridique" type="text"
+
       br
-      input#input-space placeholder="Name" type="text"
       br
-      br
-      label
-        | Nom de la salle
-      br
-      input#input-space placeholder="Name" type="text"
-      br
-      br
-      label
-        | Titre de votre annonce
-      br
-      input#input-space placeholder="Name" type="text"
-      br
-      br
-      label
-        | Description
-      br
-      input#input-space placeholder="Name" type="text"
-      br
-      br
-      input.rent type="button" value=("Enregistrer")
+      input.rent type="button" value=("Valider")
       br
       br
 
@@ -52,32 +94,70 @@
   #bills.tabcontent_account
     .tabtext_account
       h2
-        | Tarifs de la salle
+        | Facturation
       br
       p
-        | Indiquez ici la durée minimale de réservation de votre salle et son tarif de location par 1/2 journée et/ou journée.
+        |
       br
-      label
-        | Réservation
+      .infos_split
+        label
+          | SIREN
+        br
+        input#input-space placeholder="Siren" type="text"
+        br
+        br
+        label
+          | Numéro de TVA (facultatif)
+        br
+        input#input-space placeholder="Tva" type="text"
+        br
+        br
+        label
+          | Capital
+        br
+        input#input-space placeholder="Capital" type="text"
+        br
+        br
+        label
+          | RCS
+        br
+        input#input-space placeholder="RCS" type="text"
+        br
+        br
+        label
+          | Code APE
+        br
+        input#input-space placeholder="APE" type="text"
+
+      .infos_split
+        label
+          | Adresse
+        br
+        input#input-space placeholder="Adresse" type="text"
+        br
+        br
+        label
+          | Code postal
+        br
+        input#input-space placeholder="Code postal" type="text"
+        br
+        br
+        label
+          | Ville
+        br
+        input#input-space placeholder="Ville" type="text"
+        br
+        br
+        label
+          | Pays
+        br
+        input#input-space placeholder="Pays" type="text"
+        br
+        br
+
       br
       br
-      input.rent type="button" value=("4h - 1/2 journée")
-      input.rent type="button" value=("8h - journée")
-      br
-      br
-      label
-        | Tarif (en € et H.T.)
-      br
-      br
-      input#input-space type="name" placeholder="Une 1/2 journée" value=("")
-      input#input-space type="name" placeholder="Une journée" value=("")
-      br
-      br
-      p
-        | Ce traif correspond à votre tarif public
-      br
-      br
-      input.rent type="button" value=("Enregistrer")
+      input.rent type="button" value=("Valider")
       br
       br
 

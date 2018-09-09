@@ -779,6 +779,11 @@ input[type="search"]{
   font-size: 30px;
 }
 
+.infos_split{
+  display: inline-block;
+  width: 50%;
+}
+
 @media screen and (max-width: 640px){
   .tab_account button{
     display: block;
