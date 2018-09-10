@@ -9,6 +9,91 @@ br
 = render partial: "style_guide/v1/components/recap_price"
 
 
+.paiement_pages
+  h2
+    | RÉCAPITULATIF DE VOS COMMANDES
+  br
+  .recap_card
+    = image_tag "office-blur",
+      class:"recap_img"
+    h2
+      | Titre salle
+    p
+      | 10 Rue des Lilas 75019 Paris, France
+    br
+    br
+    table
+      tr
+        th
+          | Date de réservation
+        th
+          | Total H.T.
+        th
+          | TVA
+        th
+          | Total T.T.C
+      tr
+        td
+          | 20/09/2018 - 11:00 à 11:30
+        td
+          | 60 € H.T.
+        td
+          | 12,60 € (21%)
+        td
+          | 72,60 € T.T.C
+      tr
+        td
+          | 2x Viennoiseries
+        td
+          | 3,12 €
+        td
+          | 0,66 € (21 %)
+        td
+          | 3,78 € T.T.C
+
+
+    table
+      tr
+        th
+          | Total à payer
+        th
+          | 63,12 € H.T.
+        th
+          | 13,26 €
+        th
+          | 76,38 €
+
+  br
+  .payment_infos_card
+    h2
+      | COORDONNÉES DE FACTURATION
+    br
+    br
+    label
+      | Raison sociale
+    br
+    input#input-space placeholder="Raison sociale" type="text"
+    br
+    br
+    label
+      | Téléphone (portable recommandé)
+    br
+    input#input-space placeholder="téléphone" type="text"
+    br
+    br
+    label
+      | Adresse
+    br
+    input#input-space placeholder="Adresse" type="text"
+    br
+    br
+    label
+      | Code Postal
+    br
+    input#input-space placeholder="Adresse" type="text"
+    br
+    br
+
 
 = render partial: "style_guide/v1/components/help"
 
