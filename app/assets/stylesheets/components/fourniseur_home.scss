@@ -83,7 +83,7 @@
   padding-bottom: 50px;
 }
 
-.rent{
+.button_basic{
   background-color: #5d8cc2;
   color: white;
   border: none;
@@ -92,8 +92,106 @@
   z-index: 100;
 }
 
-.rent:hover{
+.button_basic:hover{
   background-color: #a5bfdd;
+  color: white;
+}
+
+.button_basic_sm{
+  background-color: #5d8cc2;
+  color: white;
+  border: none;
+  padding: 0.5%;
+  font-size: 150%;
+  z-index: 100;
+}
+
+.button_basic_sm:hover{
+  background-color: #a5bfdd;
+  color: white;
+}
+
+.button_green{
+  background-color: #81b570;
+  color: white;
+  border: none;
+  padding: 2%;
+  font-size: 150%;
+  z-index: 100;
+}
+
+.button_green:hover{
+  background-color: #bad6b1;
+  color: white;
+}
+
+.button_green_sm{
+  background-color: #81b570;
+  color: white;
+  border: none;
+  padding: 0.5%;
+  font-size: 150%;
+  z-index: 100;
+}
+
+.button_green_sm:hover{
+  background-color: #bad6b1;
+  color: white;
+}
+
+.button_orange{
+  background-color: #d86d3e;
+  color: white;
+  border: none;
+  padding: 2%;
+  font-size: 150%;
+  z-index: 100;
+}
+
+.button_orange:hover{
+  background-color: #e8ab90;
+  color: white;
+}
+
+.button_orange_sm{
+  background-color: #d86d3e;
+  color: white;
+  border: none;
+  padding: 0.5%;
+  font-size: 150%;
+  z-index: 100;
+}
+
+.button_orange_sm:hover{
+  background-color: #e8ab90;
+  color: white;
+}
+
+.button_yellow{
+  background-color: #e8bc44;
+  color: white;
+  border: none;
+  padding: 2%;
+  font-size: 150%;
+  z-index: 100;
+}
+
+.button_yellow:hover{
+  background-color: #f2db9c;
+  color: white;
+}
+
+.button_yellow_sm{
+  background-color: #e8bc44;
+  color: white;
+  border: none;
+  padding: 0.5%;
+  font-size: 150%;
+  z-index: 100;
+}
+
+.button_yellow_sm:hover{
+  background-color: #f2db9c;
   color: white;
 }
 

@@ -11,8 +11,8 @@
 .fournileft	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fournileft{$/;"	function	line:61
 .fourniright	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fourniright{$/;"	function	line:69
 .fournitext	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.fournitext{$/;"	function	line:77
-.rent	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.rent{$/;"	function	line:84
-.rent:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.rent:hover{$/;"	function	line:93
+.button_basic	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.button_basic{$/;"	function	line:84
+.button_basic:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.button_basic:hover{$/;"	function	line:93
 .food_service	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.food_service{$/;"	function	line:99
 .food_service:hover	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.food_service:hover{$/;"	function	line:111
 .download	/Users/jimmy/Desktop/MyOfficeBooker/app/assets/stylesheets/components/fourniseur_home.scss	/^.download{$/;"	function	line:115
