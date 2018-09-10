@@ -1196,56 +1196,6 @@ form textarea {
   display:none
 }
 
-//////// paiement pages  ////////
-
-.img_paiement{
-  width: 15%;
-  display: inline-block;
-}
-
-.left_display{
-  display: inline-block;
-  width: 80%;
-  padding-left: 10px;
-}
-
-.schedule{
-  display: inline-block;
-}
-
-.left_paiement{
-  float: left;
-  margin-left: 10px;
-  width: 60%;
-}
-
-.right_paiement{
-  float: right;
-  padding-right: 10px;
-}
-
-.right_infos{
-  border: 1px solid black;
-}
-
-.right_recap{
-  border: 1px solid black;
-}
-
-.right_why{
-  background-color: #5d8cc2;
-}
-
-.radio_left{
-display: inline-block;
-}
-
-.radio_right{
-display: inline-block;
-padding-left: 10px;
-}
-
-
 
 /////// résults  ///////
 
@@ -1364,4 +1314,74 @@ span {
 
 .product-price-btn button:hover {
   background-color: #79b0a1;
+}
+
+
+//////////  payment pages  /////////
+.progress{
+  width: 100%;
+  display: inline-block;
+}
+
+.progress li{
+  width: 25%;
+  display: inline-block;
+}
+
+.header_price2{
+  display: inline-block;
+  background-color: #7fc0d7;
+  width: 100%;
+  text-align: center;
+}
+
+.header_price2 h3, p{
+  display: inline-block;
+  padding: 2%;
+}
+
+.img_paiement{
+  width: 60%;
+  display: inline-block;
+}
+
+.left_display{
+  width: 48%;
+  display: inline-block;
+  background-color: #f6f7fe;
+  border-left: 1px solid black;
+}
+
+.schedule{
+  display: inline-block;
+}
+
+.paiement_pages{
+  padding: 2%;
+  background-color: #f6f7fe;
+}
+
+.left_paiement{
+  width: 50%;
+  display: inline-block;
+  background-color: #f6f7fe;
+}
+
+.radio_left{
+display: inline-block;
+}
+
+.radio_right{
+display: inline-block;
+padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .left_display{
+    width: 100%;
+    border: none;
+  }
+  .left_paiement{
+    width: 100%;
+  }
 }

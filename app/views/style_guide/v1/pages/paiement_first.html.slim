@@ -4,66 +4,82 @@
 br
 
 center
-  ul.progression
-    li.firstcircle
-      span.numberCircle
-        | 1
-      span.normal
-        | Choisir votre créneau
+  ul.progress
     li
-      span.numberCircle
-        | 2
-      span.normal
-        | Détails de votre évènement
+      | 1
+      br
+      | Choisir votre créneau
     li
-      span.numberCircle
-        | 3
-      span.normal
-        | Services additionnels
+      | 2
+      br
+      | Détails de votre évènement
     li
-      span.numberCircle
-        | 4
-      span.normal
-        | Paiement & confirmation
+      | 3
+      br
+      | Services additionnels
+    li
+      | 4
+      br
+      | Paiement & Confirmation
 
-.left_paiement
-  img class="img_paiement" src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&h=350"
+br
+.header_price2
 
-  .left_display
-    h5
-      | Louer salle de réunion joliment décorée pour 12 per...
-    h5
-      | Rue de Bucarest
-    p
-      | Vous pouvez réserver cette salle pour un minimum de 30 minutes mais elle vous sera facturée pour un montant minimum de 2h de réservation.
+  h3
+    | Réserver cette salle :
 
-  br
-  h2
-    | Vos créneaux
   p
-    | VOS CRÉNEAUX 30 août 2018 de 08:30 à 09:00 180 € H.T.
-  br
-  h2
-    | CHOISIR VOTRE CRÉNEAU
+    | Place des Vosges, PARIS
 
-  label
-    | Date
-  br
-  input.schedule placeholder="date" type="search"
+  p
+    | Le 03/10/2018
 
+  p
+    | De 9h à 12h
 
-  label
-    | Horaires de votre évènement
+  h3
+    | 180 €
 
-  input.schedule placeholder="heure de début" type="search"
-  input.schedule placeholder="heure de fin" type="search"
+  input.button_price type="button" value=("Etape suivante")
 
-  input.submitBtn type="submit" value="Ajouter"
+center
+  .paiement_pages
+    .left_paiement
+      br
+      img class="img_paiement" src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&h=350"
 
+      h5
+        | Louer salle de réunion joliment décorée pour 12 per...
+      h5
+        | Rue de Bucarest, PARIS
+      br
 
+    .left_display
+      br
+      br
+      br
+      h2
+        | CHOISIR VOTRE CRÉNEAU
+      br
+      label
+        | Date
+      br
+      input#input-space type="date" max="2012-06-25" min="2011-08-13" placeholder=""
 
-  input.rent type="button" value="Etape suivante"
+      br
+      br
 
+      label
+        | Horaires de votre évènement
+      br
+      input#input-space placeholder="heure de début" type="time"
+      input#input-space placeholder="heure de fin" type="time"
+
+      br
+      br
+      input.rent type="button" value="Etape suivante"
+      br
+      br
 
 .right_paiement
   .right_infos
@@ -72,43 +88,9 @@ center
     p
       | Contactez-nous au +33 1 86 76 10 87
     p
-      | ou contact@bird-office.com
+      | ou contact@my-office-booker.com
     p
       | Disponible du lundi au vendredi de 08:30 à 18:30
 
-  br
 
-  .right_recap
-    p
-      | Louer salle de réunion joliment décorée...
-    p
-      | Rue de Bucarest
-    p
-      | 30/08/2018 - 08:30 à 09:00
-    p
-      | Total
-    p
-      | 180 € H.T.
-
-    .right_why
-      p
-        | Pourquoi réserver sur Bird Office ?
-      p
-        | Meilleurs prix garantis
-      p
-        | Réservation sans frais
-      p
-        | Événement assuré par AXA
-      p
-        | Paiement sécurisé
-      p
-        | Lieux vérifiés
-      p
-        | Un service client à votre écoute
-      p
-        | Conditions d'annulation flexibles
-
-  br
-  br
-
-  input.rent type="button" value="Etape suivante"
+= render partial: "style_guide/v1/components/footer"
