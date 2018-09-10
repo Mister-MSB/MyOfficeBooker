@@ -1196,56 +1196,6 @@ form textarea {
   display:none
 }
 
-//////// paiement pages  ////////
-
-.img_paiement{
-  width: 15%;
-  display: inline-block;
-}
-
-.left_display{
-  display: inline-block;
-  width: 80%;
-  padding-left: 10px;
-}
-
-.schedule{
-  display: inline-block;
-}
-
-.left_paiement{
-  float: left;
-  margin-left: 10px;
-  width: 60%;
-}
-
-.right_paiement{
-  float: right;
-  padding-right: 10px;
-}
-
-.right_infos{
-  border: 1px solid black;
-}
-
-.right_recap{
-  border: 1px solid black;
-}
-
-.right_why{
-  background-color: #5d8cc2;
-}
-
-.radio_left{
-display: inline-block;
-}
-
-.radio_right{
-display: inline-block;
-padding-left: 10px;
-}
-
-
 
 /////// résults  ///////
 
@@ -1364,4 +1314,189 @@ span {
 
 .product-price-btn button:hover {
   background-color: #79b0a1;
+}
+
+
+//////////  payment pages  /////////
+.progress{
+  width: 100%;
+  display: inline-block;
+}
+
+.progress li{
+  width: 25%;
+  display: inline-block;
+}
+
+.header_price2{
+  display: inline-block;
+  background-color: #7fc0d7;
+  width: 100%;
+  text-align: center;
+}
+
+.header_price2 h3, p{
+  display: inline-block;
+  padding: 2%;
+}
+
+.img_paiement{
+  width: 60%;
+  display: inline-block;
+}
+
+.img_paiement2{
+  width: 20%;
+  display: inline-block;
+}
+
+.left_display{
+  width: 48%;
+  display: inline-block;
+  background-color: #f6f7fe;
+  border-left: 1px solid black;
+}
+
+.schedule{
+  display: inline-block;
+}
+
+.paiement_pages{
+  padding: 2%;
+  background-color: #f6f7fe;
+}
+
+.paiement_pages_food{
+  background-color: white;
+}
+
+.left_paiement{
+  width: 50%;
+  display: inline-block;
+  background-color: #f6f7fe;
+}
+
+.paiement_food{
+   width: 100%;
+   background-color: white;
+}
+
+.paiement_food h2{
+   float: left;
+   padding-left: 5%;
+}
+
+.paiement_food p{
+   width: 50%;
+}
+
+.paiement_hotel{
+   width: 100%;
+   background-color: #f6f7fe;
+}
+
+.hotel_infos{
+  width: 40%;
+  display: inline-block;
+  padding: 1%;
+  text-align: left;
+  padding-right: 10%;
+}
+
+
+#hotels_map{
+  width: 100%;
+  height: 30%;
+}
+
+.radio_left{
+display: inline-block;
+}
+
+.radio_right{
+display: inline-block;
+padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .left_display{
+    width: 100%;
+    border: none;
+  }
+  .left_paiement{
+    width: 100%;
+  }
+}
+
+
+      //  hotel section  //
+.hotel_card{
+  display: inline-block;
+  width: 40%;
+  border: 1px solid black;
+  padding: 1%;
+}
+
+.hotel_card h2{
+  float: none;
+  padding-left: none;
+}
+
+.hotel_img{
+  width: 50%;
+  height: auto;
+}
+
+
+.recap_card{
+  display: inline-block;
+  width: 40%;
+  border: 1px solid black;
+  padding: 1%;
+  text-align: center;
+}
+
+.recap_img{
+  width: 50%;
+  height: auto;
+}
+
+.payment_infos_card{
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-top: -25px;
+  margin-left: 5%;
+}
+
+.card_infos{
+  width: 50%;
+  margin-top: 5%;
+}
+
+.input-field {
+  margin-bottom:10px;
+  margin-top:3px;
+  line-height:1.5em;
+  font-size:20px;
+  font-size:1.3rem;
+  border:none;
+  padding:5px 10px 5px 10px;
+  color:#fff;
+  box-sizing:border-box;
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+@media (max-width: 600px) {
+  .payment_infos_card{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0%;
+  }
+  .recap_card{
+    width: 100%;
+    border: none;
+  }
 }
