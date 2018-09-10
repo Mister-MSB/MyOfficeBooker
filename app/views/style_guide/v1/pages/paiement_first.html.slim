@@ -3,44 +3,10 @@
 
 br
 
-center
-  ul.progress
-    li
-      | 1
-      br
-      | Choisir votre créneau
-    li
-      | 2
-      br
-      | Détails de votre évènement
-    li
-      | 3
-      br
-      | Services additionnels
-    li
-      | 4
-      br
-      | Paiement & Confirmation
+= render partial: "style_guide/v1/components/progress_bar"
 
 br
-.header_price2
-
-  h3
-    | Réserver cette salle :
-
-  p
-    | Place des Vosges, PARIS
-
-  p
-    | Le 03/10/2018
-
-  p
-    | De 9h à 12h
-
-  h3
-    | 180 €
-
-  input.button_price type="button" value=("Etape suivante")
+= render partial: "style_guide/v1/components/recap_price"
 
 center
   .paiement_pages
@@ -81,16 +47,6 @@ center
       br
       br
 
-.right_paiement
-  .right_infos
-    p
-      | Besoin d'assistance pour votre réservation ?
-    p
-      | Contactez-nous au +33 1 86 76 10 87
-    p
-      | ou contact@my-office-booker.com
-    p
-      | Disponible du lundi au vendredi de 08:30 à 18:30
-
+= render partial: "style_guide/v1/components/help"
 
 = render partial: "style_guide/v1/components/footer"
