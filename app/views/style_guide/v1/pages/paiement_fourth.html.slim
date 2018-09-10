@@ -12,7 +12,6 @@ br
 .paiement_pages
   h2
     | RÉCAPITULATIF DE VOS COMMANDES
-  br
   .recap_card
     = image_tag "office-blur",
       class:"recap_img"
@@ -63,7 +62,10 @@ br
         th
           | 76,38 €
 
-  br
+    br
+    br
+
+
   .payment_infos_card
     h2
       | COORDONNÉES DE FACTURATION
@@ -93,6 +95,47 @@ br
     input#input-space placeholder="Adresse" type="text"
     br
     br
+    label
+      | Ville
+    br
+    input#input-space placeholder="Ville" type="text"
+    br
+    br
+    label
+      | Pays
+    br
+    input#input-space placeholder="Pays" type="text"
+    br
+    br
+
+  center
+    .card_infos
+      h2
+        | PAIEMENT
+      p
+        | Toutes les transactions sont sécurisées et cryptées.
+      br
+      br
+      | Numéro de carte
+      input.input-field placeholder="**** **** **** ****"
+      table.half-input-table
+        tr
+          p
+            | Date d'expiration
+          td
+            |
+            input.input-field placeholder="MM"
+          td
+            |
+            input.input-field placeholder="AA"
+      br
+      | CVC
+      input.input-field placeholder="***"
+      br
+      br
+      input.rent type="button" value=("Confirmer la commande")
+      br
+      br
 
 
 = render partial: "style_guide/v1/components/help"
