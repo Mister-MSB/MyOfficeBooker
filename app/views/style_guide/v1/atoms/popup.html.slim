@@ -1,0 +1,31 @@
+center
+  button#modBtn.button_basic_sm
+    | POP UP
+  /! Modal
+  #modal.modal
+    /! Modal Content
+    .modal-content
+      /! Modal Body
+      .modal-body
+        br
+        h3
+          | Pop Up
+        p
+          | Un pop up pour toutes les options supplémentaires ajoutées (restauration, hôtel,...)
+        br
+        label
+          | Adresse
+        br
+        input#input-space placeholder="Adresse" type="text"
+        br
+        br
+        label
+          | Code Postal
+        br
+        input#input-space placeholder="Adresse" type="text"
+        br
+        br
+        input.button_basic_sm.close type="button" value=("Annuler")
+        input.button_basic_sm type="button" value=("Enregistrer")
+        br
+        br
