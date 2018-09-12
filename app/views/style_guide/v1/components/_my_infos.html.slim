@@ -173,7 +173,37 @@
       br
       center
 
-        input.button_basic type="button" value=("Ajouter un nouveau RIB")
+        button#modBtn4.button_basic_sm
+          | Ajouter un nouveau RIB
+        /! Modal
+        #modal4.modal
+          /! Modal Content
+          .modal-content
+            /! Modal Body
+            .modal-body
+              br
+              h1
+                | My Office Booker
+              br
+              h4
+                | Relevé d'Identité Bancaire
+              br
+              label
+                | Code IBAN
+              br
+              input#input-space placeholder="Quantitée" type="text"
+              br
+              br
+              label
+                | Code BIC
+              br
+              input#input-space placeholder="Livraison à" type="text"
+              br
+              br
+              input.button_basic_sm.close type="button" value=("Annuler")
+              input.button_basic_sm#space_button type="button" value=("Ajouter le rib")
+              br
+              br
         br
         br
 

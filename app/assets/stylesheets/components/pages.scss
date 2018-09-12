@@ -1563,8 +1563,18 @@ padding-left: 10px;
 }
 
 /* Modal Body */
+#space_button{
+  margin-left: 5%;
+}
 .modal-body {
   padding: 0 20px;
+}
+.modal-body h1 {
+  color: #5d8cc2;
+}
+.modal-body label {
+  color: #5d8cc2;
+  font-weight: bold;
 }
 .modal-body ul {
   margin: 0;
