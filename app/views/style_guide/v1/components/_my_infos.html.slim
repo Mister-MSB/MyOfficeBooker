@@ -7,7 +7,7 @@
     button.tablinks_account onclick="tabsaccount(event, 'bank')"
       | Données Bancaires
     button.tablinks_account onclick="tabsaccount(event, 'pay')"
-      | Moyens de paiement
+      | Carte bancaire
     button.tablinks_account onclick="tabsaccount(event, 'password')"
       | Mot de passe
 
@@ -172,38 +172,22 @@
       br
       br
       center
-
-        button#modBtn4.button_basic_sm
-          | Ajouter un nouveau RIB
-        /! Modal
-        #modal4.modal
-          /! Modal Content
-          .modal-content
-            /! Modal Body
-            .modal-body
-              br
-              h1
-                | My Office Booker
-              br
-              h4
-                | Relevé d'Identité Bancaire
-              br
-              label
-                | Code IBAN
-              br
-              input#input-space placeholder="Quantitée" type="text"
-              br
-              br
-              label
-                | Code BIC
-              br
-              input#input-space placeholder="Livraison à" type="text"
-              br
-              br
-              input.button_basic_sm.close type="button" value=("Annuler")
-              input.button_basic_sm#space_button type="button" value=("Ajouter le rib")
-              br
-              br
+        h4
+          | Relevé d'Identité Bancaire
+        br
+        label
+          | Code IBAN
+        br
+        input#input-space placeholder="Quantitée" type="text"
+        br
+        br
+        label
+          | Code BIC
+        br
+        input#input-space placeholder="Livraison à" type="text"
+        br
+        br
+        input.button_basic type="button" value=("Ajouter un nouveau RIB")
         br
         br
 
@@ -211,7 +195,7 @@
   #pay.tabcontent_account
     .tabtext_account
       h2
-        | Moyens de paiement
+        | Carte Bancaire
       br
       p
         | Liste des moyens de paiement possibles. Ajoutez ici vos cartes bancaires et/ou données bancaires (pour les règlements par prélèvement).
@@ -251,12 +235,12 @@
   #password.tabcontent_account
     .tabtext_account
       h2
-        | Caractéristiques / Equipements
+        | Modifier votre mot de passe
       br
       p
         |
         label
-          | Créer votre mot de passe
+          | Nouveau mot de passe
         br
         input#input-space placeholder="Mot de passe" type="text"
         br

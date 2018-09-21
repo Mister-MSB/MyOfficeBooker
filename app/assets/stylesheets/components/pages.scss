@@ -1353,7 +1353,6 @@ span {
 }
 
 .img_paiement{
-  width: 60%;
   display: inline-block;
 }
 
@@ -1459,6 +1458,9 @@ padding-left: 10px;
   height: auto;
 }
 
+.recap_paiement{
+  width: 100%;
+}
 
 .recap_card{
   display: inline-block;
