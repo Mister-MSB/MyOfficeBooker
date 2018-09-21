@@ -25,6 +25,24 @@
       br
       br
       label
+        | Adresse
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
+        | Ville
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
+        | Code postal
+      br
+      input#input-space placeholder="Name" type="text"
+      br
+      br
+      label
         | Nom de la salle
       br
       input#input-space placeholder="Name" type="text"
@@ -39,7 +57,7 @@
       label
         | Description
       br
-      input#input-space placeholder="Name" type="text"
+      textarea#input-message name="message" placeholder="Message" type="text"
       br
       br
       input.button_basic type="button" value=("Enregistrer")
@@ -289,8 +307,9 @@
         |  ERP
       br
       br
-      p
-        | Sélectionnez ici les équipements de la salle. Ces équipements peuvent être gratuits ou non. Si un ou plusieurs équipements ne sont pas inclus dans le prix de la location de salle, merci de les décrire et d'ajouter le tarif.
+      center
+        p.text_center
+          | Sélectionnez ici les équipements de la salle. Ces équipements peuvent être gratuits ou non. Si un ou plusieurs équipements ne sont pas inclus dans le prix de la location de salle, merci de les décrire et d'ajouter le tarif.
       br
       br
       center
