@@ -1,4 +1,4 @@
-.jumbotron
+.jumbotron2
   nav.text-capitalize
     = link_to "My Office Booker",
       root_path
@@ -17,12 +17,3 @@
     = link_to "Connexion",
       new_booker_session_path
   = render partial: 'layouts/flash_error'
-  #title.text-uppercase
-    h1.catchtitle
-      | Vos salles de séminaires, réunions  et formations
-    br
-    p
-      b.catchsubtitle
-        | Meilleurs hôtels avec salles de séminaire
-  /! SEARCHBAR
-  = render partial: "style_guide/v1/components/searchbar_home"

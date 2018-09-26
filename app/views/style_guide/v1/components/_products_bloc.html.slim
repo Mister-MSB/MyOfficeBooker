@@ -1,159 +1,36 @@
 h1.results_title
-  | Toutes nos salles à Lyon
+  | Tout nos établissements à #{params[:building][:city].capitalize}
 
-ul.product-list
-  center
-    li.product
-      a.product-image href="#" style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
-        img alt="town_picture" src="https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg" /
-      a.product-description href="#" target="_blank"
-        .information
-          br
-          .name
-            | Place des Vosges
-          br
-          br
-          .store
-            | Paris
-          .left_right_contents
-            .nbrs
-              | 35 participants max.
+- if buildings.present?
+  - buildings.each do |building|
+    ul.product-list
+      center
+        li.product
+          / style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
+          = link_to bookers_building_path(id: building.id),
+            class: "product-image",
+            style: "background-image: url(#{building.image.url})" do
+            = image_tag building.image.url
+          = link_to bookers_building_path(id: building.id),
+            class: "product-description" do
+            .information
               br
-              = image_tag "star",
-                class:"size_stars"
-              = image_tag "star",
-                class:"size_stars"
-              = image_tag "star",
-                class:"size_stars"
-          .stars
-            | 200 € / jour
-          br
-
-    li.product
-      a.product-image href="#" style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
-        img alt="town_picture" src="https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg" /
-      a.product-description href="#" target="_blank"
-        .information
-          br
-          .name
-            | Place des Vosges
-          br
-          br
-          .store
-            | Paris
-          .left_right_contents
-            .nbrs
-              | 35 participants max.
+              .name
+                = building.name
               br
-              = image_tag "star.png",
-                class:"size_stars"
-              = image_tag "star.png",
-                class:"size_stars"
-              = image_tag "star.png",
-                class:"size_stars"
-          .stars
-            | 200 € / jour
-          br
-
-    li.product
-      a.product-image href="#" style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
-        img alt="town_picture" src="https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg" /
-      a.product-description href="#" target="_blank"
-        .information
-          br
-          .name
-            | Place des Vosges
-          br
-          br
-          .store
-            | Paris
-          .left_right_contents
-            .nbrs
-              | 35 participants max.
               br
-              = image_tag "star.png",
-                class:"size_stars"
-              = image_tag "star.png",
-                class:"size_stars"
-              = image_tag "star.png",
-                class:"size_stars"
-          .stars
-            | 200 € / jour
-          br
+              .store
+                | #{building.city} (#{building.zipcode})
+              .left_right_contents
+                .nbrs
+                  | #{building.places.count} salle(s) existante(s)
+                  br
+                  - Buildings::GetBuildingAverageNotationService.call(building: building).times do
+                    = image_tag "star",
+                      class:"size_stars"
 
-    li.product
-      a.product-image href="#" style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
-        img alt="town_picture" src="https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg" /
-      a.product-description href="#" target="_blank"
-        .information
-          br
-          .name
-            | Place des Vosges
-          br
-          br
-          .store
-            | Paris
-          .left_right_contents
-            .nbrs
-              | 35 participants max.
+              .stars
+                | #{Buildings::GetBuildingAveragePriceService.call(building: building)} € / jour
               br
-              = image_tag "star",
-                class:"size_stars"
-              = image_tag "star",
-                class:"size_stars"
-              = image_tag "star",
-                class:"size_stars"
-          .stars
-            | 200 € / jour
-
-
-    li.product
-      a.product-image href="#" style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
-        img alt="town_picture" src="https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg" /
-      a.product-description href="#" target="_blank"
-        .information
-          br
-          .name
-            | Place des Vosges
-          br
-          br
-          .store
-            | Paris
-          .left_right_contents
-            .nbrs
-              | 35 participants max.
-              br
-              = image_tag "star.png",
-                class:"size_stars"
-              = image_tag "star.png",
-                class:"size_stars"
-              = image_tag "star.png",
-                class:"size_stars"
-          .stars
-            | 200 € / jour
-          br
-
-    li.product
-      a.product-image href="#" style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
-        img alt="town_picture" src="https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg" /
-      a.product-description href="#" target="_blank"
-        .information
-          br
-          .name
-            | Place des Vosges
-          br
-          br
-          .store
-            | Paris
-          .left_right_contents
-            .nbrs
-              | 35 participants max.
-              br
-              = image_tag "star.png",
-                class:"size_stars"
-              = image_tag "star.png",
-                class:"size_stars"
-              = image_tag "star.png",
-                class:"size_stars"
-          .stars
-            | 200 € / jour
+- else
+  | Nous sommes désolés mais aucun batiment ne correspond à votre lieux de recherche
