@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   end
 
   namespace :bookers do
+    resources :buildings
     resources :places
   end
 
