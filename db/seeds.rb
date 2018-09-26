@@ -76,7 +76,8 @@ puts "====================="
   zipcode:  "69000",
   city:     "Lyon",
   country:  "France",
-  owner_id: @owner1.id
+  owner_id: @owner1.id,
+  image:    Rails.root.join('app/assets/images/lyon.jpg').open
 )
 
 @owner_building2 = FactoryBot.create(
@@ -88,7 +89,8 @@ puts "====================="
   zipcode:  "75000",
   city:     "Paris",
   country:  "France",
-  owner_id: @owner1.id
+  owner_id: @owner1.id,
+  image:    Rails.root.join('app/assets/images/paris.jpg').open
 )
 
 @owner_building3 = FactoryBot.create(
@@ -100,7 +102,8 @@ puts "====================="
   zipcode:  "13000",
   city:     "Marseille",
   country:  "France",
-  owner_id: @owner1.id
+  owner_id: @owner1.id,
+  image:    Rails.root.join('app/assets/images/marseille.jpg').open
 )
 
 puts "OWNER BUILDINGs seeds done !"
@@ -113,7 +116,8 @@ puts "====================="
   total_price: 1750,
   unit_price:  50,
   capacity:    40,
-  building_id: @owner_building.id
+  building_id: @owner_building.id,
+  image:       Rails.root.join('app/assets/images/lyon.jpg').open
 )
 
 @building_place20 = FactoryBot.create(
@@ -123,7 +127,8 @@ puts "====================="
   total_price: 45000,
   unit_price:  20,
   capacity:    3000,
-  building_id: @owner_building2.id
+  building_id: @owner_building2.id,
+  image:       Rails.root.join('app/assets/images/paris.jpg').open
 )
 
 @building_place21 = FactoryBot.create(
@@ -133,7 +138,8 @@ puts "====================="
   total_price: 4800,
   unit_price:  35,
   capacity:    150,
-  building_id: @owner_building2.id
+  building_id: @owner_building2.id,
+  image:       Rails.root.join('app/assets/images/paris.jpg').open
 )
 
 @building_place30 = FactoryBot.create(
@@ -143,7 +149,8 @@ puts "====================="
   total_price: 1200,
   unit_price:  150,
   capacity:    10,
-  building_id: @owner_building3.id
+  building_id: @owner_building3.id,
+  image:       Rails.root.join('app/assets/images/marseille.jpg').open
 )
 
 @building_place31 = FactoryBot.create(
@@ -153,7 +160,8 @@ puts "====================="
   total_price: 20000,
   unit_price:  100,
   capacity:    250,
-  building_id: @owner_building3.id
+  building_id: @owner_building3.id,
+  image:       Rails.root.join('app/assets/images/marseille.jpg').open
 )
 
 @building_place32 = FactoryBot.create(
@@ -163,7 +171,8 @@ puts "====================="
   total_price: 12000,
   unit_price:  50,
   capacity:    250,
-  building_id: @owner_building3.id
+  building_id: @owner_building3.id,
+  image:       Rails.root.join('app/assets/images/marseille.jpg').open
 )
 
 puts "BUILDING PLACES seeds done !"
