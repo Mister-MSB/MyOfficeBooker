@@ -14,6 +14,8 @@
       br
       .login
         form.login-form
+          | Inscription Utilisateur
+        br
         = simple_form_for :booker, url: booker_registration_path do |f|
           = f.error_notification
           = f.input :email,
