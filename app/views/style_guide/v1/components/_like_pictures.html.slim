@@ -6,30 +6,10 @@ center
     br
 
     .card_line1
-      .card
-        a href="#"
-          = image_tag "nice",
-            class: "photo"
-          p.text_card2
-            | Paris - 250 €
-      .card
-        a href="#"
-          = image_tag "nice",
-            class: "photo"
-          p.text_card2
-            | Paris - 250 €
-
-
-    .card_line2
-      .card
-        a href="#"
-          = image_tag "nice",
-            class: "photo"
-          p.text_card2
-            | Paris - 250 €
-      .card
-        a href="#"
-          = image_tag "nice",
-            class: "photo"
-          p.text_card2
-            | Paris - 250 €
+      - places.each do |place|
+        .card
+          = link_to bookers_place_path(id: place.id) do
+            = image_tag place.image.url,
+              class: "photo"
+            p.text_card2
+              | #{place.building.city} - #{place.name} - #{place.total_price}€
