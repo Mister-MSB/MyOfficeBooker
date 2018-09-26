@@ -16,6 +16,7 @@
     = link_to "se déconnecter",
       destroy_booker_session_path,
       method: :delete
+  = render partial: 'layouts/flash_error'
 
   #title.text-uppercase
     h1.catchtitle

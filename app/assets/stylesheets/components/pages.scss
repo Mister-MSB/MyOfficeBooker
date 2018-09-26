@@ -2,6 +2,43 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.alert-pos {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  .notice{
+    color: #00561B;
+    background-color: #7BA05B;
+    #flash-close {
+      background-color: #7BA05B;
+      color: white;
+      border: none;
+      margin-left: 2rem;
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+  .alert{
+    color: #89220c;
+    background-color: #ff5733;
+    #flash-close {
+      background-color: #ff5733;
+      color: white;
+      border: none;
+      margin-left: 2rem;
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 /////// RESULTS PRODUCTS ////////
 
 .jumbotron2 {
