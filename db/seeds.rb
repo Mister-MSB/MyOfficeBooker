@@ -171,7 +171,7 @@ puts "====================="
 
 @place_note = FactoryBot.create(
   :note,
-  place_id: @building_place.id,
+  place_id: @building_place10.id,
   booker_id: @booker1.id
 )
 
