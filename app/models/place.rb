@@ -1,7 +1,9 @@
 class Place < ApplicationRecord
   belongs_to :building
   has_many :notes
+  has_many :building_images
 
+  mount_uploader :image, ImageUploader
   validates :name,        presence: true
   validates :capacity,    presence: true
   validates :unit_price,  presence: true
