@@ -1,7 +1,16 @@
 .jumbotron
   nav.text-capitalize
-    = link_to "my office booker",
+    = link_to "My Office Booker",
       root_path
+    = link_to "Espace Utilisateur",
+      root_path
+    = image_tag "tel.png",
+      class:"icon_phone"
+    = link_to "#",
+      href: "tel:+33654321276",
+      class: 'link_phone' do
+      p
+        |  06 54 32 12 76
     = link_to "Bienvenue #{current_owner.firstname} #{current_owner.lastname}",
       edit_owner_registration_path
     = link_to "se déconnecter",
