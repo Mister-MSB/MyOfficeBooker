@@ -78,7 +78,65 @@
         = image_tag "star.png",
           class: "icons_price"
         p
-          | Ce lieux à été noté #{booking.place.notes.count} fois
+          | Vous avez déjà noté ce lieu #{Note.where(booker_id: current_booker.id, place_id: booking.place_id).count} fois
+    br
+    br
+    br
+    p.product_ss_title
+      | Que faire maintenant ?
+    br
+    - if booking.status == :created
+      p
+        | Votre réservation en attente de validation par notre service
+      p
+        | Vous recevrez un courriel qui vous invitera à accéder à la prochaine étape prochainement
+      br
+      br
+      p
+        | Merci de votre participation
+    - if booking.status == :validated
+      p
+        | Votre réservation à été validée par notre service
+      p
+        | Merci de bien vouloir procédé au paiement via le boutton ci dessous
+      p
+        | Vous recevrez une facture par courriel après la validation de celui-ci
+      br
+      br
+      p
+        | (integrer le paiment ici)
+    - if booking.status == :paid
+      p
+        | Votre paiement à bien été reçu
+      p
+        | Il ne vous reste plus qu'a passé un agréable séjour!
+      br
+      br
+      p
+        | L'Equipe de My Office Booker reste a votre disposition, et vous souhaite un agréable séjour
+    - if booking.status == :done
+      p
+        | Votre sejour à été effectué le #{booking.date}
+      p
+        | Nous espérons que tout c'est passé pour le mieux
+      p
+        | Pourquoi ne pas laissé une note à ce lieux en cliquant ci dessous ?
+      br
+      br
+      p
+        | (intégré la notation)
+    - if booking.status == :cancelled
+      p
+        | Votre sejour à malheureusement été annulé le #{booking.updated_at}
+      p
+        | Nous nous excusons pour la gêne occasionnée
+      p
+        | Pourquoi ne pas nous laissé un commentaire sur cette annulation ?
+      br
+      br
+      p
+        | (intégré le commentaire)
+    br
 .text_left
   p
     | #{booking.place.description}

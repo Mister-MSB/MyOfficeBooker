@@ -16,7 +16,9 @@ class Booking < ApplicationRecord
   private
 
   def set_status
-    self.status = :created
+    if self.status.blank?
+      self.status = :created
+    end
   end
 
 
