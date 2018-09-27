@@ -3,6 +3,8 @@ class HomeController < ApplicationController
 
   layout "home"
 
+  expose :buildings, ->{Building.all.sample(6)}
+
   def index
   end
 

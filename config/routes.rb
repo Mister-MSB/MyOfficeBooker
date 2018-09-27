@@ -20,7 +20,9 @@ Rails.application.routes.draw do
   end
 
   namespace :bookers do
+    resources :buildings
     resources :places
+    resources :bookings
   end
 
   get "/style_guide/*id" => 'style_guide#show', as: :page, format: false

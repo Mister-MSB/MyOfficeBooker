@@ -9,6 +9,7 @@ class Booker < ApplicationRecord
 
   has_many :addresses
   has_many :notes
+  has_many :bookings
 
   validates :firstname, presence: true
   validates :lastname,  presence: true

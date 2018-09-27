@@ -1,0 +1,82 @@
+/! NAVBAR
+- if current_booker.present?
+  = render partial: "style_guide/v1/components/navbar_connect"
+- else
+  = render partial: "style_guide/v1/components/navbar_unconnect"
+
+.product_left
+  center
+    h5.product_title
+      | Louer #{place.name} pour #{place.capacity} personnes à #{place.building.city}
+    .product_subtitle
+      | #{place.building.street} - #{place.building.zipcode} #{place.building.city} - #{place.building.country}
+    .product_subtitle
+      - Places::GetPlaceAverageNotationService.call(place: place).times do
+        = image_tag "star",
+          class:"size_stars",
+          style: "width: 2rem;"
+    br
+  = image_tag place.image.url,
+    class: "product_image"
+
+  .product_infos
+    p.product_ss_title
+      | Informations sur la salle
+    br
+    .first_icons
+      .icons2
+        = image_tag "meeting.png",
+          class: "icons_price"
+        p
+          | Jusqu'a #{place.capacity} personnes
+      .icons2
+        = image_tag "dollars.png",
+          class: "icons_price"
+        p
+          | #{place.unit_price}€ / personnes
+      .icons2
+        = image_tag "dollars.png",
+          class: "icons_price"
+        p
+          | #{place.total_price}€ réservation complète
+      br
+      br
+      br
+      .icons2
+        = image_tag "key.png",
+          class: "icons_price"
+        p
+          | #{place.bookings.count} reservations éffectuées au total
+      .icons2
+        = image_tag "check.png",
+          class: "icons_price"
+        p
+          | #{place.bookings.where(status: [:validated, :paid]).count} reservations en cours
+      .icons2
+        = image_tag "star.png",
+          class: "icons_price"
+        p
+          | Ce lieux à été noté #{place.notes.count} fois
+.text_left
+  p
+    | #{place.description}
+.product_left
+  center
+    h5.product_title
+      | Effectuer ma reservation pour #{place.name} à #{place.building.city}
+  = simple_form_for booking, url: bookers_bookings_path do |f|
+    = f.hidden_field :place_id,
+      value: place.id
+    = f.input :booking_type,
+      label: "Type de reservation",
+      required: false
+    = f.input :capacity,
+      collection: 1..place.capacity,
+      label: "Nombres de personnes",
+      required: false
+    = f.input :date,
+      label: "Date souhaitée",
+      required: false
+    = f.submit "Valider ma reservation"
+
+= render partial: "style_guide/v1/components/footer"

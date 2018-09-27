@@ -1,0 +1,13 @@
+/! NAVBAR
+- if current_booker.present?
+  = render partial: "style_guide/v1/components/navbar_connect"
+- else
+  = render partial: "style_guide/v1/components/navbar_unconnect"
+
+
+.color_results
+  br
+  /! PLACES BLOC
+  = render partial: "style_guide/v1/components/places_bloc"
+
+= render partial: "style_guide/v1/components/footer"

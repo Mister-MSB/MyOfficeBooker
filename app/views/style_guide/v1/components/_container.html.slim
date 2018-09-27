@@ -11,58 +11,15 @@
   br
 
   .card_line1
-
-    = render partial: "style_guide/v1/components/card"
-
-    .card
-      a href="#"
-        = image_tag "nice.jpg",
-          class: "photo"
-        h3.title_card
-          | Nice
-        br
-        p.text_card
-          | La côte d'azur pour conjuger travail et détente !
-
-    .card
-      a href="#"
-        = image_tag "lyon.jpg",
-          class: "photo"
-        h3.title_card
-          | Lyon
-        br
-        p.text_card
-          | Travail et gastronomie font souvent bon ménage !
-
-  .card_line2
-    .card
-      a href="#"
-        = image_tag "marseille.jpg",
-          class: "photo"
-        h3.title_card
-          | Marseille
-        br
-        p.text_card
-          | Une réunion sous les yeux de la Dame de la Garde !
-
-    .card
-      a href="#"
-        = image_tag "nantes.jpg",
-          class: "photo"
-        h3.title_card
-          | Nantes
-        br
-        p.text_card
-          | Le port, la Loire et vous !
-
-    .card
-      a href="#"
-        = image_tag "bordeaux.jpg",
-          class: "photo"
-        h3.title_card
-          | Bordeaux
-        br
-        p.text_card
-          | Travailler autour d'une bonne bouteille !
+    - buildings.each do |building|
+      .card
+        = link_to bookers_building_path(id: building.id) do
+          = image_tag building.image.url,
+            class: "photo"
+          h3.title_card
+            = building.city
+          br
+          p.text_card
+            = building.name
 
   .bloc
