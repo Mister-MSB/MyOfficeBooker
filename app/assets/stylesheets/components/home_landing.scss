@@ -44,7 +44,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5em;
   margin-bottom: 3em;
 }
 
@@ -53,7 +52,6 @@ body {
   background-color:  rgba(0, 0, 0, 0.36);
   border-radius: 2%;
   padding: 1%;
-  height: 15%;
 }
 
 .catchtitle{
@@ -336,12 +334,13 @@ input[type="search"]{
   margin-top: 2px;
   padding-top: 0;
   margin-bottom: 1%;
+  text-align: center;
+
 
 .title_card{
   color: white;
   font-weight: bold;
   font-size: 30px;
-  margin-top: -3%;
 }
 
 .text_card{
