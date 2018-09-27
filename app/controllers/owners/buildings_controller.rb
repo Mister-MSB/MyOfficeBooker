@@ -1,5 +1,5 @@
 class Owners::BuildingsController < ApplicationController
-  before_action :check_booker_redirection
+  before_action :check_owner_redirection
   layout 'style_guide'
 
   expose :buildings, ->{current_owner.buildings.all}
@@ -34,6 +34,12 @@ class Owners::BuildingsController < ApplicationController
     params.require(:building).permit(
       :name, :street, :zipcode, :city, :country, :complement
     )
+  end
+
+  def check_owner_redirection
+    if current_owner.blank?
+      redirect_to new_owner_registration_path, alert: "Veuillez vous inscrire afin de continuer"
+    end
   end
 
 end

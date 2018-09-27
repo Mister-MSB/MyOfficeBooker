@@ -13,7 +13,7 @@
   .card_line1
     - buildings.each do |building|
       .card
-        = link_to bookers_building_path(id: building.id) do
+        = link_to bookers_places_path(building_id: building.id) do
           = image_tag building.image.url,
             class: "photo"
           h3.title_card
