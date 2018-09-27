@@ -6,12 +6,11 @@ h1.results_title
     ul.product-list
       center
         li.product
-          / style=("background-image: url(https://www.incimages.com/uploaded_files/image/970x450/getty_175138996_97986.jpg);")
-          = link_to bookers_building_path(id: building.id),
+          = link_to bookers_places_path(building_id: building.id),
             class: "product-image",
             style: "background-image: url(#{building.image.url})" do
             = image_tag building.image.url
-          = link_to bookers_building_path(id: building.id),
+          = link_to bookers_places_path(building_id: building.id),
             class: "product-description" do
             .information
               br
