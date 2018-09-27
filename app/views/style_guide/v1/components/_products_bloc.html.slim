@@ -25,7 +25,7 @@ h1.results_title
                   | #{building.places.count} salle(s) existante(s)
                   br
                   - Buildings::GetBuildingAverageNotationService.call(building: building).times do
-                    = image_tag "star",
+                    = image_tag "star.png",
                       class:"size_stars"
 
               .stars
