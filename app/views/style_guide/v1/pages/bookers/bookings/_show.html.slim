@@ -1,0 +1,86 @@
+/! NAVBAR
+- if current_booker.present?
+  = render partial: "style_guide/v1/components/navbar_connect"
+- else
+  = render partial: "style_guide/v1/components/navbar_unconnect"
+
+.product_left
+  center
+    h5.product_title
+      | Votre location pour #{booking.capacity} personnes à #{booking.place.building.city}
+    .product_subtitle
+      | #{booking.place.building.street} - #{booking.place.building.zipcode} #{booking.place.building.city} - #{booking.place.building.country}
+    .product_subtitle
+      - Places::GetPlaceAverageNotationService.call(place: booking.place).times do
+        = image_tag "star",
+          class:"size_stars",
+          style: "width: 2rem;"
+    br
+  = image_tag booking.place.image.url,
+    class: "product_image"
+
+  .product_infos
+    p.product_ss_title
+      | Informations sur la reservation
+    br
+    .first_icons
+      .icons2
+        = image_tag "meeting.png",
+          class: "icons_price"
+        p
+          | Réservé pour #{booking.capacity} personnes
+      .icons2
+        = image_tag "dollars.png",
+          class: "icons_price"
+        - if booking.booking_type == "complète"
+          p
+            | Réservation complète
+        - else
+          p
+            | Réservation partielle
+      .icons2
+        = image_tag "dollars.png",
+          class: "icons_price"
+        - if booking.booking_type == "complète"
+          p
+            | Prix de la réservation: #{booking.place.total_price}€
+        - else
+          p
+            | Prix de la réservation: #{booking.place.unit_price * booking.capacity}€
+      br
+      br
+      br
+      .icons2
+        = image_tag "key.png",
+          class: "icons_price"
+        p
+          | Vous avez déjà effectuée #{current_booker.bookings.where(place_id: booking.place_id).count} reservations dans ce lieux
+      .icons2
+        = image_tag "check.png",
+          class: "icons_price"
+        - if booking.status == :created
+          p
+            | Reservation en attente de validation
+        - if booking.status == :validated
+          p
+            | Reservation validée
+        - if booking.status == :paid
+          p
+            | Paiement reçu
+        - if booking.status == :done
+          p
+            | Sejour effectué
+        - if booking.status == :cancelled
+          p
+            | Reservation annulé
+
+      .icons2
+        = image_tag "star.png",
+          class: "icons_price"
+        p
+          | Ce lieux à été noté #{booking.place.notes.count} fois
+.text_left
+  p
+    | #{booking.place.description}
+
+= render partial: "style_guide/v1/components/footer"
