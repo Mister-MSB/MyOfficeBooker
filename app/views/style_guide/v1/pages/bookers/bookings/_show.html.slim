@@ -12,7 +12,7 @@
       | #{booking.place.building.street} - #{booking.place.building.zipcode} #{booking.place.building.city} - #{booking.place.building.country}
     .product_subtitle
       - Places::GetPlaceAverageNotationService.call(place: booking.place).times do
-        = image_tag "star",
+        = image_tag "star.png",
           class:"size_stars",
           style: "width: 2rem;"
     br

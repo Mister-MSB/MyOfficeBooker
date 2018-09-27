@@ -25,7 +25,7 @@ h1.results_title
                   | capacité: #{place.capacity} personnes
                   br
                   - Places::GetPlaceAverageNotationService.call(place: place).times do
-                    = image_tag "star",
+                    = image_tag "star.png",
                       class:"size_stars"
 
               .stars
