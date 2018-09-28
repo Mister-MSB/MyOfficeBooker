@@ -1,0 +1,69 @@
+- if current_owner.present?
+  = render partial: "style_guide/v1/components/navbar_owner_connect"
+- else
+  = render partial: "style_guide/v1/components/navbar_owner_unconnect"
+
+h1.create_title
+
+  | LISTE DE VOS ÉTABLISSEMENT
+.building_left
+  .navleft_building
+    = link_to "Créer une salle",
+      new_owners_place_path,
+      class: "onglets"
+    = link_to "Créer un établissement",
+      new_owners_building_path,
+      class: "onglets"
+    = link_to "Liste des réservations",
+      owners_bookings_path,
+      class: "onglets"
+    = link_to "Liste de vos établissements",
+      owners_buildings_path,
+      class: "onglets"
+    = link_to "Liste de vos salles",
+      owners_places_path,
+      class: "onglets"
+    br
+    br
+    br
+
+center
+  .custom_table
+    table
+      tr
+        th
+          | Numéro
+        th
+          | Image principale
+        th
+          | Nom
+        th
+          | Addresse
+        th
+          | Note moyenne
+        th
+          | Nb reservation total
+        th
+          | Actions
+      - buildings.each do |building|
+        tr
+          td
+            = building.id
+          td
+            = image_tag building.image.url, size: 50
+          td
+            = building.name
+          td
+            | #{building.street} #{building.complement} #{building.zipcode} #{building.city}, #{building.country}
+          td
+            - Buildings::GetBuildingAverageNotationService.call(building: building).times do
+              = image_tag "star.png",
+                class:"size_stars"
+          td
+            = building.places.joins(:bookings).count
+          td
+            ul
+              li
+                = link_to "Voir",
+                  owners_building_path(id: building.id)
+= render partial: "style_guide/v1/components/footer"

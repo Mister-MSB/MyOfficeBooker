@@ -13,22 +13,30 @@
     br
     br
     br
-
-    = simple_form_for place, url: owners_places_path do |f|
-      = f.input :name,
-        label: "Nom"
-      = f.input :description,
-        label: "Description"
-      = f.input :capacity,
-        label: "Capacité"
-      = f.input :total_price,
-        label: "Prix total"
-      = f.input :unit_price,
-        label: "Prix par personne"
-      = f.input :building_id,
-        as: :select,
-        collection: current_owner.buildings,
-        label: "Etablissement rattaché"
-      = f.submit "Créer la salle"
+    .simple_form_container
+      = simple_form_for place, url: owners_places_path do |f|
+        = f.input :name,
+          label: "Nom",
+          required: false
+        = f.input :image,
+          label: "Image principale",
+          required: false
+        = f.input :description,
+          label: "Description",
+          required: false
+        = f.input :capacity,
+          label: "Capacité",
+          required: false
+        = f.input :total_price,
+          label: "Prix total",
+          required: false
+        = f.input :unit_price,
+          label: "Prix par personne",
+          required: false
+        = f.input :building_id,
+          as: :select,
+          collection: current_owner.buildings,
+          label: "Etablissement rattaché"
+        = f.submit "Créer la salle"
   br
   br

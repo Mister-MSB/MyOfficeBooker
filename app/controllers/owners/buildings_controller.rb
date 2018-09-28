@@ -13,7 +13,7 @@ class Owners::BuildingsController < ApplicationController
 
   def create
     if building.save(building_params)
-      redirect_to new_owners_place_path, notice: "Votre établissement a bien été sauvegardé."
+      redirect_to owners_buildings_path, notice: "Votre établissement a bien été sauvegardé."
     else
       redirect_to :back, alert: "Votre établissement n'a pas pu être sauvegardé."
     end
@@ -32,7 +32,7 @@ class Owners::BuildingsController < ApplicationController
 
   def building_params
     params.require(:building).permit(
-      :name, :street, :zipcode, :city, :country, :complement
+      :name, :street, :zipcode, :city, :country, :complement, :image
     )
   end
 

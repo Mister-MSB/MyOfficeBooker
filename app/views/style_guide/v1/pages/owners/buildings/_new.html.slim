@@ -1,34 +1,30 @@
-= render partial: "style_guide/v1/components/navbar_unconnect"
+- if current_owner.present?
+  = render partial: "style_guide/v1/components/navbar_owner_connect"
+- else
+  = render partial: "style_guide/v1/components/navbar_owner_unconnect"
 
 h1.create_title
 
   | CRÉATION D'UN NOUVEL ÉTABLISSEMENT
 .building_left
   .navleft_building
-    = link_to "Accéder à l'établissement",
-      "",
+    = link_to "Créer une salle",
+      new_owners_place_path,
       class: "onglets"
-    = link_to "Contact & horaires",
-      "",
+    = link_to "Créer un établissement",
+      new_owners_building_path,
       class: "onglets"
-    = link_to "Service restauration",
-      "",
+    = link_to "Liste des réservations",
+      owners_bookings_path,
       class: "onglets"
-    = link_to "Photos de l'établissement",
-      "",
+    = link_to "Liste de vos établissements",
+      owners_buildings_path,
       class: "onglets"
-    = link_to "Liste des salles",
-      "",
+    = link_to "Liste de vos salles",
+      owners_places_path,
       class: "onglets"
 
     br
-    br
-    br
-    br
-    center
-      input.button_basic type="button" value=("Créer une salle")
-
-      input.button_basic type="button" value=("Retour à mon compte")
     br
     br
 
