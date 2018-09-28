@@ -14,19 +14,30 @@
     br
     br
 
+  .simple_form_container
     = simple_form_for building, url: owners_buildings_path do |f|
       = f.input :name,
-        label: "Nom"
+        label: "Nom",
+        required: false
+      = f.input :image,
+        label: "Image principale",
+        required: false
       = f.input :street,
-        label: "Addresse (rue et numéro)"
+        label: "Addresse (rue et numéro)",
+        required: false
       = f.input :complement,
-        label: "Complément d'addresse"
+        label: "Complément d'addresse",
+        required: false
       = f.input :zipcode,
-        label: "Code postale"
+        label: "Code postale",
+        required: false
       = f.input :city,
-        label: "Ville"
+        label: "Ville",
+        required: false
       = f.input :country,
-        label: "Pays"
-      = f.submit "Créer l'établissement"
+        label: "Pays",
+        required: false
+      = f.submit "Créer l'établissement",
+        class: "primary_submit"
   br
   br

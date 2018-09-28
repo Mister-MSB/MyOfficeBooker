@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   namespace :owners do
     resources :buildings
     resources :places
+    resources :bookings
   end
 
   namespace :bookers do
