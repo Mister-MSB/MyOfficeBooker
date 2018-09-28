@@ -13,7 +13,7 @@ class Owners::PlacesController < ApplicationController
 
   def create
     if place.save(place_params)
-      redirect_to owners_home_path, notice: "Votre salle a bien été sauvegardé."
+      redirect_to owners_places_path, notice: "Votre salle a bien été sauvegardé."
     else
       redirect_to :back, alert: "Votre salle n'a pas pu être sauvegardé."
     end
@@ -32,7 +32,7 @@ class Owners::PlacesController < ApplicationController
 
   def place_params
     params.require(:place).permit(
-      :name, :description, :building_id,
+      :name, :description, :building_id, :image,
       :unit_price, :total_price, :capacity
     )
   end

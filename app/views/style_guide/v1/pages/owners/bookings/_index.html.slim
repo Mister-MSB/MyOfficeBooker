@@ -1,0 +1,88 @@
+- if current_owner.present?
+  = render partial: "style_guide/v1/components/navbar_owner_connect"
+- else
+  = render partial: "style_guide/v1/components/navbar_owner_unconnect"
+
+h1.create_title
+
+  | LISTE DE VOS RESERVATIONS
+.building_left
+  .navleft_building
+    = link_to "Créer une salle",
+      new_owners_place_path,
+      class: "onglets"
+    = link_to "Créer un établissement",
+      new_owners_building_path,
+      class: "onglets"
+    = link_to "Liste des réservations",
+      owners_bookings_path,
+      class: "onglets"
+    = link_to "Liste de vos établissements",
+      owners_buildings_path,
+      class: "onglets"
+    = link_to "Liste de vos salles",
+      owners_places_path,
+      class: "onglets"
+    br
+    br
+    br
+
+center
+  .custom_table
+    table
+      tr
+        th
+          | Numéro
+        th
+          | Date
+        th
+          | Salle
+        th
+          | Batiment
+        th
+          | Nb per.
+        th
+          | Type
+        th
+          | Status
+        th
+          | Actions
+      - bookings.each do |booking|
+        tr
+          td
+            = booking.id
+          td
+            = booking.date
+          td
+            = link_to booking.place.name,
+              owners_place_path(id: booking.place.id)
+          td
+            = link_to booking.place.building.name,
+              owners_building_path(id: booking.place.building.id)
+          td
+            = booking.capacity
+          td
+            = booking.booking_type
+          td
+            = booking.status
+          td.action_list
+            ul
+              li
+                = link_to "Voir",
+                  owners_booking_path(id: booking.id)
+              - if booking.status == "created"
+                li
+                  = link_to "Valider",
+                    owners_booking_path(id: booking.id, status: :validated),
+                    method: :patch
+                li
+                  = link_to "Annuler",
+                    owners_booking_path(id: booking.id, status: :cancelled),
+                    method: :patch
+              - elsif booking.status == "validated"
+                li
+                  = link_to "Annuler",
+                    owners_booking_path(id: booking.id, status: :cancelled),
+                    method: :patch
+
+= render partial: "style_guide/v1/components/footer"

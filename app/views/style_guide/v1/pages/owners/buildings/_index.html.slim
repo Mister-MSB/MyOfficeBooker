@@ -4,8 +4,8 @@
   = render partial: "style_guide/v1/components/navbar_owner_unconnect"
 
 h1.create_title
-  | CRÉATION D'UNE NOUVELLE SALLE
 
+  | LISTE DE VOS ÉTABLISSEMENT
 .building_left
   .navleft_building
     = link_to "Créer une salle",
@@ -23,12 +23,7 @@ h1.create_title
     = link_to "Liste de vos salles",
       owners_places_path,
       class: "onglets"
-
     br
     br
     br
-
-  = render partial: "style_guide/v1/components/place"
-
-
 = render partial: "style_guide/v1/components/footer"
