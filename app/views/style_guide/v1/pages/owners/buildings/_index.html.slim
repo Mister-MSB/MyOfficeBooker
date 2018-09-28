@@ -26,4 +26,44 @@ h1.create_title
     br
     br
     br
+
+center
+  .custom_table
+    table
+      tr
+        th
+          | Numéro
+        th
+          | Image principale
+        th
+          | Nom
+        th
+          | Addresse
+        th
+          | Note moyenne
+        th
+          | Nb reservation total
+        th
+          | Actions
+      - buildings.each do |building|
+        tr
+          td
+            = building.id
+          td
+            = image_tag building.image.url, size: 50
+          td
+            = building.name
+          td
+            | #{building.street} #{building.complement} #{building.zipcode} #{building.city}, #{building.country}
+          td
+            - Buildings::GetBuildingAverageNotationService.call(building: building).times do
+              = image_tag "star.png",
+                class:"size_stars"
+          td
+            = building.places.joins(:bookings).count
+          td
+            ul
+              li
+                = link_to "Voir",
+                  owners_building_path(id: building.id)
 = render partial: "style_guide/v1/components/footer"
