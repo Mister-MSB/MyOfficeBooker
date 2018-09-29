@@ -77,7 +77,7 @@ puts "====================="
   city:     "Lyon",
   country:  "France",
   owner_id: @owner1.id,
-  image:    Rails.root.join('app/assets/images/lyon.jpg').open
+  image:    Rails.root.join('app/assets/images/seed_images/lyon.jpg').open
 )
 
 @owner_building2 = FactoryBot.create(
@@ -90,7 +90,7 @@ puts "====================="
   city:     "Paris",
   country:  "France",
   owner_id: @owner1.id,
-  image:    Rails.root.join('app/assets/images/paris.jpg').open
+  image:    Rails.root.join('app/assets/images/seed_images/paris.jpg').open
 )
 
 @owner_building3 = FactoryBot.create(
@@ -103,10 +103,60 @@ puts "====================="
   city:     "Marseille",
   country:  "France",
   owner_id: @owner1.id,
-  image:    Rails.root.join('app/assets/images/marseille.jpg').open
+  image:    Rails.root.join('app/assets/images/seed_images/marseille.jpg').open
 )
 
 puts "OWNER BUILDINGs seeds done !"
+puts "====================="
+
+@building_image10 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building.id,
+  image:       Rails.root.join('app/assets/images/seed_images/lyon_1.jpg').open
+)
+@building_image11 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building.id,
+  image:       Rails.root.join('app/assets/images/seed_images/lyon_2.jpg').open
+)
+@building_image12 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building.id,
+  image:       Rails.root.join('app/assets/images/seed_images/lyon_3.jpg').open
+)
+
+@building_image20 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building2.id,
+  image:       Rails.root.join('app/assets/images/seed_images/paris_1.jpg').open
+)
+@building_image21 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building2.id,
+  image:       Rails.root.join('app/assets/images/seed_images/paris_2.jpg').open
+)
+@building_image22 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building2.id,
+  image:       Rails.root.join('app/assets/images/seed_images/paris_3.jpg').open
+)
+
+@building_image30 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building3.id,
+  image:       Rails.root.join('app/assets/images/seed_images/marseille_1.jpg').open
+)
+@building_image31 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building3.id,
+  image:       Rails.root.join('app/assets/images/seed_images/marseille_2.jpg').open
+)
+@building_image32 = FactoryBot.create(
+  :building_image,
+  building_id: @owner_building3.id,
+  image:       Rails.root.join('app/assets/images/seed_images/marseille_3.jpg').open
+)
+puts "OWNER BUILDINGs IMAGEs seeds done !"
 puts "====================="
 
 @building_place10 = FactoryBot.create(
@@ -117,7 +167,7 @@ puts "====================="
   unit_price:  50,
   capacity:    40,
   building_id: @owner_building.id,
-  image:       Rails.root.join('app/assets/images/lyon.jpg').open
+  image:       Rails.root.join('app/assets/images/seed_images/lyon.jpg').open
 )
 
 @building_place20 = FactoryBot.create(
@@ -128,7 +178,7 @@ puts "====================="
   unit_price:  20,
   capacity:    3000,
   building_id: @owner_building2.id,
-  image:       Rails.root.join('app/assets/images/paris.jpg').open
+  image:       Rails.root.join('app/assets/images/seed_images/paris.jpg').open
 )
 
 @building_place21 = FactoryBot.create(
@@ -139,7 +189,7 @@ puts "====================="
   unit_price:  35,
   capacity:    150,
   building_id: @owner_building2.id,
-  image:       Rails.root.join('app/assets/images/paris.jpg').open
+  image:       Rails.root.join('app/assets/images/seed_images/paris.jpg').open
 )
 
 @building_place30 = FactoryBot.create(
@@ -150,7 +200,7 @@ puts "====================="
   unit_price:  150,
   capacity:    10,
   building_id: @owner_building3.id,
-  image:       Rails.root.join('app/assets/images/marseille.jpg').open
+  image:       Rails.root.join('app/assets/images/seed_images/marseille.jpg').open
 )
 
 @building_place31 = FactoryBot.create(
@@ -161,7 +211,7 @@ puts "====================="
   unit_price:  100,
   capacity:    250,
   building_id: @owner_building3.id,
-  image:       Rails.root.join('app/assets/images/marseille.jpg').open
+  image:       Rails.root.join('app/assets/images/seed_images/marseille.jpg').open
 )
 
 @building_place32 = FactoryBot.create(
@@ -172,10 +222,64 @@ puts "====================="
   unit_price:  50,
   capacity:    250,
   building_id: @owner_building3.id,
-  image:       Rails.root.join('app/assets/images/marseille.jpg').open
+  image:       Rails.root.join('app/assets/images/seed_images/marseille.jpg').open
 )
 
 puts "BUILDING PLACES seeds done !"
+puts "====================="
+
+[@building_place30, @building_place31, @building_place32].each do |place|
+  place.place_images << FactoryBot.create(
+    :place_image,
+    place_id: place.id,
+    image:    Rails.root.join('app/assets/images/seed_images/marseille_1.jpg').open
+  )
+  place.place_images << FactoryBot.create(
+    :place_image,
+    place_id: place.id,
+    image:    Rails.root.join('app/assets/images/seed_images/marseille_2.jpg').open
+  )
+  place.place_images << FactoryBot.create(
+    :place_image,
+    place_id: place.id,
+    image:    Rails.root.join('app/assets/images/seed_images/marseille_3.jpg').open
+  )
+end
+
+[@building_place20, @building_place21].each do |place|
+  place.place_images << FactoryBot.create(
+    :place_image,
+    place_id: place.id,
+    image:    Rails.root.join('app/assets/images/seed_images/paris_1.jpg').open
+  )
+  place.place_images << FactoryBot.create(
+    :place_image,
+    place_id: place.id,
+    image:    Rails.root.join('app/assets/images/seed_images/paris_2.jpg').open
+  )
+  place.place_images << FactoryBot.create(
+    :place_image,
+    place_id: place.id,
+    image:    Rails.root.join('app/assets/images/seed_images/paris_3.jpg').open
+  )
+end
+
+@building_place10.place_images << FactoryBot.create(
+  :place_image,
+  place_id: @building_place10.id,
+  image:    Rails.root.join('app/assets/images/seed_images/lyon_1.jpg').open
+)
+@building_place10.place_images << FactoryBot.create(
+  :place_image,
+  place_id: @building_place10.id,
+  image:    Rails.root.join('app/assets/images/seed_images/lyon_2.jpg').open
+)
+@building_place10.place_images << FactoryBot.create(
+  :place_image,
+  place_id: @building_place10.id,
+  image:    Rails.root.join('app/assets/images/seed_images/lyon_3.jpg').open
+)
+puts "BUILDING PLACES IMAGES seeds done !"
 puts "====================="
 
 @place_note = FactoryBot.create(
