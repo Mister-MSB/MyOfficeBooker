@@ -18,8 +18,8 @@
 CommitMsg:
   MessageFormat:
     enabled: true
-    pattern: '(.+)[|](.+)[|](.+)'
-    expected_pattern_message: '<Issue Id> | <Commit Message Description> | <Developer(s)>'
+    pattern: '(.+)'
+    expected_pattern_message: '#Id | Commit Message Description | Developer(s)'
     sample_message: 'DEFECT-1234 | Refactored Onboarding flow | John Doe'
   HardTabs:
     enabled: true
