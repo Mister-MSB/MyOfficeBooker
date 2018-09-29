@@ -52,6 +52,7 @@ gem 'awesome_rails_console'
 gem 'gmaps4rails'
 gem 'rspec_junit_formatter'
 gem 'simplecov'
+gem "jquery-slick-rails"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
