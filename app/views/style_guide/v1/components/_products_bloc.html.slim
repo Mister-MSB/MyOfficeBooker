@@ -1,15 +1,16 @@
-h1.results_title
-  | Tout nos établissements à #{params[:building][:city].capitalize}
+center
+  h1.results_title
+    | Tout nos établissements à #{params[:building][:city].capitalize}
 
 - if buildings.present?
-  - buildings.each do |building|
-    ul.product-list
-      center
-        li.product
-          = link_to bookers_places_path(building_id: building.id),
-            class: "product-image",
-            style: "background-image: url(#{building.image.url})" do
-            = image_tag building.image.url
+  .product-list
+    - buildings.each do |building|
+        .product
+          .scroller
+            - building.building_images.each do |building_image|
+              = link_to bookers_places_path(building_id: building.id) do
+                = image_tag building_image.image.url,
+                  class: "product_image"
           = link_to bookers_places_path(building_id: building.id),
             class: "product-description" do
             .information
@@ -28,8 +29,11 @@ h1.results_title
                     = image_tag "star.png",
                       class:"size_stars"
 
-              .stars
-                | #{Buildings::GetBuildingAveragePriceService.call(building: building)} € / jour
-              br
+          .stars
+            | #{Buildings::GetBuildingAveragePriceService.call(building: building)} € / jour
+          br
 - else
   | Nous sommes désolés mais aucun batiment ne correspond à votre lieux de recherche
+
+javascript:
+  $('.scroller').slick();
