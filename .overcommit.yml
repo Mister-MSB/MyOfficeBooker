@@ -18,9 +18,9 @@
 CommitMsg:
   MessageFormat:
     enabled: true
-    pattern: '^ *\w+(?: +\w+){2,}$'
-    expected_pattern_message: 'Refactoring mangopay controller'
-    sample_message: 'Le message du commit doit contenir au minimum 3 mot'
+    pattern: '(.+)[|](.+)[|](.+)'
+    expected_pattern_message: '<Issue Id> | <Commit Message Description> | <Developer(s)>'
+    sample_message: 'DEFECT-1234 | Refactored Onboarding flow | John Doe'
   HardTabs:
     enabled: true
 PreCommit:
@@ -28,7 +28,7 @@ PreCommit:
     enabled: true
     on_warn: fail # Treat all warnings as failures
     problem_on_unmodified_line: ignore
-    
+
   BundleCheck:
     enabled: true
 
