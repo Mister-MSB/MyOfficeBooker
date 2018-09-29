@@ -740,6 +740,23 @@ footer {
   width: 100%;
   background-color: #f6f7fe;
 }
+.product_container{
+  display: flex;
+  flex-direction: row;
+}
+.product_image_holder{
+  width: 50%;
+  height: 450px;
+  .slick-slider{
+    .slick-prev{
+      left: 5px;
+      z-index: 1;
+    }
+    .slick-next{
+      right: 5px;
+    }
+  }
+}
 
 .product_image{
   width: 100%;
@@ -750,9 +767,10 @@ footer {
   padding: 2%;
   width: 60%;
   color: black;
-  display: inline-block;
+  display: flex;
   margin-left: 20%;
   font-weight: bold;
+  justify-content: center;
 }
 
 .text_infos h5{

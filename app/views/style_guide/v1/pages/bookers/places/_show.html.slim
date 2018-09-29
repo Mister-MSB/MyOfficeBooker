@@ -28,33 +28,39 @@
           class:"size_stars",
           style: "width: 2rem;"
     br
-  = image_tag place.image.url,
-    class: "product_image"
+  .product_container
+    .product_image_holder
+      .scroller
+        - place.place_images.each do |place_image|
+          = image_tag place_image.image.url,
+            class: "product_image"
 
-  .product_infos
-    br
-    p.product_ss_title
-      | Caractéristiques de l'établissement mère
-    br
-    .first_icons
-      .icons
-        = image_tag "home.png",
-          class: "icons_price"
-        p
-          | #{place.building.places.count} salles
+    .product_infos
+      br
+      p.product_ss_title
+        | Caractéristiques de l'établissement mère
+      br
+      .first_icons
+        .icons
+          = image_tag "home.png",
+            class: "icons_price"
+          p
+            | #{place.building.places.count} salles
 
-    br
-    br
-    p.product_ss_title
-      | Caractéristiques de la salle
-    br
-    .first_icons
-      .icons2
-        = image_tag "meeting.png",
-          class: "icons_price"
-        p
-          | #{place.capacity} personnes
+      br
+      br
+      p.product_ss_title
+        | Caractéristiques de la salle
+      br
+      .first_icons
+        .icons2
+          = image_tag "meeting.png",
+            class: "icons_price"
+          p
+            | #{place.capacity} personnes
   .text_left
     p
       | #{place.description}
 = render partial: "style_guide/v1/components/footer"
+javascript:
+  $('.scroller').slick();
