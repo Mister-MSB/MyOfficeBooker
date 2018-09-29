@@ -44,7 +44,7 @@ gem 'html5_validators'
 gem 'decent_exposure'
 gem 'kaminari'
 gem 'aasm'
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', require: 'rack/cors'
 gem 'high_voltage'
 gem 'geometry', '~> 6.5'
 gem 'factory_bot_rails'
@@ -56,7 +56,7 @@ gem "jquery-slick-rails"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'codecov', :require => false
+  gem 'codecov', require: false
   gem 'dotenv-rails'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
