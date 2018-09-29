@@ -18,7 +18,7 @@
 CommitMsg:
   MessageFormat:
     enabled: true
-    pattern: '^ *((\w|\S)+\s+){2,}(\w|\S)+$'
+    pattern: '^*((\w|\S)+\s+){2,}(\w|\S)+$'
     expected_pattern_message: 'Refactoring mangopay controller'
     sample_message: 'Le message du commit doit contenir au minimum 3 mot'
   HardTabs:
