@@ -9,9 +9,10 @@ center
     button.searchbuttons#big
       | Seminaire résidentielle
 
-  .flex-form_home
+  .search_bar_home
     = simple_form_for :building, url: bookers_buildings_path, method: :get do |f|
       = f.input :city,
         label: false,
         placeholder: "Ville"
-      = f.submit "Rercherche"
+      = f.submit "Rerchercher",
+        class: "primary_submit"

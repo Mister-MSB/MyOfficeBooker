@@ -47,13 +47,6 @@ body {
   margin-bottom: 3em;
 }
 
-.flex-form_home {
-  width: 70%;
-  background-color:  rgba(0, 0, 0, 0.36);
-  border-radius: 2%;
-  padding: 1%;
-}
-
 .catchtitle{
   color: #d86d3e;
   font-size: 40px;
@@ -170,6 +163,47 @@ body {
       font-weight: 700;
     }
   }
+}
+
+.search_bar_home {
+  width: 70%;
+  background-color:  rgba(0, 0, 0, 0.36);
+  border-radius: 2%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  form{
+    display: flex;
+    flex-direction: row;
+    input{
+      width: 20rem;
+    }
+    .primary_submit{
+      width: 10rem;
+      margin-left: 1rem;
+      background-color: #5d8cc2;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  }
+}
+
+.search_bar_home input[type="submit"] {
+  background:#5d8cc2;
+  border-top: 1px solid #5d8cc2;
+  border-bottom: 1px solid #5d8cc2;
+  color:white;
+  margin-top: 2%;
+  display: inline-block;
+}
+
+.search_bar_home > * {
+  border:0;
+  padding:10px;
+  background-color: rgba(0, 0, 0, 0.36);
+  border-radius:5px;
 }
 
 .town{

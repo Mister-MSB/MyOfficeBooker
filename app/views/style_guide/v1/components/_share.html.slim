@@ -24,5 +24,9 @@
           | Acceptez les réservations
         p
           | et recevez les confirmations de location en temps réel
-    = link_to owners_home_path do
-      input.sharebutton type="button" value=("Partager ma salle")
+    center(
+      style = "margin-top: 3rem;"
+    )
+      = link_to "Partager ma salle",
+        owners_home_path,
+        class: "button_basic"

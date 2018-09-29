@@ -163,34 +163,6 @@
 
 ////// SEARCHBAR ////////
 
-/*Hack to get them to align properly */
-.flex-form_home > *:not([type="date"]) {
-
-}
-
-.flex-form_home input[type="submit"] {
-  background:#5d8cc2;
-  border-top: 1px solid #5d8cc2;
-  border-bottom: 1px solid #5d8cc2;
-  color:white;
-  margin-top: 2%;
-  display: inline-block;
-}
-
-
-.flex-form_home > * {
-  border:0;
-  padding:10px;
-  background-color: rgba(0, 0, 0, 0.36);
-  border-radius:5px;
-  outline:0;
-  -webkit-appearance:none;
-}
-
-.flex-form_home > *:last-child {
-  border-right: 0;
-}
-
 input:hover{
   cursor: pointer;
 }
