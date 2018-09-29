@@ -1,35 +1,39 @@
-h1.results_title
-  | Toutes nos salles pour le batiment: #{Building.find_by(id: params[:building_id])&.name}
+center
+  h1.results_title
+    | Toutes nos salles pour le batiment: #{Building.find_by(id: params[:building_id])&.name}
 
 - if places.present?
-  - places.each do |place|
-    ul.product-list
-      center
-        li.product
-          = link_to bookers_place_path(id: place.id),
-            class: "product-image",
-            style: "background-image: url(#{place.image.url})" do
-            = image_tag place.image.url
-          = link_to bookers_place_path(id: place.id),
-            class: "product-description" do
-            .information
-              br
-              .name
-                = place.name
-              br
-              br
-              .store
-                | #{place.building.city} (#{place.building.zipcode})
-              .left_right_contents
-                .nbrs
-                  | capacité: #{place.capacity} personnes
-                  br
-                  - Places::GetPlaceAverageNotationService.call(place: place).times do
-                    = image_tag "star.png",
-                      class:"size_stars"
+  .product-list
+    - places.each do |place|
+      .product
+        .scroller
+          - place.place_images.each do |place_image|
+            = link_to bookers_place_path(id: place.id) do
+              = image_tag place_image.image.url,
+                class: "product_image"
+        = link_to bookers_place_path(id: place.id),
+          class: "product-description" do
+          .information
+            br
+            .name
+              = place.name
+            br
+            br
+            .store
+              | #{place.building.city} (#{place.building.zipcode})
+            .left_right_contents
+              .nbrs
+                | capacité: #{place.capacity} personnes
+                br
+                - Places::GetPlaceAverageNotationService.call(place: place).times do
+                  = image_tag "star.png",
+                    class:"size_stars"
 
-              .stars
-                | #{place.total_price}€ / jour
-              br
+        .stars
+          | #{place.total_price}€ / jour
+
 - else
   | Nous sommes désolés mais ce batiment ne comporte actuellement aucune salles
+
+javascript:
+  $('.scroller').slick();

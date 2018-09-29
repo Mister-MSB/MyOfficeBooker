@@ -1,7 +1,7 @@
 class Building < ApplicationRecord
   belongs_to :owner
   has_many :places
-  has_many :place_images
+  has_many :building_images
 
   mount_uploader :image, ImageUploader
   validates :name,    presence: true

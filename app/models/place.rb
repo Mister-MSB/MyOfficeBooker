@@ -1,7 +1,7 @@
 class Place < ApplicationRecord
   belongs_to :building
   has_many :notes
-  has_many :building_images
+  has_many :place_images
   has_many :bookings
 
   mount_uploader :image, ImageUploader

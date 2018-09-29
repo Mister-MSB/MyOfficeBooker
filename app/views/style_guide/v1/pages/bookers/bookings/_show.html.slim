@@ -16,129 +16,135 @@
           class:"size_stars",
           style: "width: 2rem;"
     br
-  = image_tag booking.place.image.url,
-    class: "product_image"
+  .product_container
+    .product_image_holder
+      .scroller
+        - booking.place.place_images.each do |place_image|
+          = image_tag place_image.image.url,
+            class: "product_image"
 
-  .product_infos
-    p.product_ss_title
-      | Informations sur la reservation
-    br
-    .first_icons
-      .icons2
-        = image_tag "meeting.png",
-          class: "icons_price"
-        p
-          | Réservé pour #{booking.capacity} personnes
-      .icons2
-        = image_tag "dollars.png",
-          class: "icons_price"
-        - if booking.booking_type == "complète"
-          p
-            | Réservation complète
-        - else
-          p
-            | Réservation partielle
-      .icons2
-        = image_tag "dollars.png",
-          class: "icons_price"
-        - if booking.booking_type == "complète"
-          p
-            | Prix de la réservation: #{booking.place.total_price}€
-        - else
-          p
-            | Prix de la réservation: #{booking.place.unit_price * booking.capacity}€
+    .product_infos
+      p.product_ss_title
+        | Informations sur la reservation
       br
-      br
-      br
-      .icons2
-        = image_tag "key.png",
-          class: "icons_price"
-        p
-          | Vous avez déjà effectuée #{current_booker.bookings.where(place_id: booking.place_id).count} reservations dans ce lieux
-      .icons2
-        = image_tag "check.png",
-          class: "icons_price"
-        - if booking.status == :created
+      .first_icons
+        .icons2
+          = image_tag "meeting.png",
+            class: "icons_price"
           p
-            | Reservation en attente de validation
-        - if booking.status == :validated
+            | Réservé pour #{booking.capacity} personnes
+        .icons2
+          = image_tag "dollars.png",
+            class: "icons_price"
+          - if booking.booking_type == "complète"
+            p
+              | Réservation complète
+          - else
+            p
+              | Réservation partielle
+        .icons2
+          = image_tag "dollars.png",
+            class: "icons_price"
+          - if booking.booking_type == "complète"
+            p
+              | Prix de la réservation: #{booking.place.total_price}€
+          - else
+            p
+              | Prix de la réservation: #{booking.place.unit_price * booking.capacity}€
+        br
+        br
+        br
+        .icons2
+          = image_tag "key.png",
+            class: "icons_price"
           p
-            | Reservation validée
-        - if booking.status == :paid
-          p
-            | Paiement reçu
-        - if booking.status == :done
-          p
-            | Sejour effectué
-        - if booking.status == :cancelled
-          p
-            | Reservation annulé
+            | Vous avez déjà effectuée #{current_booker.bookings.where(place_id: booking.place_id).count} reservations dans ce lieux
+        .icons2
+          = image_tag "check.png",
+            class: "icons_price"
+          - if booking.status == :created
+            p
+              | Reservation en attente de validation
+          - if booking.status == :validated
+            p
+              | Reservation validée
+          - if booking.status == :paid
+            p
+              | Paiement reçu
+          - if booking.status == :done
+            p
+              | Sejour effectué
+          - if booking.status == :cancelled
+            p
+              | Reservation annulé
 
-      .icons2
-        = image_tag "star.png",
-          class: "icons_price"
+        .icons2
+          = image_tag "star.png",
+            class: "icons_price"
+          p
+            | Vous avez déjà noté ce lieu #{Note.where(booker_id: current_booker.id, place_id: booking.place_id).count} fois
+      br
+      br
+      br
+      p.product_ss_title
+        | Que faire maintenant ?
+      br
+      - if booking.status == :created
         p
-          | Vous avez déjà noté ce lieu #{Note.where(booker_id: current_booker.id, place_id: booking.place_id).count} fois
-    br
-    br
-    br
-    p.product_ss_title
-      | Que faire maintenant ?
-    br
-    - if booking.status == :created
-      p
-        | Votre réservation en attente de validation par notre service
-      p
-        | Vous recevrez un courriel qui vous invitera à accéder à la prochaine étape prochainement
+          | Votre réservation en attente de validation par notre service
+        p
+          | Vous recevrez un courriel qui vous invitera à accéder à la prochaine étape prochainement
+        br
+        br
+        p
+          | Merci de votre participation
+      - if booking.status == :validated
+        p
+          | Votre réservation à été validée par notre service
+        p
+          | Merci de bien vouloir procédé au paiement via le boutton ci dessous
+        p
+          | Vous recevrez une facture par courriel après la validation de celui-ci
+        br
+        br
+        p
+          | (integrer le paiment ici)
+      - if booking.status == :paid
+        p
+          | Votre paiement à bien été reçu
+        p
+          | Il ne vous reste plus qu'a passé un agréable séjour!
+        br
+        br
+        p
+          | L'Equipe de My Office Booker reste a votre disposition, et vous souhaite un agréable séjour
+      - if booking.status == :done
+        p
+          | Votre sejour à été effectué le #{booking.date}
+        p
+          | Nous espérons que tout c'est passé pour le mieux
+        p
+          | Pourquoi ne pas laissé une note à ce lieux en cliquant ci dessous ?
+        br
+        br
+        p
+          | (intégré la notation)
+      - if booking.status == :cancelled
+        p
+          | Votre sejour à malheureusement été annulé le #{booking.updated_at}
+        p
+          | Nous nous excusons pour la gêne occasionnée
+        p
+          | Pourquoi ne pas nous laissé un commentaire sur cette annulation ?
+        br
+        br
+        p
+          | (intégré le commentaire)
       br
-      br
-      p
-        | Merci de votre participation
-    - if booking.status == :validated
-      p
-        | Votre réservation à été validée par notre service
-      p
-        | Merci de bien vouloir procédé au paiement via le boutton ci dessous
-      p
-        | Vous recevrez une facture par courriel après la validation de celui-ci
-      br
-      br
-      p
-        | (integrer le paiment ici)
-    - if booking.status == :paid
-      p
-        | Votre paiement à bien été reçu
-      p
-        | Il ne vous reste plus qu'a passé un agréable séjour!
-      br
-      br
-      p
-        | L'Equipe de My Office Booker reste a votre disposition, et vous souhaite un agréable séjour
-    - if booking.status == :done
-      p
-        | Votre sejour à été effectué le #{booking.date}
-      p
-        | Nous espérons que tout c'est passé pour le mieux
-      p
-        | Pourquoi ne pas laissé une note à ce lieux en cliquant ci dessous ?
-      br
-      br
-      p
-        | (intégré la notation)
-    - if booking.status == :cancelled
-      p
-        | Votre sejour à malheureusement été annulé le #{booking.updated_at}
-      p
-        | Nous nous excusons pour la gêne occasionnée
-      p
-        | Pourquoi ne pas nous laissé un commentaire sur cette annulation ?
-      br
-      br
-      p
-        | (intégré le commentaire)
-    br
 .text_left
   p
     | #{booking.place.description}
 
 = render partial: "style_guide/v1/components/footer"
+javascript:
+  $('.scroller').slick();

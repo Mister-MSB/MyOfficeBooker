@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_27_004103) do
+ActiveRecord::Schema.define(version: 2018_09_29_105613) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -97,6 +97,12 @@ ActiveRecord::Schema.define(version: 2018_09_27_004103) do
     t.index ["place_id"], name: "index_bookings_on_place_id"
   end
 
+  create_table "building_images", force: :cascade do |t|
+    t.string "image"
+    t.bigint "building_id"
+    t.index ["building_id"], name: "index_building_images_on_building_id"
+  end
+
   create_table "buildings", force: :cascade do |t|
     t.string "name"
     t.float "long"
@@ -142,6 +148,12 @@ ActiveRecord::Schema.define(version: 2018_09_27_004103) do
     t.inet "last_sign_in_ip"
     t.index ["email"], name: "index_owners_on_email", unique: true
     t.index ["reset_password_token"], name: "index_owners_on_reset_password_token", unique: true
+  end
+
+  create_table "place_images", force: :cascade do |t|
+    t.string "image"
+    t.bigint "place_id"
+    t.index ["place_id"], name: "index_place_images_on_place_id"
   end
 
   create_table "places", force: :cascade do |t|

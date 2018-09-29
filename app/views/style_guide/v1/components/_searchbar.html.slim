@@ -1,8 +1,10 @@
 center
-  div
-  .flex-form
+  .search_bar
+    h3
+      | Vous souhaitez effectuer une nouvelle recherche ?
     = simple_form_for :building, url: bookers_buildings_path, method: :get do |f|
       = f.input :city,
         label: false,
         placeholder: "Ville"
-      = f.submit "Rercherche"
+      = f.submit "Rerchercher",
+        class: "primary_submit"
