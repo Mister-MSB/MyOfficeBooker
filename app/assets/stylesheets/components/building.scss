@@ -4,13 +4,21 @@
   padding: 1%;
 }
 
-.building_left{
-
-}
-
 .navleft_building{
-  width: 100%;
-  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  background-color: #000000;
+  a{
+    padding: 1rem 0 1rem 0;
+    color: #FFFFFF;
+  }
+  .active{
+    padding: 1rem 0 1rem 0;
+    color: #FFFFFF;
+    background-color: #d86d3e;
+  }
 }
 
 .onglets{

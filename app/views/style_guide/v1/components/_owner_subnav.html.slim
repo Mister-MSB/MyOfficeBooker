@@ -1,0 +1,23 @@
+.building_left
+  .navleft_building
+    = link_to "Mon Compte",
+      edit_owner_registration_path,
+      class: controller_path == "owners/registrations" ? "onglets active" : "onglets"
+    = link_to "Créer une salle",
+      new_owners_place_path,
+      class: controller_path == "owners/places" && action_name == "new" ? "onglets active" : "onglets"
+    = link_to "Créer un établissement",
+      new_owners_building_path,
+      class: controller_path == "owners/buildings" && action_name == "new" ? "onglets active" : "onglets"
+    = link_to "Liste des réservations",
+      owners_bookings_path,
+      class: controller_path == "owners/bookings" ? "onglets active" : "onglets"
+    = link_to "Liste de vos établissements",
+      owners_buildings_path,
+      class: controller_path == "owners/buildings" && action_name == "index"  ? "onglets active" : "onglets"
+    = link_to "Liste de vos salles",
+      owners_places_path,
+      class: controller_path == "owners/places" && action_name == "index" ? "onglets active" : "onglets"
+    br
+    br
+    br
