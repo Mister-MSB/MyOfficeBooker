@@ -1,0 +1,17 @@
+.building_left
+  .navleft_building
+    = link_to "Mon Compte",
+      edit_booker_registration_path,
+      class: controller_path == "bookers/registrations" ? "onglets active" : "onglets"
+    = link_to "Mes réservations",
+      bookers_bookings_path,
+      class: controller_path == "bookers/bookings" ? "onglets active" : "onglets"
+    = link_to "Mes séjours effectués",
+      "#",
+      class: "onglets"
+    = link_to "Mes factures",
+      "#",
+      class: "onglets"
+    br
+    br
+    br

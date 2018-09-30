@@ -30,7 +30,7 @@ center
                       class:"size_stars"
 
           .stars
-            | #{Buildings::GetBuildingAveragePriceService.call(building: building)} € / jour
+            | A partir de #{building.places.order(:total_price).first.total_price}€ / jour
           br
 - else
   | Nous sommes désolés mais aucun batiment ne correspond à votre lieux de recherche
