@@ -45,6 +45,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 3em;
+  margin-top: 3%;
 }
 
 .catchtitle{
@@ -138,7 +139,7 @@ body {
 /*Flexbox Starts Here*/
 
 .search_bar{
-  background: #000000;
+  background: rgba(0, 0, 0, 0.36);
   display:flex;
   width: 100%;
   flex-direction: column;
@@ -178,7 +179,7 @@ body {
     display: flex;
     flex-direction: row;
     input{
-      width: 20rem;
+      width: 35rem;
     }
     .primary_submit{
       width: 10rem;
@@ -192,17 +193,13 @@ body {
 
 .search_bar_home input[type="submit"] {
   background:#5d8cc2;
-  border-top: 1px solid #5d8cc2;
-  border-bottom: 1px solid #5d8cc2;
   color:white;
-  margin-top: 2%;
   display: inline-block;
 }
 
 .search_bar_home > * {
   border:0;
   padding:10px;
-  background-color: rgba(0, 0, 0, 0.36);
   border-radius:5px;
 }
 
@@ -260,6 +257,30 @@ select:hover{
   }
   .flex-form > *:not([type="date"]) {
     width: 80%;
+  }
+  .search_bar_home {
+    width: 70%;
+    background-color:  rgba(0, 0, 0, 0.36);
+    border-radius: 2%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    form{
+      display: flex;
+      flex-direction: row;
+      input{
+        width: 4rem;
+      }
+      .primary_submit{
+        width: 10rem;
+        margin-left: 1rem;
+        background-color: #5d8cc2;
+        color: #FFFFFF;
+        font-weight: 700;
+      }
+    }
   }
 }
 
@@ -548,6 +569,10 @@ select:hover{
 	opacity: 0.8;
   color: #5d8cc2;
   background: white;
+}
+
+.contentshare{
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 640px){
