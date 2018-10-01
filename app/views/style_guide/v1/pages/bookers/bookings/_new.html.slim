@@ -23,6 +23,8 @@
           = image_tag place_image.image.url,
             class: "product_image"
     .product_infos
+      br
+      br
       p.product_ss_title
         | Informations sur la salle
       br
@@ -68,20 +70,21 @@
     h5.product_title
       | Effectuer ma reservation pour #{place.name} à #{place.building.city}
   = simple_form_for booking, url: bookers_bookings_path do |f|
-    = f.hidden_field :place_id,
-      value: place.id
-    = f.input :booking_type,
-      label: "Type de reservation",
-      required: false
-    = f.input :capacity,
-      collection: 1..place.capacity,
-      label: "Nombres de personnes",
-      required: false
-    = f.input :date,
-      label: "Date souhaitée",
-      required: false
-    = f.submit "Valider ma reservation",
-      class:"button_basic"
+    center
+      = f.hidden_field :place_id,
+        value: place.id
+      = f.input :booking_type,
+        label: "Type de reservation",
+        required: false
+      = f.input :capacity,
+        collection: 1..place.capacity,
+        label: "Nombres de personnes",
+        required: false
+      = f.input :date,
+        label: "Date souhaitée",
+        required: false
+      = f.submit "Valider ma reservation",
+        class:"button_basic"
 
 = render partial: "style_guide/v1/components/footer"
 javascript:
