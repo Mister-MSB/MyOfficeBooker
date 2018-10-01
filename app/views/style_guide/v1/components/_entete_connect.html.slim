@@ -7,8 +7,10 @@
     = link_to "#",
       href: "tel:+33654321276",
       class: 'link_phone' do
-      i.fa.fa-phone
-      span
+    = link_to "#",
+      href: "tel:+33654321276",
+      class: 'link_phone' do
+      p
         |  06 54 32 12 76
 
     = link_to "Mon compte",
@@ -21,7 +23,7 @@
   #title.text-uppercase
     h1.catchtitle
       | Vos salles de séminaires, réunions et formations
-    p
+    p.catchsubtitle
       | Meilleurs hôtels avec salles de séminaire
   /! SEARCHBAR
   = render partial: "style_guide/v1/components/searchbar_home"
