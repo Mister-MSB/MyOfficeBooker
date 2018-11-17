@@ -1,12 +1,4 @@
-- if current_owner.present?
-  = render partial: "style_guide/v1/components/navbar_owner_connect"
-- else
-  = render partial: "style_guide/v1/components/navbar_owner_unconnect"
-
 = render partial: "style_guide/v1/components/owner_subnav"
 h1.create_title
   | CRÉATION D'UN NOUVEL ÉTABLISSEMENT
 = render partial: "style_guide/v1/components/building"
-
-
-= render partial: "style_guide/v1/components/footer"

@@ -14,8 +14,15 @@ html
     = javascript_include_tag "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"
     = javascript_include_tag '//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js'
     = javascript_include_tag '//underscorejs.org/underscore-min.js'
-    = javascript_include_tag 'application',
-      'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'
+    = stylesheet_link_tag 'application/owner',
+      media: 'all'
 
   body
+    - if current_owner.present?
+      = render partial: "style_guide/v1/components/navbar_owner_connect"
+    - else
+      = render partial: "style_guide/v1/components/navbar_owner_unconnect"
+    = render partial: "style_guide/v1/components/flash_error"
     = yield
+    = render partial: "style_guide/v1/components/footer"

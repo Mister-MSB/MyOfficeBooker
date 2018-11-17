@@ -1,5 +1,5 @@
 class Owners::BookingsController < ApplicationController
-  layout 'style_guide'
+  layout 'application/owner'
 
   expose :bookings, ->{Booking.all.order(status: :asc, date: :desc)}
   expose :booking

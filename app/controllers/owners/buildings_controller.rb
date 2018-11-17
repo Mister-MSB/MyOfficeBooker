@@ -1,6 +1,6 @@
 class Owners::BuildingsController < ApplicationController
   before_action :check_owner_redirection
-  layout 'style_guide'
+  layout 'application/owner'
 
   expose :buildings, ->{current_owner.buildings.all}
   expose :building,  scope: ->{current_owner.buildings}
