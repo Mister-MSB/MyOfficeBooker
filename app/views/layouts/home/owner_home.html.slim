@@ -17,10 +17,10 @@ html
     = javascript_include_tag 'application'
 
   body
-    - if current_booker.present?
-      = render partial: "style_guide/v1/components/entete_connect"
+    - if current_owner.present?
+      = render partial: "style_guide/v1/components/entete_fournisseur_connect"
     - else
-      = render partial: "style_guide/v1/components/entete_unconnect"
+      = render partial: "style_guide/v1/components/entete_fournisseur_unconnect"
     = render partial: "style_guide/v1/components/flash_error"
     = yield
     = render partial: "style_guide/v1/components/footer"

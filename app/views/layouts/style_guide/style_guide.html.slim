@@ -14,18 +14,17 @@ html
     = javascript_include_tag "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"
     = javascript_include_tag '//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js'
     = javascript_include_tag '//underscorejs.org/underscore-min.js'
-
-    - if params[:id] == "v1/pages/sessions/_new"
-      = stylesheet_link_tag 'connexion',
-        media: 'all',
-        'data-turbolinks-track': 'reload'
-    - else
-      = stylesheet_link_tag 'home',
-        media: 'all',
-        'data-turbolinks-track': 'reload'
-
-    = javascript_include_tag 'application',
-      'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'style_guide/styleguide',
+      media: 'all'
+    = javascript_include_tag 'application'
 
   body
+    - if current_owner.present?
+      = render partial: "style_guide/v1/components/entete_fournisseur_connect"
+    - elsif current_booker.present?
+      = render partial: "style_guide/v1/components/entete_connect"
+    - else
+      = render partial: "style_guide/v1/components/entete_unconnect"
+    = render partial: "style_guide/v1/components/flash_error"
     = yield
+    = render partial: "style_guide/v1/components/footer"

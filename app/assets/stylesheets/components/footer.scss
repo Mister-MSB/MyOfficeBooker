@@ -1,0 +1,162 @@
+footer {
+  background: lightgrey;
+  margin-top: auto;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+
+.footer_right{
+  text-align: right;
+  width: 100%;
+  padding-right: 2%;
+}
+
+.center_footer{
+
+}
+
+.footer-list-top {
+  width: 23.333%;
+  padding-left: 10%;
+  margin-top: 3%;
+}
+
+.footer-list-top h1{
+  color: #e8bc44;
+}
+
+.footer-list-top a{
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer-list-top > li {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.footer-list-header {
+  padding: 10px 0 5px 0;
+  color: #fff;
+}
+
+.footer-list-anchor {
+}
+
+.footer-social-section {
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+}
+
+.footer-social-section::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 10px;
+  border-top: 1px solid #ccc;
+  width: calc(100% - 20px);
+}
+
+.footer-social-overlap {
+  position: relative;
+  z-index: 2;
+  background: lightgrey;
+  padding: 0 20px;
+}
+
+.footer-social-connect {
+  display: flex;
+  color: #fff;
+}
+
+.footer-social-small {
+  font-size: 0.6em;
+  padding: 0px 20px;
+}
+
+.footer-social-overlap > a {
+  font-size: 3em;
+}
+
+.footer-social-overlap > a:not(:first-child) {
+  margin-left: 0.38em;
+}
+
+.footer-bottom-section {
+  width: 100%;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.footer-bottom-section > div:first-child {
+  margin-right: auto;
+}
+
+.footer-bottom-wrapper {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.footer-address {
+  display: inline;
+  font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-list-header {
+  }
+
+  .footer-list-anchor {
+  }
+
+  .footer-social-connect {
+  }
+
+  .footer-social-overlap > a {
+  }
+
+  .footer-bottom-wrapper {
+  }
+}
+@media only screen and (max-width: 568px) {
+
+  .footer-list-top {
+    width: 23.333%;
+    padding-left: 30%;
+    margin-top: 3%;
+  }
+
+  .icon_socials {
+    display: none;
+  }
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.generic-anchor {
+  color: white;
+}
+.generic-anchor:visited {
+  color: white;
+}
+.generic-anchor:hover {
+  color: #e8bc44;
+}
+
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+  background: #93629d;
+}
