@@ -1,0 +1,21 @@
+html
+  head
+    title
+      | myofficebooker
+    meta(
+      content    = ("text/html; charset=UTF-8")
+      http-equiv = "Content-Type"
+      charset    = "utf-8"
+    )
+
+    = csrf_meta_tags
+    = csp_meta_tag
+    = javascript_include_tag "//maps.google.com/maps/api/js?key=AIzaSyAlEhAB9wTgf9S2Eub0_SUdpS-xz0JRs4I"
+    = javascript_include_tag "//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"
+    = javascript_include_tag '//cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js'
+    = javascript_include_tag '//underscorejs.org/underscore-min.js'
+    = javascript_include_tag 'application',
+      'data-turbolinks-track': 'reload'
+
+  body
+    = yield
