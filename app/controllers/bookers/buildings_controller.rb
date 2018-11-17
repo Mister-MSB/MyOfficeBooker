@@ -1,5 +1,5 @@
 class Bookers::BuildingsController < ApplicationController
-  layout 'style_guide'
+  layout 'application/booker'
 
   expose :building
   expose :buildings, ->{get_buildings}

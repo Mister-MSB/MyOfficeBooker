@@ -1,5 +1,5 @@
 class Bookers::BookingsController < ApplicationController
-  layout 'style_guide'
+  layout 'application/booker'
 
   before_action :visitor_redirection
   prepend_before_action :check_if_date_already_booked, only: :create

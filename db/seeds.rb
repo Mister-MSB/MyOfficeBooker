@@ -314,3 +314,26 @@ puts "====================="
 
 puts "PLACE NOTES seeds done !"
 puts "====================="
+
+@option = FactoryBot.create(
+  :option,
+  name: "Disposition en U"
+)
+
+@option2 = FactoryBot.create(
+  :option,
+  name: "Disposition en O"
+)
+
+@option3 = FactoryBot.create(
+  :option,
+  pname: "Vidéoprojecteur"
+)
+
+@option4 = FactoryBot.create(
+  :option,
+  name: "Piscine"
+)
+
+puts "OPTIONS seeds done !"
+puts "====================="

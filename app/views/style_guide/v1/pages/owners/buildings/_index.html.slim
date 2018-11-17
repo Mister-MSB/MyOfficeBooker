@@ -1,8 +1,3 @@
-- if current_owner.present?
-  = render partial: "style_guide/v1/components/navbar_owner_connect"
-- else
-  = render partial: "style_guide/v1/components/navbar_owner_unconnect"
-
 = render partial: "style_guide/v1/components/owner_subnav"
 h1.create_title
   | LISTE DE VOS ÉTABLISSEMENT
@@ -45,4 +40,3 @@ center
               li
                 = link_to "Voir",
                   owners_building_path(id: building.id)
-= render partial: "style_guide/v1/components/footer"

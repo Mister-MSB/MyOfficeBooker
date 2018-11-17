@@ -1,6 +1,6 @@
 class Bookers::SessionsController < Devise::SessionsController
 
-  layout "login"
+  layout "login/connexion"
 
   def new
   end

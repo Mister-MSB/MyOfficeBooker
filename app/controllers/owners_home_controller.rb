@@ -1,5 +1,5 @@
 class OwnersHomeController < ApplicationController
-  layout "home"
+  layout "home/owner_home"
 
   expose :places, ->{Place.joins(:notes).where("notes.note > ?", 4).uniq.sample(4)}
 
