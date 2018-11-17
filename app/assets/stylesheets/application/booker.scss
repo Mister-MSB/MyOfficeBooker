@@ -1,15 +1,20 @@
+//important components
 @import 'slick';
 @import 'slick-theme';
 @import 'components/variables';
 @import 'components/home_body';
+@import 'components/buttons';
 
-@import "components/navbar";
-
+//things between this line must be erased
 @import "components/home_booker";
 @import "components/home_owner";
 @import "components/pages";
 @import "components/styleguide";
 @import "components/building";
 @import "components/fourniseur_home";
+//things between this line must be erased
 
+//main css
+@import "components/navbar";
+@import "components/main_booker";
 @import "components/footer";

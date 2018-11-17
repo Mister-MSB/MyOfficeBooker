@@ -1,0 +1,136 @@
+.page_title{
+  display:          flex;
+  flex-direction:   column;
+  align-items:      center;
+  background-color: $lightblue;
+  h1{
+    color:      $blue;
+    font-size:  1.7rem;
+    margin-top: 1rem;
+    span{
+      color:     $darkblue;
+      font-size: 1.7rem;
+    }
+  }
+  .subtitle{
+    font-size: 0.8rem;
+  }
+  .primary_button{
+    font-size:     1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.page_presentation{
+  display:        flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  .carousel{
+    width: 30%;
+    height: 300px;
+    .slick-prev{
+      left: 0px;
+      z-index: 1;
+      vertical-align: middle;
+    }
+    .slick-next{
+      right: 0px;
+      vertical-align: middle;
+    }
+  }
+  #map{
+    width:  30%;
+    height: 300px;
+  }
+}
+
+.page_informations{
+  display:         flex;
+  flex-direction: row;
+  color:           $white;
+  margin: 1rem 24rem 0rem 24rem;
+  height: 10rem;
+  .informations{
+    padding: 0.5rem;
+    background-color: $blue;
+    flex: 0 0 85%;
+    .information_title{
+      text-align: center;
+      color:       $orange;
+      font-size:   1.3rem;
+      font-weight: bold;
+    }
+    .information_content{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .contents{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .page_content{
+    flex: 1;
+    background-color: $darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.page_notations{
+  display:         flex;
+  flex-direction: row;
+  color:           $white;
+  margin: 1rem 24rem 0rem 24rem;
+  height: 10rem;
+  .informations{
+    padding: 0.5rem;
+    background-color: $purple;
+    flex: 0 0 85%;
+    .information_title{
+      text-align: center;
+      color:       $darkpurple;
+      font-size:   1.3rem;
+      font-weight: bold;
+    }
+    .information_content{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .contents{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .page_content{
+    flex: 1;
+    background-color: $darkpurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .notations{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.icon{
+  width: 4rem;
+  color: $white;
+  align-self: center;
+}
+.stars{
+  width: 1.5rem;
+}

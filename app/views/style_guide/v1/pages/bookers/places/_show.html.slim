@@ -1,66 +1,82 @@
-/! NAVBAR
-- if current_booker.present?
-  = render partial: "style_guide/v1/components/navbar_connect"
-- else
-  = render partial: "style_guide/v1/components/navbar_unconnect"
-
-.header_price
-
-  h3
-    | #{place.unit_price}€ par personne
-
-  h3
-    | #{place.total_price}€ pour une reservation complète
-
+.page_title
+  h1
+    | Louer
+    span<>
+      | #{place.name}
+    | pour
+    span<>
+      | #{place.capacity}
+    | personnes à
+    span<>
+      | #{place.building.city}
+  .subtitle
+    | #{place.description}
   = link_to "Réserver",
     new_bookers_booking_path(place_id: place.id),
-    class: "button_price"
+    class: "primary_button"
 
-.product_left
-  center
-    h5.product_title
-      | Louer #{place.name} pour #{place.capacity} personnes à #{place.building.city}
-    .product_subtitle
-      | #{place.building.street} - #{place.building.zipcode} #{place.building.city} - #{place.building.country}
-    .product_subtitle
+.page_presentation
+  .carousel
+    - place.place_images.each do |place_image|
+      = image_tag place_image.image.url
+  #map
+
+.page_informations
+  .informations
+    .information_title
+      | Caractéristiques de l'établissement mère
+    .information_content
+
+  .page_content
+    = image_tag "home.png",
+      class: "icon"
+    p
+      | #{place.building.places.count} salles
+
+.page_informations
+  .informations
+    .information_title
+      | Caractéristiques de la salle
+    .information_content
+      .contents
+        = image_tag "meeting.png",
+          class: "icon"
+        p
+          | #{place.capacity} personnes
+
+  .page_content
+    = image_tag "dollars.png",
+      class: "icon"
+    p
+      | #{place.unit_price}€ / pers.
+
+.page_notations
+  .informations
+    .information_title
+      | Avis des clients
+    .information_content
+      .contents
+
+  .page_content
+    .notations
       - Places::GetPlaceAverageNotationService.call(place: place).times do
         = image_tag "star.png",
-          class:"size_stars",
-          style: "width: 2rem;"
-    br
-  .product_container
-    .product_image_holder
-      .scroller
-        - place.place_images.each do |place_image|
-          = image_tag place_image.image.url,
-            class: "product_image"
-
-    .product_infos
-      br
-      p.product_ss_title
-        | Caractéristiques de l'établissement mère
-      br
-      .first_icons
-        .icons
-          = image_tag "home.png",
-            class: "icons_price"
-          p
-            | #{place.building.places.count} salles
-
-      br
-      br
-      p.product_ss_title
-        | Caractéristiques de la salle
-      br
-      .first_icons
-        .icons2
-          = image_tag "meeting.png",
-            class: "icons_price"
-          p
-            | #{place.capacity} personnes
-  .text_left
+          class:"stars"
     p
-      | #{place.description}
-= render partial: "style_guide/v1/components/footer"
+      | Notation moyenne de la salle
+
+
+
 javascript:
-  $('.scroller').slick();
+  $('.carousel').slick();;
+  handler = Gmaps.build('Google');
+  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+    markers = handler.addMarkers([
+      {
+        "lat": 0,
+        "lng": 0,
+      }
+    ]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  });
