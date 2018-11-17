@@ -1,7 +1,7 @@
 class Owners::RegistrationsController < Devise::RegistrationsController
   before_action :configure_create_permitted_parameters, only: :create
 
-  layout "login", only: %i(new)
+  layout "login/inscription", only: %i(new)
   layout "style_guide", only: %i(edit)
 
   def new
