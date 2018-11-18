@@ -70,13 +70,25 @@
 javascript:
   $('.carousel').slick();;
   handler = Gmaps.build('Google');
-  handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-    markers = handler.addMarkers([
-      {
-        "lat": 0,
-        "lng": 0,
-      }
-    ]);
+  handler.buildMap({
+    provider: {
+      draggable: false,
+      keyboardShortcuts: false,
+      maxZoom: 15,
+      streetViewControl: false,
+
+    },
+    internal: {
+      id: 'map'
+    }
+  },
+  function(){
+    var markers = handler.addCircles(
+      [{ lat: (#{place.building.lat} + 0.005),
+         lng: (#{place.building.long} + 0.005),
+         radius: 300 }],
+      { strokeColor: '#FFFFFF'}
+    );
     handler.bounds.extendWith(markers);
     handler.fitMapToBounds();
   });
