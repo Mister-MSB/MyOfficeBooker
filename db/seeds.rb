@@ -284,30 +284,35 @@ puts "====================="
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place10.id,
   booker_id: @booker1.id
 )
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place10.id,
   booker_id: @booker1.id
 )
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place10.id,
   booker_id: @booker1.id
 )
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place20.id,
   booker_id: @booker1.id
 )
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place30.id,
   booker_id: @booker1.id
 )
