@@ -28,8 +28,10 @@
   justify-content: center;
   margin-top: 2rem;
   .carousel{
-    width: 30%;
+    width: 35.5rem;
     height: 300px;
+    max-height: 300px;
+    min-height: 300px;
     .slick-prev{
       left: 0px;
       z-index: 1;
@@ -41,21 +43,24 @@
     }
   }
   #map{
-    width:  30%;
+    width:  35.5rem;
     height: 300px;
+    max-height: 300px;
+    min-height: 300px;
   }
 }
 
 .page_informations{
+  margin-bottom: 1rem;
   display:         flex;
   flex-direction: row;
   color:           $white;
-  margin: 1rem 24rem 0rem 24rem;
   height: 10rem;
+  justify-content: center;
   .informations{
     padding: 0.5rem;
     background-color: $blue;
-    flex: 0 0 85%;
+    flex: 0 0 60rem;
     .information_title{
       text-align: center;
       color:       $orange;
@@ -74,7 +79,7 @@
     }
   }
   .page_content{
-    flex: 1;
+    flex: 0 0 10rem;
     background-color: $darkblue;
     display: flex;
     flex-direction: column;
@@ -84,15 +89,16 @@
 }
 
 .page_notations{
+  margin-bottom: 1rem;
   display:         flex;
   flex-direction: row;
   color:           $white;
-  margin: 1rem 24rem 0rem 24rem;
   height: 10rem;
+  justify-content: center;
   .informations{
     padding: 0.5rem;
     background-color: $purple;
-    flex: 0 0 85%;
+    flex: 0 0 60rem;
     .information_title{
       text-align: center;
       color:       $darkpurple;
@@ -111,7 +117,7 @@
     }
   }
   .page_content{
-    flex: 1;
+    flex: 0 0 10rem;
     background-color: $darkpurple;
     display: flex;
     flex-direction: column;
