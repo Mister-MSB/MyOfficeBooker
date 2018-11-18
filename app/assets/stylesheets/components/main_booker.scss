@@ -1,0 +1,168 @@
+.page_title{
+  display:          flex;
+  flex-direction:   column;
+  align-items:      center;
+  background-color: $lightblue;
+  h1{
+    color:      $blue;
+    font-size:  1.7rem;
+    margin-top: 1rem;
+    span{
+      color:     $darkblue;
+      font-size: 1.7rem;
+    }
+  }
+  .subtitle{
+    font-size: 0.8rem;
+  }
+  .primary_button{
+    font-size:     1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.page_presentation{
+  display:        flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  .carousel{
+    width: 35.5rem;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    .slick-prev{
+      left: 0px;
+      z-index: 1;
+      vertical-align: middle;
+    }
+    .slick-next{
+      right: 0px;
+      vertical-align: middle;
+    }
+  }
+  #map{
+    width:  35.5rem;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+  }
+}
+
+.page_informations{
+  margin-bottom: 1rem;
+  display:         flex;
+  flex-direction: row;
+  color:           $white;
+  height: 10rem;
+  justify-content: center;
+  .informations{
+    padding: 0.5rem;
+    background-color: $blue;
+    flex: 0 0 60rem;
+    .information_title{
+      text-align: center;
+      color:       $orange;
+      font-size:   1.3rem;
+      font-weight: bold;
+    }
+    .information_content{
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .contents{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .page_content{
+    flex: 0 0 10rem;
+    background-color: $darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.page_notations{
+  margin-bottom: 1rem;
+  display:         flex;
+  flex-direction: row;
+  color:           $white;
+  height: 19rem;
+  justify-content: center;
+  .informations{
+    padding: 0.5rem;
+    background-color: $purple;
+    flex: 0 0 60rem;
+    .information_title{
+      text-align: center;
+      color:       $darkpurple;
+      font-size:   1.3rem;
+      font-weight: bold;
+      span{
+        color:       $darkpurple;
+        font-size:   1rem;
+        font-weight: bold;
+      }
+    }
+    .information_content{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .contents{
+        display: flex;
+        vertical-align: middle;
+        flex: 0 0 15rem;
+        flex-direction: column;
+        background-color: $lightpurple;
+        height: 15rem;
+        margin-top: -1rem;
+        .notations{
+          background-color: $darkpurple;
+          padding: 0.5rem;
+          text-align: center;
+        }
+        .comment{
+          text-align: center;
+          font-size: 0.8rem;
+          padding: 0.5rem;
+        }
+        .signature{
+          font-size: 0.8rem;
+          padding: 0.5rem;
+          margin-top: auto;
+          margin-left: auto;
+          display: flex;
+        }
+      }
+    }
+  }
+  .page_content{
+    flex: 0 0 10rem;
+    background-color: $darkpurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .notations{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.icon{
+  width: 4rem;
+  color: $white;
+  align-self: center;
+}
+.stars{
+  width: 1.5rem;
+}

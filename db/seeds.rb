@@ -70,8 +70,8 @@ puts "====================="
 @owner_building = FactoryBot.create(
   :building,
   name:     "Hotel Concorde",
-  lat:      0.25,
-  long:     0.25,
+  lat:      45.75,
+  long:     4.85,
   street:   "11 rue de la paix",
   zipcode:  "69000",
   city:     "Lyon",
@@ -83,8 +83,8 @@ puts "====================="
 @owner_building2 = FactoryBot.create(
   :building,
   name:     "Zenith de Paris",
-  lat:      0.25,
-  long:     0.25,
+  lat:      48.866667,
+  long:     2.333333,
   street:   "11 cours dauphiné",
   zipcode:  "75000",
   city:     "Paris",
@@ -96,8 +96,8 @@ puts "====================="
 @owner_building3 = FactoryBot.create(
   :building,
   name:     "Stade de Marseille",
-  lat:      0.25,
-  long:     0.25,
+  lat:      43.3,
+  long:     5.4,
   street:   "11 rue de la paix",
   zipcode:  "13000",
   city:     "Marseille",
@@ -284,30 +284,35 @@ puts "====================="
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place10.id,
   booker_id: @booker1.id
 )
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place10.id,
   booker_id: @booker1.id
 )
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place10.id,
   booker_id: @booker1.id
 )
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place20.id,
   booker_id: @booker1.id
 )
 
 @place_note = FactoryBot.create(
   :note,
+  comment: "Ceci est un commentaire",
   place_id: @building_place30.id,
   booker_id: @booker1.id
 )
@@ -327,7 +332,7 @@ puts "====================="
 
 @option3 = FactoryBot.create(
   :option,
-  pname: "Vidéoprojecteur"
+  name: "Vidéoprojecteur"
 )
 
 @option4 = FactoryBot.create(
