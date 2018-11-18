@@ -18,7 +18,7 @@
 .page_presentation
   .carousel
     - place.place_images.each do |place_image|
-      = image_tag place_image.image.url
+      = image_tag(place_image.image.url, height: '300')
   #map
 
 .page_informations
