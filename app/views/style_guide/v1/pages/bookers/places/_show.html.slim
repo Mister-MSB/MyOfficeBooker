@@ -54,8 +54,22 @@
   .informations
     .information_title
       | Avis des clients
+      span<>
+        | (3 derniers)
     .information_content
-      .contents
+      - if place.notes.present?
+        - place.notes.last(3).each do |note|
+          .contents
+            .notations
+              - note.note.to_i.times do
+                = image_tag "star.png",
+                  class:"stars"
+            .comment
+              = note.comment
+            .signature
+              = note.booker.firstname
+      - else
+        | Ce lieux n'a pas encore été noté.
 
   .page_content
     .notations
